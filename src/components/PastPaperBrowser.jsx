@@ -1,0 +1,465 @@
+import { useState, useMemo } from "react";
+import { C, F, cardS, btnS } from "../constants";
+import { useIsMobile } from "../hooks";
+import { pastPapers, getPastQuestionsBySubtopic, getPastQuestionCountBySubtopic } from "../data/pastPaperData";
+import syllabusData from "../data/syllabus_topics.json";
+import { TC } from "./TeachingMode";
+
+// ── Progress storage ──
+const PP_STORAGE = "igcse-pp-progress";
+function loadPPProgress() {
+  try { return JSON.parse(localStorage.getItem(PP_STORAGE) || "{}"); }
+  catch { return {}; }
+}
+function savePPProgress(p) { localStorage.setItem(PP_STORAGE, JSON.stringify(p)); }
+
+export default function PastPaperBrowser({ navigateTo }) {
+  const mobile = useIsMobile();
+  const [view, setView] = useState("byTopic");
+  const [paperFilter, setPaperFilter] = useState("all");
+  const [yearFilter, setYearFilter] = useState("all");
+  const [expandedTopic, setExpandedTopic] = useState(null);
+  const [expandedPaper, setExpandedPaper] = useState(null);
+
+  const counts = useMemo(getPastQuestionCountBySubtopic, []);
+  const years = [...new Set(pastPapers.map(p => p.year))].sort((a, b) => b - a);
+
+  const filteredPapers = useMemo(() => {
+    return pastPapers.filter(p => {
+      if (paperFilter !== "all" && p.paper !== Number(paperFilter)) return false;
+      if (yearFilter !== "all" && p.year !== Number(yearFilter)) return false;
+      return true;
+    }).sort((a, b) => b.year - a.year || a.session.localeCompare(b.session));
+  }, [paperFilter, yearFilter]);
+
+  return (
+    <div>
+      <h2 style={{ color: C.text, fontSize: 20, fontWeight: 800, margin: "0 0 4px" }}>
+        기출문제 풀기
+      </h2>
+      <p style={{ color: C.sub, fontSize: 13, margin: "0 0 12px" }}>
+        {pastPapers.length}개 시험지 · {pastPapers.reduce((s, p) => s + p.questions.length, 0)}개 문제
+      </p>
+
+      {/* View toggle */}
+      <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
+        {[
+          { key: "byTopic", label: "소주제별" },
+          { key: "byPaper", label: "시험지별" },
+        ].map(v => (
+          <button key={v.key} onClick={() => setView(v.key)} style={{
+            ...btnS, fontSize: 12,
+            background: view === v.key ? C.blue : C.blueLight,
+            color: view === v.key ? "#fff" : C.blue,
+          }}>
+            {v.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Filters */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
+        {[
+          { key: "all", label: "전체" },
+          { key: "1", label: "Paper 1" },
+          { key: "2", label: "Paper 2" },
+        ].map(f => (
+          <button key={f.key} onClick={() => setPaperFilter(f.key)} style={{
+            ...btnS, fontSize: 12,
+            background: paperFilter === f.key ? C.purple : C.purpleLight,
+            color: paperFilter === f.key ? "#fff" : C.purple,
+          }}>
+            {f.label}
+          </button>
+        ))}
+        {view === "byPaper" && (
+          <select
+            value={yearFilter}
+            onChange={e => setYearFilter(e.target.value)}
+            style={{
+              padding: "6px 10px", borderRadius: 10, border: `1px solid ${C.border}`,
+              fontSize: 12, fontFamily: F, color: C.text, background: C.white,
+            }}
+          >
+            <option value="all">전체 연도</option>
+            {years.map(y => <option key={y} value={y}>{y}</option>)}
+          </select>
+        )}
+      </div>
+
+      {view === "byTopic" ? (
+        <TopicView
+          paperFilter={paperFilter}
+          counts={counts}
+          expandedTopic={expandedTopic}
+          setExpandedTopic={setExpandedTopic}
+          navigateTo={navigateTo}
+          mobile={mobile}
+        />
+      ) : (
+        <PaperListView
+          papers={filteredPapers}
+          expandedPaper={expandedPaper}
+          setExpandedPaper={setExpandedPaper}
+          mobile={mobile}
+        />
+      )}
+    </div>
+  );
+}
+
+// ── Topic View ──
+function TopicView({ paperFilter, counts, expandedTopic, setExpandedTopic, navigateTo, mobile }) {
+  const topics = syllabusData.topics.filter(t =>
+    paperFilter === "all" || t.paper === Number(paperFilter)
+  );
+
+  return (
+    <div>
+      {topics.map(topic => {
+        const color = topic.paper === 1 ? C.purple : C.blue;
+        return (
+          <div key={topic.id} style={{ marginBottom: 16 }}>
+            <div style={{
+              fontWeight: 800, fontSize: 15, color,
+              padding: "8px 0", borderBottom: `2px solid ${color}`,
+              marginBottom: 8,
+            }}>
+              Topic {topic.id}: {topic.name}
+            </div>
+            {topic.subtopics.map(st => {
+              const count = counts[st.id] || 0;
+              const tc = TC[st.id];
+              const isOpen = expandedTopic === st.id;
+
+              return (
+                <div key={st.id} style={{ ...cardS, marginBottom: 8, padding: 0, overflow: "hidden" }}>
+                  <button onClick={() => setExpandedTopic(isOpen ? null : st.id)} style={{
+                    width: "100%", background: "none", border: "none",
+                    padding: mobile ? "10px 12px" : "10px 16px",
+                    cursor: "pointer", fontFamily: F,
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                    borderLeft: `4px solid ${color}`,
+                  }}>
+                    <div style={{ textAlign: "left" }}>
+                      <div style={{ fontWeight: 700, fontSize: 14, color: C.text }}>
+                        {st.id} {st.name}
+                        {tc && <span style={{ color: C.sub, fontWeight: 500 }}> · {tc.nameKo}</span>}
+                      </div>
+                      <div style={{ fontSize: 12, color: C.sub, marginTop: 2 }}>
+                        기출 {count}문제
+                      </div>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <span onClick={(e) => {
+                        e.stopPropagation();
+                        navigateTo("teaching", { subtopicId: st.id });
+                      }} style={{
+                        ...btnS, fontSize: 11, padding: "4px 10px",
+                        background: color + "15", color: color,
+                        border: `1px solid ${color}40`,
+                      }}>
+                        📖 수업
+                      </span>
+                      <span style={{
+                        fontSize: 14, color: C.sub,
+                        transform: isOpen ? "rotate(180deg)" : "rotate(0)",
+                        transition: "transform .2s", display: "inline-block",
+                      }}>▼</span>
+                    </div>
+                  </button>
+
+                  {isOpen && (
+                    <InteractiveQuestionList
+                      questions={getPastQuestionsBySubtopic(st.id)}
+                      color={color}
+                    />
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ── Interactive Question (single question with input + grading) ──
+function InteractiveQuestion({ q, color, qKey }) {
+  const [progress, setProgress] = useState(loadPPProgress);
+  const saved = progress[qKey];
+  const [userAnswer, setUserAnswer] = useState(saved?.answer || "");
+  const [showMs, setShowMs] = useState(!!saved);
+
+  const isAutoGradable = q.answerType === "mc" || (q.answerType === "short" && q.answer);
+  const hasMarkScheme = q.markScheme && q.markScheme.length > 5;
+
+  const handleSubmit = () => {
+    if (!userAnswer.trim()) return;
+    let correct = null;
+
+    if (q.answerType === "mc" && q.answer) {
+      correct = userAnswer.trim().toUpperCase() === q.answer.trim().toUpperCase();
+    } else if (q.answerType === "short" && q.answer) {
+      const norm = userAnswer.trim().toLowerCase();
+      const ans = q.answer.trim().toLowerCase();
+      correct = norm === ans || norm.includes(ans) || ans.includes(norm);
+    }
+
+    const newProgress = {
+      ...progress,
+      [qKey]: { answer: userAnswer, correct, timestamp: Date.now() },
+    };
+    setProgress(newProgress);
+    savePPProgress(newProgress);
+    setShowMs(true);
+  };
+
+  const handleReset = () => {
+    const newProgress = { ...progress };
+    delete newProgress[qKey];
+    setProgress(newProgress);
+    savePPProgress(newProgress);
+    setUserAnswer("");
+    setShowMs(false);
+  };
+
+  return (
+    <div style={{
+      padding: "10px 0",
+      borderTop: `1px solid ${C.border}`,
+    }}>
+      {/* Question header */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+        <span style={{ fontWeight: 700, color, fontSize: 12 }}>
+          {q.paper} Q{q.qNum}
+        </span>
+        <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+          {saved && (
+            <span style={{
+              fontSize: 11, fontWeight: 600,
+              color: saved.correct === true ? C.green : saved.correct === false ? C.red : C.orange,
+              background: saved.correct === true ? C.greenLight : saved.correct === false ? C.redLight : C.orangeLight,
+              borderRadius: 10, padding: "2px 8px",
+            }}>
+              {saved.correct === true ? "정답" : saved.correct === false ? "오답" : "제출됨"}
+            </span>
+          )}
+          <span style={{
+            fontSize: 11, color: C.sub,
+            background: C.border, borderRadius: 10, padding: "2px 8px",
+          }}>{q.marks}점</span>
+        </div>
+      </div>
+
+      {/* Question text */}
+      <div style={{ color: C.text, fontSize: 13, lineHeight: 1.5, marginBottom: 8 }}>
+        {q.context && <div style={{ color: C.sub, marginBottom: 4 }}>{q.context.slice(0, 120)}{q.context.length > 120 ? "..." : ""}</div>}
+        {q.text}
+      </div>
+
+      {/* Answer input */}
+      {!saved ? (
+        <div style={{ display: "flex", gap: 6, alignItems: "flex-start" }}>
+          {q.answerType === "mc" ? (
+            <div style={{ display: "flex", gap: 4 }}>
+              {["A", "B", "C", "D"].map(opt => (
+                <button key={opt} onClick={() => setUserAnswer(opt)} style={{
+                  ...btnS,
+                  width: 36, height: 36, padding: 0,
+                  fontSize: 14, fontWeight: 700,
+                  background: userAnswer === opt ? color : C.border + "80",
+                  color: userAnswer === opt ? "#fff" : C.text,
+                }}>
+                  {opt}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <textarea
+              value={userAnswer}
+              onChange={e => setUserAnswer(e.target.value)}
+              placeholder="답을 입력하세요..."
+              rows={q.marks > 3 ? 4 : 2}
+              style={{
+                flex: 1, padding: "8px 10px", borderRadius: 8,
+                border: `1px solid ${C.border}`, fontSize: 13,
+                fontFamily: F, resize: "vertical", background: C.white,
+                color: C.text,
+              }}
+            />
+          )}
+          <button onClick={handleSubmit} disabled={!userAnswer.trim()} style={{
+            ...btnS, padding: "8px 14px",
+            background: userAnswer.trim() ? color : C.border,
+            color: userAnswer.trim() ? "#fff" : C.sub,
+            opacity: userAnswer.trim() ? 1 : 0.6,
+          }}>
+            제출
+          </button>
+        </div>
+      ) : (
+        <div>
+          {/* Show user's answer */}
+          <div style={{
+            padding: "8px 12px", borderRadius: 8, fontSize: 13, marginBottom: 8,
+            background: saved.correct === true ? "#ECFDF5" : saved.correct === false ? "#FEF2F2" : "#FFF7ED",
+            border: `1px solid ${saved.correct === true ? C.green + "40" : saved.correct === false ? C.red + "40" : C.orange + "40"}`,
+            color: C.text,
+          }}>
+            <span style={{ fontWeight: 600 }}>내 답: </span>{saved.answer}
+            {saved.correct === true && <span style={{ color: C.green, marginLeft: 8 }}>✓ 정답</span>}
+            {saved.correct === false && (
+              <span style={{ color: C.red, marginLeft: 8 }}>✗ 정답: {q.answer}</span>
+            )}
+          </div>
+
+          {/* Reset button */}
+          <button onClick={handleReset} style={{
+            ...btnS, fontSize: 11, padding: "4px 10px",
+            background: C.border + "60", color: C.sub,
+          }}>
+            다시 풀기
+          </button>
+        </div>
+      )}
+
+      {/* Mark scheme toggle */}
+      {hasMarkScheme && showMs && (
+        <div style={{ marginTop: 8 }}>
+          <MarkSchemeDisplay markScheme={q.markScheme} acceptedAnswers={q.acceptedAnswers} />
+        </div>
+      )}
+      {hasMarkScheme && !showMs && saved && (
+        <button onClick={() => setShowMs(true)} style={{
+          ...btnS, fontSize: 11, marginTop: 6,
+          background: C.orangeLight, color: "#92400E",
+        }}>
+          📋 마크스킴 보기
+        </button>
+      )}
+    </div>
+  );
+}
+
+// ── Mark Scheme Display ──
+function MarkSchemeDisplay({ markScheme, acceptedAnswers }) {
+  return (
+    <div style={{
+      padding: "10px 12px", borderRadius: 8,
+      background: "#FFFBEB", border: `1px solid ${C.orange}30`,
+      fontSize: 12, lineHeight: 1.6,
+    }}>
+      <div style={{ fontWeight: 700, color: "#92400E", marginBottom: 4 }}>
+        📋 Mark Scheme
+      </div>
+      <div style={{ color: C.text, whiteSpace: "pre-line" }}>
+        {markScheme}
+      </div>
+      {acceptedAnswers && acceptedAnswers.length > 0 && (
+        <div style={{ marginTop: 6 }}>
+          <div style={{ fontWeight: 600, color: "#92400E", fontSize: 11 }}>허용 답안:</div>
+          {acceptedAnswers.map((a, i) => (
+            <div key={i} style={{ color: C.text, paddingLeft: 8 }}>• {a}</div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Interactive Question List (for subtopic view) ──
+function InteractiveQuestionList({ questions, color }) {
+  if (questions.length === 0) {
+    return (
+      <div style={{ padding: "12px 16px", color: C.sub, fontSize: 13 }}>
+        이 소주제의 기출문제가 없습니다
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ padding: "0 16px 12px", maxHeight: 600, overflow: "auto" }}>
+      {questions.slice(0, 20).map((q, idx) => (
+        <InteractiveQuestion
+          key={`${q.qpFile}-${q.qNum}-${idx}`}
+          q={q}
+          color={color}
+          qKey={`${q.qpFile}-${q.qNum}`}
+        />
+      ))}
+      {questions.length > 20 && (
+        <div style={{
+          textAlign: "center", padding: 12, color: C.sub, fontSize: 12,
+        }}>
+          +{questions.length - 20}개 더 (시험지별 보기에서 전체 확인 가능)
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Paper List View (시험지별) ──
+function PaperListView({ papers, expandedPaper, setExpandedPaper, mobile }) {
+  const SESSION_COLORS = { s: C.blue, w: C.orange, m: C.green };
+  const SESSION_LABELS = { s: "May/Jun", w: "Oct/Nov", m: "Mar" };
+
+  return (
+    <div>
+      {papers.map((p, idx) => {
+        const isOpen = expandedPaper === idx;
+        const sColor = SESSION_COLORS[p.session] || C.border;
+        return (
+          <div key={idx} style={{
+            ...cardS,
+            borderLeft: `4px solid ${sColor}`,
+            padding: 0, marginBottom: 8, overflow: "hidden",
+          }}>
+            <button onClick={() => setExpandedPaper(isOpen ? null : idx)} style={{
+              width: "100%", background: "none", border: "none",
+              padding: "12px 16px", cursor: "pointer", fontFamily: F,
+              display: "flex", justifyContent: "space-between", alignItems: "center",
+            }}>
+              <div style={{ textAlign: "left" }}>
+                <div style={{ fontWeight: 800, fontSize: 14, color: C.text }}>
+                  {p.label}
+                </div>
+                <div style={{ fontSize: 12, color: C.sub, marginTop: 2 }}>
+                  Paper {p.paper} · {p.questions.length}문제 · {p.totalMarks}점
+                </div>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <span style={{
+                  fontSize: 11, fontWeight: 600,
+                  color: sColor, background: sColor + "15",
+                  borderRadius: 10, padding: "2px 8px",
+                }}>
+                  {SESSION_LABELS[p.session]}
+                </span>
+                <span style={{
+                  fontSize: 14, color: C.sub,
+                  transform: isOpen ? "rotate(180deg)" : "rotate(0)",
+                  transition: "transform .2s", display: "inline-block",
+                }}>▼</span>
+              </div>
+            </button>
+
+            {isOpen && (
+              <div style={{ padding: "0 16px 12px" }}>
+                {p.questions.map((q, qi) => (
+                  <InteractiveQuestion
+                    key={`${p.qpFile}-${q.qNum}-${qi}`}
+                    q={{ ...q, paper: p.label }}
+                    color={sColor}
+                    qKey={`${p.qpFile}-${q.qNum}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
