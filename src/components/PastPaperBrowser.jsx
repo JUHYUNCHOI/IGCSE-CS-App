@@ -26,6 +26,24 @@ function cleanQText(s) {
   return t.trim();
 }
 
+// 깨진 문제 필터 (파싱 실패한 것들 숨기기)
+function isValidQuestion(q) {
+  const t = cleanQText(q.text);
+  return t.length >= 20 && q.marks > 0 && q.marks <= 30;
+}
+
+// 문제 텍스트를 줄바꿈이 있는 JSX로 변환
+function formatQText(rawText) {
+  const t = cleanQText(rawText);
+  if (!t) return null;
+  const formatted = t
+    .replace(/\s*(_{3,})/g, "\n$1")                    // _____ 앞 줄바꿈
+    .replace(/\s+(\d{4,}\s*\+?\s*\d{4,})/g, "\n$1")   // 이진수 연산
+    .replace(/(_{3,}\s*\.)\s+/g, "$1\n")               // _____ . 뒤 줄바꿈
+    .trim();
+  return formatted;
+}
+
 // ── Progress storage ──
 const PP_STORAGE = "igcse-pp-progress";
 function loadPPProgress() {
@@ -275,18 +293,18 @@ function InteractiveQuestion({ q, color, qKey }) {
       </div>
 
       {/* Question text */}
-      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10 }}>
+      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10, whiteSpace: "pre-line" }}>
         {cleanQText(q.context) && (
           <div style={{
             color: C.sub, marginBottom: 8, fontSize: 13, fontStyle: "italic",
             background: C.border + "40", padding: "6px 10px", borderRadius: 6,
-            lineHeight: 1.7,
+            lineHeight: 1.7, whiteSpace: "normal",
           }}>
-            {cleanQText(q.context).slice(0, 200)}
-            {cleanQText(q.context).length > 200 ? "..." : ""}
+            {cleanQText(q.context).slice(0, 300)}
+            {cleanQText(q.context).length > 300 ? "..." : ""}
           </div>
         )}
-        {cleanQText(q.text) || q.text}
+        {formatQText(q.text)}
       </div>
 
       {/* Answer input */}
@@ -401,7 +419,8 @@ function MarkSchemeDisplay({ markScheme, acceptedAnswers }) {
 
 // ── Interactive Question List (for subtopic view) ──
 function InteractiveQuestionList({ questions, color }) {
-  if (questions.length === 0) {
+  const valid = questions.filter(isValidQuestion);
+  if (valid.length === 0) {
     return (
       <div style={{ padding: "12px 16px", color: C.sub, fontSize: 13 }}>
         이 소주제의 기출문제가 없습니다
@@ -411,7 +430,7 @@ function InteractiveQuestionList({ questions, color }) {
 
   return (
     <div style={{ padding: "0 16px 12px", maxHeight: 600, overflow: "auto" }}>
-      {questions.slice(0, 20).map((q, idx) => (
+      {valid.slice(0, 20).map((q, idx) => (
         <InteractiveQuestion
           key={`${q.qpFile}-${q.qNum}-${idx}`}
           q={q}
@@ -477,7 +496,7 @@ function PaperListView({ papers, expandedPaper, setExpandedPaper, mobile }) {
 
             {isOpen && (
               <div style={{ padding: "0 16px 12px" }}>
-                {p.questions.map((q, qi) => (
+                {p.questions.filter(isValidQuestion).map((q, qi) => (
                   <InteractiveQuestion
                     key={`${p.qpFile}-${q.qNum}-${qi}`}
                     q={{ ...q, paper: p.label }}

@@ -369,10 +369,9 @@ function cleanQText(text) {
     .replace(/\(([a-z])\)/g, "")
     .replace(/\((i{1,3}v?)\)/g, "")
     .replace(/Working space/g, "")
-    .replace(/\.\.\./g, "")
+    .replace(/\.\.\.\s*/g, "_____ ")  // preserve fill-in blanks as _____
     .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 300);
+    .trim();
 }
 
 function detectSubtopics(text) {
