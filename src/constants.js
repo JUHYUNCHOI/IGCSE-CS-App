@@ -23,12 +23,12 @@ export const cardS = {
 };
 
 export const NAV_ITEMS = [
-  { key: "teaching", emoji: "🏫", label: "수업 모드" },
-  { key: "quiz", emoji: "🧠", label: "퀴즈" },
-  { key: "pseudocode", emoji: "💻", label: "의사코드" },
-  { key: "topics", emoji: "📚", label: "토픽 학습" },
-  { key: "papers", emoji: "📄", label: "기출문제" },
-  { key: "grading", emoji: "✅", label: "채점 모드" },
+  { key: "teaching", emoji: "🏫", label: "수업 모드", desc: "슬라이드 강의 + 연습문제" },
+  { key: "quiz", emoji: "🧠", label: "퀴즈", desc: "소주제별 객관식 퀴즈" },
+  { key: "pseudocode", emoji: "💻", label: "의사코드", desc: "Cambridge 수도코드 문법" },
+  { key: "topics", emoji: "📚", label: "토픽 학습", desc: "개념 목록 + 체크리스트" },
+  { key: "papers", emoji: "📄", label: "기출문제", desc: "실제 시험 문제 풀기" },
+  { key: "grading", emoji: "✅", label: "채점 모드", desc: "PDF 시험지 채점" },
 ];
 
 export const SESSION_LABELS = { s: "May/Jun", w: "Oct/Nov", m: "Mar" };

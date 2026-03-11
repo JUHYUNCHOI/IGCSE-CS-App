@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { C, F } from "./constants";
+import { C, F, NAV_ITEMS } from "./constants";
 import { useIsMobile, useProgress } from "./hooks";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
@@ -87,6 +87,20 @@ export default function App() {
         padding: mobile ? "12px 12px" : "20px 24px",
       }}>
         {!mobile && <NavBar view={view} setView={setView} mobile={false} />}
+        {/* 현재 탭 설명 배너 */}
+        {(() => {
+          const cur = NAV_ITEMS.find(n => n.key === view);
+          return cur?.desc ? (
+            <div style={{
+              fontSize: 12, color: C.sub, marginBottom: 8,
+              padding: "4px 0",
+              display: "flex", alignItems: "center", gap: 6,
+            }}>
+              <span style={{ fontSize: 14 }}>{cur.emoji}</span>
+              <span><b style={{ color: C.text }}>{cur.label}</b> — {cur.desc}</span>
+            </div>
+          ) : null;
+        })()}
         <div key={view} style={{
           animation: "fadeIn 0.25s ease-out",
         }}>
