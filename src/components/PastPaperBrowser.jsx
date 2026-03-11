@@ -103,6 +103,147 @@ function loadPPProgress() {
 }
 function savePPProgress(p) { localStorage.setItem(PP_STORAGE, JSON.stringify(p)); }
 
+// ── Exam Info Panel ──
+function ExamInfoPanel() {
+  const [open, setOpen] = useState(false);
+  const hd = { fontWeight: 700, fontSize: 13, color: C.blue, marginBottom: 4, marginTop: 12 };
+  const row = { display: "flex", gap: 8, marginBottom: 2 };
+  const label = { fontWeight: 600, minWidth: 80, fontSize: 12, color: C.text };
+  const val = { fontSize: 12, color: C.sub };
+  const pill = (bg, fg) => ({
+    display: "inline-block", padding: "2px 8px", borderRadius: 10,
+    fontSize: 11, fontWeight: 600, background: bg, color: fg, marginRight: 4,
+  });
+
+  return (
+    <div style={{
+      ...cardS, marginBottom: 12, padding: 0, overflow: "hidden",
+      border: `1px solid ${C.blue}30`,
+    }}>
+      <button onClick={() => setOpen(!open)} style={{
+        width: "100%", background: "none", border: "none",
+        padding: "10px 14px", cursor: "pointer", fontFamily: F,
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+      }}>
+        <span style={{ fontWeight: 700, fontSize: 14, color: C.text }}>
+          📋 IGCSE CS 0478 시험 안내
+        </span>
+        <span style={{
+          fontSize: 14, color: C.sub,
+          transform: open ? "rotate(180deg)" : "rotate(0)",
+          transition: "transform .2s", display: "inline-block",
+        }}>▼</span>
+      </button>
+
+      {open && (
+        <div style={{ padding: "0 14px 14px", lineHeight: 1.7 }}>
+          {/* Papers */}
+          <div style={hd}>시험 구성</div>
+          <div style={{
+            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginBottom: 8,
+          }}>
+            <div style={{
+              padding: "8px 10px", borderRadius: 8,
+              background: C.purpleLight, border: `1px solid ${C.purple}30`,
+            }}>
+              <div style={{ fontWeight: 700, fontSize: 13, color: C.purple }}>Paper 1</div>
+              <div style={{ fontSize: 11, color: C.sub }}>Computer Systems</div>
+              <div style={{ fontSize: 12, color: C.text, marginTop: 4 }}>
+                <b>1시간 45분</b> · 75점
+              </div>
+              <div style={{ fontSize: 11, color: C.sub }}>
+                단답형 + 서술형 (이론)
+              </div>
+            </div>
+            <div style={{
+              padding: "8px 10px", borderRadius: 8,
+              background: C.blueLight, border: `1px solid ${C.blue}30`,
+            }}>
+              <div style={{ fontWeight: 700, fontSize: 13, color: C.blue }}>Paper 2</div>
+              <div style={{ fontSize: 11, color: C.sub }}>Algorithms & Programming</div>
+              <div style={{ fontSize: 12, color: C.text, marginTop: 4 }}>
+                <b>1시간 45분</b> · 50점
+              </div>
+              <div style={{ fontSize: 11, color: C.sub }}>
+                수도코드 작성 · 알고리즘 추적
+              </div>
+            </div>
+          </div>
+
+          {/* Sessions */}
+          <div style={hd}>시험 시기 (연 3회)</div>
+          <div style={{ fontSize: 12, marginBottom: 6 }}>
+            <div style={row}>
+              <span style={pill(C.greenLight, "#065F46")}>Mar</span>
+              <span style={val}>2~3월 · 인도, 일부 아시아 학교</span>
+            </div>
+            <div style={row}>
+              <span style={pill(C.blueLight, C.blue)}>May/Jun</span>
+              <span style={val}>5~6월 · <b>전 세계 대부분</b> (주요 세션)</span>
+            </div>
+            <div style={row}>
+              <span style={pill(C.orangeLight, "#92400E")}>Oct/Nov</span>
+              <span style={val}>10~11월 · 남반구, 일부 아시아</span>
+            </div>
+          </div>
+
+          {/* Regional info */}
+          <div style={hd}>지역별 시험 시기</div>
+          <div style={{ fontSize: 12 }}>
+            <div style={row}>
+              <span style={label}>🇰🇷 한국</span>
+              <span style={val}>
+                <span style={pill(C.blueLight, C.blue)}>May/Jun</span>
+                제주 영국제 등
+              </span>
+            </div>
+            <div style={row}>
+              <span style={label}>🇲🇾 말레이시아</span>
+              <span style={val}>
+                <span style={pill(C.blueLight, C.blue)}>May/Jun</span>
+                <span style={pill(C.orangeLight, "#92400E")}>Oct/Nov</span>
+              </span>
+            </div>
+            <div style={row}>
+              <span style={label}>🇸🇬 싱가포르</span>
+              <span style={val}>
+                <span style={pill(C.blueLight, C.blue)}>May/Jun</span>
+                <span style={pill(C.orangeLight, "#92400E")}>Oct/Nov</span>
+              </span>
+            </div>
+            <div style={row}>
+              <span style={label}>🇬🇧 영국</span>
+              <span style={val}>
+                <span style={pill(C.blueLight, C.blue)}>May/Jun</span>
+                주로 6월
+              </span>
+            </div>
+          </div>
+
+          {/* Pseudocode */}
+          <div style={hd}>수도코드 (Pseudocode) 시험</div>
+          <div style={{ fontSize: 12, color: C.text }}>
+            <div>• <b>Paper 2</b>에서 출제 — 종이에 <b>손으로 직접 작성</b> (컴퓨터 X)</div>
+            <div>• Cambridge 자체 수도코드 문법 사용 (Python과 유사하지만 다름)</div>
+            <div>• 주어진 코드 읽고 <b>변수 추적(trace table)</b> 작성</div>
+            <div>• 코드의 <b>오류 찾기/수정</b></div>
+            <div>• 문제 설명 보고 <b>수도코드 직접 작성</b></div>
+          </div>
+
+          {/* Tips */}
+          <div style={hd}>시험 팁</div>
+          <div style={{ fontSize: 12, color: C.text }}>
+            <div>• Paper 1 + Paper 2 합산 = 최종 성적 (A*~G)</div>
+            <div>• 한 세션에 Paper 1, 2 모두 응시 (보통 며칠 간격)</div>
+            <div>• 각 Paper는 variant(버전)가 3개 — 학교가 배정받음</div>
+            <div>• 계산기 사용 불가</div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function PastPaperBrowser({ navigateTo }) {
   const mobile = useIsMobile();
   const [view, setView] = useState("byTopic");
@@ -130,6 +271,8 @@ export default function PastPaperBrowser({ navigateTo }) {
       <p style={{ color: C.sub, fontSize: 13, margin: "0 0 12px" }}>
         {pastPapers.length}개 시험지 · {pastPapers.reduce((s, p) => s + p.questions.length, 0)}개 문제
       </p>
+
+      <ExamInfoPanel />
 
       {/* View toggle */}
       <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
