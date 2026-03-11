@@ -175,7 +175,7 @@ const flatSubtopics = syllabusData.topics.flatMap(t =>
 );
 
 // ─── MAIN COMPONENT ───
-export default function TeachingMode({ initialSubtopic }) {
+export default function TeachingMode({ initialSubtopic, navigateTo, fromView }) {
   const [phase, setPhase] = useState("overview");
   const [topicId, setTopicId] = useState(null);
   const [subIdx, setSubIdx] = useState(0);
@@ -265,6 +265,8 @@ export default function TeachingMode({ initialSubtopic }) {
         subIdx={subIdx}
         mobile={mobile}
         onBack={() => setPhase("overview")}
+        navigateTo={navigateTo}
+        fromView={fromView}
       />
       <SlideNav
         topic={topic}
@@ -469,7 +471,7 @@ function TopicOverview({ onSelect, mobile }) {
 }
 
 // ─── SLIDE VIEW ───
-function SlideView({ topic, subtopic, subIdx, mobile, onBack }) {
+function SlideView({ topic, subtopic, subIdx, mobile, onBack, navigateTo, fromView }) {
   const [showQuiz, setShowQuiz] = useState(false);
   const [activeSec, setActiveSec] = useState(0);
   const [page, setPage] = useState(0);
@@ -525,14 +527,26 @@ function SlideView({ topic, subtopic, subIdx, mobile, onBack }) {
         color: "#fff", marginBottom: 16,
       }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <button onClick={onBack} style={{
-            background: "rgba(255,255,255,0.2)", border: "none",
-            borderRadius: 8, padding: "6px 12px",
-            color: "#fff", fontWeight: 700, fontSize: 13,
-            cursor: "pointer", fontFamily: F,
-          }}>
-            ← 목록
-          </button>
+          <div style={{ display: "flex", gap: 6 }}>
+            <button onClick={onBack} style={{
+              background: "rgba(255,255,255,0.2)", border: "none",
+              borderRadius: 8, padding: "6px 12px",
+              color: "#fff", fontWeight: 700, fontSize: 13,
+              cursor: "pointer", fontFamily: F,
+            }}>
+              ← 목록
+            </button>
+            {fromView === "papers" && navigateTo && (
+              <button onClick={() => navigateTo("papers")} style={{
+                background: "rgba(255,255,255,0.3)", border: "none",
+                borderRadius: 8, padding: "6px 12px",
+                color: "#fff", fontWeight: 700, fontSize: 13,
+                cursor: "pointer", fontFamily: F,
+              }}>
+                📄 기출문제로
+              </button>
+            )}
+          </div>
           <span style={{ fontSize: 14, opacity: 0.8 }}>
             Paper {topic.paper} · Topic {topic.id}
           </span>

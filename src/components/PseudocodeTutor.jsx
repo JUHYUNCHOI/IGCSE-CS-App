@@ -10,6 +10,10 @@ const SYNTAX_CARDS = [
     syntax: "DECLARE <name> : <type>\n<name> ← <value>",
     example: "DECLARE age : INTEGER\nage ← 15",
     explain: "변수를 만들고 값을 넣는 방법.\nDECLARE로 선언하고, ← (화살표)로 값을 넣습니다.\n자료형: INTEGER(정수), REAL(실수), STRING(문자열), CHAR(문자 1개), BOOLEAN(참/거짓)",
+    titlePy: "변수 대입",
+    pythonSyntax: "<name> = <value>",
+    pythonExample: 'age = 15\nname = "Alice"\nis_student = True',
+    pythonExplain: "Python은 DECLARE 없이 바로 대입합니다.\n타입을 지정하지 않아도 자동으로 감지됩니다.\nint(정수), float(실수), str(문자열), bool(참/거짓)",
   },
   {
     title: "INPUT / OUTPUT",
@@ -17,6 +21,10 @@ const SYNTAX_CARDS = [
     syntax: "INPUT <variable>\nOUTPUT <value>",
     example: 'INPUT name\nOUTPUT "Hello, ", name',
     explain: "INPUT은 사용자로부터 값을 받습니다.\nOUTPUT은 화면에 값을 보여줍니다.\nOUTPUT에 콤마로 여러 값을 이어 출력할 수 있습니다.",
+    titlePy: "입력 / 출력",
+    pythonSyntax: '<var> = input(<prompt>)\nprint(<value>)',
+    pythonExample: 'name = input("Enter name: ")\nage = int(input("Enter age: "))\nprint("Hello,", name)',
+    pythonExplain: "input()은 항상 문자열(str)을 반환합니다.\n숫자가 필요하면 int() 또는 float()으로 변환해야 합니다.\nprint()로 출력하고, 콤마로 여러 값을 이어 출력합니다.",
   },
   {
     title: "IF / THEN / ELSE",
@@ -24,6 +32,10 @@ const SYNTAX_CARDS = [
     syntax: "IF <condition> THEN\n  <statements>\nELSE\n  <statements>\nENDIF",
     example: 'IF score >= 50 THEN\n  OUTPUT "Pass"\nELSE\n  OUTPUT "Fail"\nENDIF',
     explain: "조건이 참이면 THEN 아래를 실행,\n거짓이면 ELSE 아래를 실행합니다.\nENDIF로 끝냅니다.\nELSE는 생략 가능합니다.",
+    titlePy: "조건문",
+    pythonSyntax: "if <condition>:\n    <statements>\nelse:\n    <statements>",
+    pythonExample: 'if score >= 50:\n    print("Pass")\nelse:\n    print("Fail")',
+    pythonExplain: "콜론(:)과 들여쓰기로 블록을 구분합니다.\nENDIF가 필요 없습니다!\nELSE IF 대신 elif를 사용합니다.",
   },
   {
     title: "CASE OF",
@@ -31,6 +43,10 @@ const SYNTAX_CARDS = [
     syntax: 'CASE OF <variable>\n  <value1> : <statement>\n  <value2> : <statement>\n  OTHERWISE <statement>\nENDCASE',
     example: 'CASE OF grade\n  "A" : OUTPUT "Excellent"\n  "B" : OUTPUT "Good"\n  OTHERWISE OUTPUT "Try harder"\nENDCASE',
     explain: "변수 값에 따라 다른 동작을 합니다.\nIF-ELSE가 많을 때 더 깔끔하게 쓸 수 있습니다.\nOTHERWISE는 어떤 값에도 해당 안 될 때 실행됩니다.",
+    titlePy: "선택문 (if/elif)",
+    pythonSyntax: "if <var> == <val1>:\n    ...\nelif <var> == <val2>:\n    ...\nelse:\n    ...",
+    pythonExample: 'if grade == "A":\n    print("Excellent")\nelif grade == "B":\n    print("Good")\nelse:\n    print("Try harder")',
+    pythonExplain: "Python에는 CASE OF가 없습니다!\nif / elif / else로 대체합니다.\n(Python 3.10+에 match가 있지만 시험에는 안 나옴)",
   },
   {
     title: "FOR / NEXT",
@@ -38,6 +54,10 @@ const SYNTAX_CARDS = [
     syntax: "FOR <var> ← <start> TO <end>\n  <statements>\nNEXT <var>",
     example: "FOR i ← 1 TO 5\n  OUTPUT i\nNEXT i",
     explain: "정해진 횟수만큼 반복할 때 사용합니다.\n변수가 start부터 end까지 1씩 증가하며 반복합니다.\nSTEP 키워드로 증가량을 바꿀 수 있습니다.",
+    titlePy: "for 루프",
+    pythonSyntax: "for <var> in range(<start>, <end+1>):\n    <statements>",
+    pythonExample: "for i in range(1, 6):\n    print(i)\n# 1,2,3,4,5 출력 (6은 포함 안 됨!)",
+    pythonExplain: "⚠ range(1, 6)은 1~5입니다. 끝값 6은 포함 안 됨!\n의사코드 FOR i ← 1 TO 5 = Python range(1, 6)\nNEXT 필요 없이 들여쓰기로 블록을 구분합니다.",
   },
   {
     title: "WHILE / ENDWHILE",
@@ -45,6 +65,10 @@ const SYNTAX_CARDS = [
     syntax: "WHILE <condition> DO\n  <statements>\nENDWHILE",
     example: "WHILE count < 10 DO\n  count ← count + 1\nENDWHILE",
     explain: "조건이 참인 동안 반복합니다.\n조건을 먼저 검사하므로 한 번도 실행 안 될 수 있습니다.\n반복 횟수를 모를 때 사용합니다.",
+    titlePy: "while 루프",
+    pythonSyntax: "while <condition>:\n    <statements>",
+    pythonExample: "while count < 10:\n    count = count + 1",
+    pythonExplain: "의사코드와 거의 같습니다!\nDO와 ENDWHILE이 필요 없고,\n콜론(:)과 들여쓰기로 블록을 구분합니다.",
   },
   {
     title: "REPEAT / UNTIL",
@@ -52,6 +76,10 @@ const SYNTAX_CARDS = [
     syntax: "REPEAT\n  <statements>\nUNTIL <condition>",
     example: 'REPEAT\n  INPUT password\nUNTIL password = "1234"',
     explain: "조건이 참이 될 때까지 반복합니다.\n최소 1번은 반드시 실행됩니다 (조건을 나중에 검사).\n입력 검증에 자주 사용됩니다.",
+    titlePy: "while True + break",
+    pythonSyntax: "while True:\n    <statements>\n    if <condition>:\n        break",
+    pythonExample: 'while True:\n    password = input("Password: ")\n    if password == "1234":\n        break',
+    pythonExplain: "Python에는 REPEAT...UNTIL이 없습니다!\nwhile True로 무한 루프를 만들고,\n조건이 맞으면 break로 빠져나옵니다.",
   },
   {
     title: "ARRAY",
@@ -59,6 +87,10 @@ const SYNTAX_CARDS = [
     syntax: "DECLARE <name> : ARRAY[<l>:<u>] OF <type>",
     example: "DECLARE scores : ARRAY[1:5] OF INTEGER\nscores[1] ← 85\nscores[2] ← 92",
     explain: "같은 타입의 값 여러 개를 하나의 이름으로 저장합니다.\n인덱스([ ])로 각 위치에 접근합니다.\nCambridge에서는 보통 1부터 시작합니다.",
+    titlePy: "리스트 (list)",
+    pythonSyntax: "<name> = [<values>]\n<name>[<index>] = <value>",
+    pythonExample: "scores = [0, 0, 0, 0, 0]\nscores[0] = 85  # 인덱스 0부터!\nscores[1] = 92\n# 또는 바로: scores = [85, 92, 70]",
+    pythonExplain: "Python 리스트 = 의사코드 배열.\n⚠ Python 인덱스는 0부터 시작! (의사코드는 보통 1부터)\nlen()으로 길이, .append()로 추가, .pop()으로 제거.",
   },
   {
     title: "FUNCTION / PROCEDURE",
@@ -66,6 +98,10 @@ const SYNTAX_CARDS = [
     syntax: "FUNCTION <name>(<params>) RETURNS <type>\n  ...\n  RETURN <value>\nENDFUNCTION\n\nPROCEDURE <name>(<params>)\n  ...\nENDPROCEDURE",
     example: "FUNCTION double(n : INTEGER) RETURNS INTEGER\n  RETURN n * 2\nENDFUNCTION\n\nOUTPUT double(5)",
     explain: "FUNCTION: 값을 반환합니다 (RETURNS + RETURN 필수).\nPROCEDURE: 값을 반환하지 않고 동작만 수행합니다.\n코드를 재사용 가능하게 만듭니다.",
+    titlePy: "함수 (def)",
+    pythonSyntax: "def <name>(<params>):\n    ...\n    return <value>",
+    pythonExample: 'def double(n):\n    return n * 2\n\ndef greet(name):\n    print("Hello", name)\n\nprint(double(5))\ngreet("Alice")',
+    pythonExplain: "Python은 def 하나로 함수와 프로시저를 모두 만듭니다.\nFUNCTION/PROCEDURE 구분이 없습니다!\nreturn이 있으면 함수, 없으면 프로시저와 같습니다.\nCALL 키워드도 필요 없습니다.",
   },
   {
     title: "File Handling",
@@ -73,6 +109,10 @@ const SYNTAX_CARDS = [
     syntax: 'OPENFILE <name> FOR READ|WRITE|APPEND\nREADFILE <name>, <var>\nWRITEFILE <name>, <data>\nCLOSEFILE <name>',
     example: 'OPENFILE "data.txt" FOR READ\nREADFILE "data.txt", line\nOUTPUT line\nCLOSEFILE "data.txt"',
     explain: "OPENFILE로 파일을 열고,\nREAD(읽기) / WRITE(쓰기) / APPEND(이어쓰기) 모드를 선택합니다.\nREADFILE / WRITEFILE로 데이터를 읽고 쓰고,\nCLOSEFILE로 닫습니다.",
+    titlePy: "파일 처리",
+    pythonSyntax: 'f = open(<name>, <mode>)\nline = f.readline()\nf.write(<data>)\nf.close()',
+    pythonExample: 'f = open("data.txt", "r")\nline = f.readline()\nprint(line)\nf.close()\n\n# 더 좋은 방법 (with):\nwith open("data.txt", "r") as f:\n    line = f.readline()',
+    pythonExplain: "모드: \"r\"(읽기), \"w\"(쓰기/덮어씀), \"a\"(이어쓰기)\nwith문을 쓰면 자동으로 닫아줍니다 (CLOSEFILE 불필요).\nreadline()은 한 줄, read()는 전체를 읽습니다.",
   },
 ];
 
@@ -98,6 +138,23 @@ const TRACER_EXAMPLES = [
       { line: 0, vars: { i: 5 }, output: [1, 2, 3, 4], explain: "i=5로 증가" },
       { line: 1, vars: { i: 5 }, output: [1, 2, 3, 4, 5], explain: "i(5) 출력" },
       { line: 2, vars: { i: 5 }, output: [1, 2, 3, 4, 5], explain: "루프 종료 (i가 5에 도달)" },
+    ],
+    pythonCode: [
+      "for i in range(1, 6):",
+      "    print(i)",
+    ],
+    pythonSteps: [
+      { line: 0, vars: { i: 1 }, output: [], explain: "for 루프 시작, i=1 (range(1,6)은 1~5)" },
+      { line: 1, vars: { i: 1 }, output: [1], explain: "i(1) 출력" },
+      { line: 0, vars: { i: 2 }, output: [1], explain: "i=2로 증가" },
+      { line: 1, vars: { i: 2 }, output: [1, 2], explain: "i(2) 출력" },
+      { line: 0, vars: { i: 3 }, output: [1, 2], explain: "i=3으로 증가" },
+      { line: 1, vars: { i: 3 }, output: [1, 2, 3], explain: "i(3) 출력" },
+      { line: 0, vars: { i: 4 }, output: [1, 2, 3], explain: "i=4로 증가" },
+      { line: 1, vars: { i: 4 }, output: [1, 2, 3, 4], explain: "i(4) 출력" },
+      { line: 0, vars: { i: 5 }, output: [1, 2, 3, 4], explain: "i=5로 증가" },
+      { line: 1, vars: { i: 5 }, output: [1, 2, 3, 4, 5], explain: "i(5) 출력" },
+      { line: 0, vars: { i: 5 }, output: [1, 2, 3, 4, 5], explain: "range 소진, 루프 종료" },
     ],
   },
   {
@@ -138,6 +195,31 @@ const TRACER_EXAMPLES = [
       { line: 2, vars: { i: 10 }, output: [2, 4, 6, 8, 10], explain: "i(10) 출력" },
       { line: 4, vars: { i: 10 }, output: [2, 4, 6, 8, 10], explain: "루프 종료" },
     ],
+    pythonCode: [
+      "for i in range(1, 11):",
+      "    if i % 2 == 0:",
+      "        print(i)",
+    ],
+    pythonSteps: [
+      { line: 0, vars: { i: 1 }, output: [], explain: "for 루프 시작, i=1 (range(1,11)은 1~10)" },
+      { line: 1, vars: { i: 1 }, output: [], explain: "1 % 2 = 1 ≠ 0 → 거짓 (홀수)" },
+      { line: 0, vars: { i: 2 }, output: [], explain: "i=2로 증가" },
+      { line: 1, vars: { i: 2 }, output: [], explain: "2 % 2 = 0 → 참 (짝수!)" },
+      { line: 2, vars: { i: 2 }, output: [2], explain: "i(2) 출력" },
+      { line: 0, vars: { i: 4 }, output: [2], explain: "i=3 거짓... i=4로" },
+      { line: 1, vars: { i: 4 }, output: [2], explain: "4 % 2 = 0 → 참 (짝수!)" },
+      { line: 2, vars: { i: 4 }, output: [2, 4], explain: "i(4) 출력" },
+      { line: 0, vars: { i: 6 }, output: [2, 4], explain: "i=5 거짓... i=6으로" },
+      { line: 1, vars: { i: 6 }, output: [2, 4], explain: "6 % 2 = 0 → 참 (짝수!)" },
+      { line: 2, vars: { i: 6 }, output: [2, 4, 6], explain: "i(6) 출력" },
+      { line: 0, vars: { i: 8 }, output: [2, 4, 6], explain: "i=7 거짓... i=8로" },
+      { line: 1, vars: { i: 8 }, output: [2, 4, 6], explain: "8 % 2 = 0 → 참 (짝수!)" },
+      { line: 2, vars: { i: 8 }, output: [2, 4, 6, 8], explain: "i(8) 출력" },
+      { line: 0, vars: { i: 10 }, output: [2, 4, 6, 8], explain: "i=9 거짓... i=10으로" },
+      { line: 1, vars: { i: 10 }, output: [2, 4, 6, 8], explain: "10 % 2 = 0 → 참 (짝수!)" },
+      { line: 2, vars: { i: 10 }, output: [2, 4, 6, 8, 10], explain: "i(10) 출력" },
+      { line: 0, vars: { i: 10 }, output: [2, 4, 6, 8, 10], explain: "range 소진, 루프 종료" },
+    ],
   },
   {
     title: "합계 구하기",
@@ -165,6 +247,27 @@ const TRACER_EXAMPLES = [
       { line: 3, vars: { total: 15, i: 5 }, output: [], explain: "total = 10 + 5 = 15" },
       { line: 4, vars: { total: 15, i: 5 }, output: [], explain: "루프 종료" },
       { line: 5, vars: { total: 15, i: 5 }, output: [15], explain: "total(15) 출력!" },
+    ],
+    pythonCode: [
+      "total = 0",
+      "for i in range(1, 6):",
+      "    total = total + i",
+      "print(total)",
+    ],
+    pythonSteps: [
+      { line: 0, vars: { total: 0 }, output: [], explain: "total을 0으로 초기화 (선언 불필요)" },
+      { line: 1, vars: { total: 0, i: 1 }, output: [], explain: "for 루프 시작, i=1" },
+      { line: 2, vars: { total: 1, i: 1 }, output: [], explain: "total = 0 + 1 = 1" },
+      { line: 1, vars: { total: 1, i: 2 }, output: [], explain: "i=2로 증가" },
+      { line: 2, vars: { total: 3, i: 2 }, output: [], explain: "total = 1 + 2 = 3" },
+      { line: 1, vars: { total: 3, i: 3 }, output: [], explain: "i=3으로 증가" },
+      { line: 2, vars: { total: 6, i: 3 }, output: [], explain: "total = 3 + 3 = 6" },
+      { line: 1, vars: { total: 6, i: 4 }, output: [], explain: "i=4로 증가" },
+      { line: 2, vars: { total: 10, i: 4 }, output: [], explain: "total = 6 + 4 = 10" },
+      { line: 1, vars: { total: 10, i: 5 }, output: [], explain: "i=5로 증가" },
+      { line: 2, vars: { total: 15, i: 5 }, output: [], explain: "total = 10 + 5 = 15" },
+      { line: 1, vars: { total: 15, i: 5 }, output: [], explain: "range 소진, 루프 종료" },
+      { line: 3, vars: { total: 15, i: 5 }, output: [15], explain: "total(15) 출력!" },
     ],
   },
   {
@@ -198,6 +301,30 @@ const TRACER_EXAMPLES = [
       { line: 7, vars: { nums: "[3,7,2,9,4]", max: 9, i: 5 }, output: [], explain: "루프 종료" },
       { line: 8, vars: { nums: "[3,7,2,9,4]", max: 9, i: 5 }, output: [9], explain: "max(9) 출력! 최대값은 9" },
     ],
+    pythonCode: [
+      "nums = [3, 7, 2, 9, 4]",
+      "max_val = nums[0]",
+      "for i in range(1, len(nums)):",
+      "    if nums[i] > max_val:",
+      "        max_val = nums[i]",
+      "print(max_val)",
+    ],
+    pythonSteps: [
+      { line: 0, vars: { nums: "[3,7,2,9,4]" }, output: [], explain: "리스트 생성: [3, 7, 2, 9, 4]" },
+      { line: 1, vars: { nums: "[3,7,2,9,4]", max_val: 3 }, output: [], explain: "max_val를 첫 번째 값(인덱스 0 → 3)으로 설정" },
+      { line: 2, vars: { nums: "[3,7,2,9,4]", max_val: 3, i: 1 }, output: [], explain: "for 루프 시작, i=1 (인덱스 0부터!)" },
+      { line: 3, vars: { nums: "[3,7,2,9,4]", max_val: 3, i: 1 }, output: [], explain: "nums[1]=7 > max_val(3)? → 참!" },
+      { line: 4, vars: { nums: "[3,7,2,9,4]", max_val: 7, i: 1 }, output: [], explain: "max_val = 7로 업데이트" },
+      { line: 2, vars: { nums: "[3,7,2,9,4]", max_val: 7, i: 2 }, output: [], explain: "i=2로 증가" },
+      { line: 3, vars: { nums: "[3,7,2,9,4]", max_val: 7, i: 2 }, output: [], explain: "nums[2]=2 > max_val(7)? → 거짓" },
+      { line: 2, vars: { nums: "[3,7,2,9,4]", max_val: 7, i: 3 }, output: [], explain: "i=3으로 증가" },
+      { line: 3, vars: { nums: "[3,7,2,9,4]", max_val: 7, i: 3 }, output: [], explain: "nums[3]=9 > max_val(7)? → 참!" },
+      { line: 4, vars: { nums: "[3,7,2,9,4]", max_val: 9, i: 3 }, output: [], explain: "max_val = 9로 업데이트" },
+      { line: 2, vars: { nums: "[3,7,2,9,4]", max_val: 9, i: 4 }, output: [], explain: "i=4로 증가" },
+      { line: 3, vars: { nums: "[3,7,2,9,4]", max_val: 9, i: 4 }, output: [], explain: "nums[4]=4 > max_val(9)? → 거짓" },
+      { line: 2, vars: { nums: "[3,7,2,9,4]", max_val: 9, i: 4 }, output: [], explain: "range 소진, 루프 종료" },
+      { line: 5, vars: { nums: "[3,7,2,9,4]", max_val: 9, i: 4 }, output: [9], explain: "max_val(9) 출력! 최대값은 9" },
+    ],
   },
   {
     title: "입력 검증",
@@ -222,6 +349,30 @@ const TRACER_EXAMPLES = [
       { line: 2, vars: { age: 200 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "안내 메시지 다시 출력" },
       { line: 3, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "사용자가 17 입력 (올바른 값!)" },
       { line: 4, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "17 >= 1 AND 17 <= 120? → 참! 루프 종료" },
+      { line: 5, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "입력된 나이: 17"], explain: "입력된 나이(17) 출력!" },
+    ],
+    pythonCode: [
+      "while True:",
+      '    print("나이를 입력하세요 (1-120):")',
+      "    age = int(input())",
+      "    if 1 <= age <= 120:",
+      "        break",
+      'print("입력된 나이:", age)',
+    ],
+    pythonSteps: [
+      { line: 0, vars: {}, output: [], explain: "while True: 무한 루프 시작 (최소 1번 실행)" },
+      { line: 1, vars: {}, output: ["나이를 입력하세요 (1-120):"], explain: "안내 메시지 출력" },
+      { line: 2, vars: { age: -5 }, output: ["나이를 입력하세요 (1-120):"], explain: "사용자가 -5 입력 → int()로 변환" },
+      { line: 3, vars: { age: -5 }, output: ["나이를 입력하세요 (1-120):"], explain: "1 <= -5 <= 120? → 거짓! break 안 함" },
+      { line: 0, vars: { age: -5 }, output: ["나이를 입력하세요 (1-120):"], explain: "while True → 다시 반복" },
+      { line: 1, vars: { age: -5 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "안내 메시지 다시 출력" },
+      { line: 2, vars: { age: 200 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "사용자가 200 입력" },
+      { line: 3, vars: { age: 200 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "1 <= 200 <= 120? → 거짓! break 안 함" },
+      { line: 0, vars: { age: 200 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "while True → 다시 반복" },
+      { line: 1, vars: { age: 200 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "안내 메시지 다시 출력" },
+      { line: 2, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "사용자가 17 입력 (올바른 값!)" },
+      { line: 3, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "1 <= 17 <= 120? → 참!" },
+      { line: 4, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):"], explain: "break! 루프 종료" },
       { line: 5, vars: { age: 17 }, output: ["나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "나이를 입력하세요 (1-120):", "입력된 나이: 17"], explain: "입력된 나이(17) 출력!" },
     ],
   },
@@ -265,6 +416,37 @@ const TRACER_EXAMPLES = [
       { line: 10, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "TRUE", i: 5 }, output: ["Found at position 4"], explain: "루프 종료" },
       { line: 11, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "TRUE", i: 5 }, output: ["Found at position 4"], explain: "found = FALSE? → 거짓 (found는 TRUE)" },
       { line: 13, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "TRUE", i: 5 }, output: ["Found at position 4"], explain: "프로그램 종료. Choi를 위치 4에서 찾음!" },
+    ],
+    pythonCode: [
+      'names = ["Kim", "Lee", "Park", "Choi", "Jung"]',
+      'target = "Choi"',
+      "found = False",
+      "for i in range(len(names)):",
+      "    if names[i] == target:",
+      "        found = True",
+      '        print("Found at index", i)',
+      "if not found:",
+      '    print("Not found")',
+    ],
+    pythonSteps: [
+      { line: 0, vars: { names: "[Kim,Lee,Park,Choi,Jung]" }, output: [], explain: "리스트 생성 (인덱스 0~4)" },
+      { line: 1, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi" }, output: [], explain: '찾을 값: "Choi"' },
+      { line: 2, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False" }, output: [], explain: "found = False (아직 못 찾음)" },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 0 }, output: [], explain: "for 루프 시작, i=0 (Python은 0부터!)" },
+      { line: 4, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 0 }, output: [], explain: 'names[0]="Kim" == "Choi"? → 거짓' },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 1 }, output: [], explain: "i=1로 증가" },
+      { line: 4, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 1 }, output: [], explain: 'names[1]="Lee" == "Choi"? → 거짓' },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 2 }, output: [], explain: "i=2로 증가" },
+      { line: 4, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 2 }, output: [], explain: 'names[2]="Park" == "Choi"? → 거짓' },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 3 }, output: [], explain: "i=3으로 증가" },
+      { line: 4, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "False", i: 3 }, output: [], explain: 'names[3]="Choi" == "Choi"? → 참! 찾았다!' },
+      { line: 5, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 3 }, output: [], explain: "found = True로 변경" },
+      { line: 6, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 3 }, output: ["Found at index 3"], explain: '"인덱스 3에서 찾음" 출력' },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 4 }, output: ["Found at index 3"], explain: "i=4로 증가 (계속 검색)" },
+      { line: 4, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 4 }, output: ["Found at index 3"], explain: 'names[4]="Jung" == "Choi"? → 거짓' },
+      { line: 3, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 4 }, output: ["Found at index 3"], explain: "range 소진, 루프 종료" },
+      { line: 7, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 4 }, output: ["Found at index 3"], explain: "not found? → 거짓 (found는 True)" },
+      { line: 8, vars: { names: "[Kim,Lee,Park,Choi,Jung]", target: "Choi", found: "True", i: 4 }, output: ["Found at index 3"], explain: "프로그램 종료. Choi를 인덱스 3에서 찾음!" },
     ],
   },
 ];
@@ -477,34 +659,78 @@ export default function PseudocodeTutor() {
 // ─── TAB A: SYNTAX CARDS ───
 function SyntaxCards({ mobile }) {
   const [openIdx, setOpenIdx] = useState(null);
+  const [lang, setLang] = useState("pseudo"); // "pseudo" | "python"
+
+  const isPy = lang === "python";
+  const accent = isPy ? C.blue : C.purple;
+  const accentLight = isPy ? C.blueLight : C.purpleLight;
+  const codeBg = isPy ? "#0F172A" : "#1E1B4B";
+  const codeColor = isPy ? "#93C5FD" : "#E0E7FF";
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-      <h2 style={{ color: C.text, fontSize: 18, fontWeight: 800, margin: 0 }}>
-        Cambridge IGCSE 의사코드 문법
-      </h2>
-      <p style={{ color: C.sub, fontSize: 13, margin: 0 }}>
-        카드를 클릭하면 상세 설명을 볼 수 있습니다
-      </p>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+        <div>
+          <h2 style={{ color: C.text, fontSize: 18, fontWeight: 800, margin: 0 }}>
+            {isPy ? "Python 문법" : "Cambridge IGCSE 의사코드 문법"}
+          </h2>
+          <p style={{ color: C.sub, fontSize: 13, margin: 0 }}>
+            카드를 클릭하면 상세 설명을 볼 수 있습니다
+          </p>
+        </div>
+        {/* Language toggle */}
+        <div style={{
+          display: "flex", borderRadius: 10, overflow: "hidden",
+          border: `1.5px solid ${C.border}`,
+        }}>
+          {[
+            { key: "pseudo", label: "의사코드", icon: "📝" },
+            { key: "python", label: "Python", icon: "🐍" },
+          ].map(opt => (
+            <button key={opt.key} onClick={() => setLang(opt.key)} style={{
+              padding: "7px 14px",
+              border: "none",
+              background: lang === opt.key
+                ? (opt.key === "python" ? C.blue : C.purple)
+                : C.white,
+              color: lang === opt.key ? "#fff" : C.sub,
+              fontWeight: 700, fontSize: 13,
+              cursor: "pointer", fontFamily: F,
+              display: "flex", alignItems: "center", gap: 4,
+              transition: "all .15s",
+            }}>
+              <span style={{ fontSize: 14 }}>{opt.icon}</span>
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {SYNTAX_CARDS.map((card, idx) => {
         const isOpen = openIdx === idx;
+        const titleText = isPy ? (card.titlePy || card.titleKo) : card.title;
+        const titleSub = isPy ? card.title : card.titleKo;
+        const syntaxText = isPy ? card.pythonSyntax : card.syntax;
+        const exampleText = isPy ? card.pythonExample : card.example;
+        const explainText = isPy ? card.pythonExplain : card.explain;
+
         return (
-          <div key={idx} style={{
+          <div key={`${lang}-${idx}`} style={{
             ...cardS,
             cursor: "pointer",
-            borderColor: isOpen ? C.purple : C.border,
+            borderColor: isOpen ? accent : C.border,
             transition: "all .2s",
           }} onClick={() => setOpenIdx(isOpen ? null : idx)}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <div>
                 <span style={{
-                  color: C.purple, fontWeight: 800, fontSize: 15,
+                  color: accent, fontWeight: 800, fontSize: 15,
                   fontFamily: "'Courier New', monospace",
                 }}>
-                  {card.title}
+                  {titleText}
                 </span>
                 <span style={{ color: C.sub, fontSize: 13, marginLeft: 8 }}>
-                  {card.titleKo}
+                  {titleSub}
                 </span>
               </div>
               <span style={{
@@ -521,11 +747,11 @@ function SyntaxCards({ mobile }) {
             <pre style={{
               margin: "10px 0 0",
               padding: 12, borderRadius: 8,
-              background: "#1E1B4B", color: "#E0E7FF",
+              background: codeBg, color: codeColor,
               fontSize: 13, fontFamily: "'Courier New', monospace",
               overflowX: "auto", lineHeight: 1.6,
             }}>
-              {card.syntax}
+              {syntaxText}
             </pre>
 
             {/* Expanded content */}
@@ -545,16 +771,16 @@ function SyntaxCards({ mobile }) {
                     fontSize: 13, fontFamily: "'Courier New', monospace",
                     overflowX: "auto", lineHeight: 1.6,
                   }}>
-                    {card.example}
+                    {exampleText}
                   </pre>
                 </div>
                 <div style={{
                   padding: 12, borderRadius: 8,
-                  background: C.purpleLight, color: C.text,
+                  background: accentLight, color: C.text,
                   fontSize: 13, lineHeight: 1.7,
                   whiteSpace: "pre-wrap",
                 }}>
-                  {card.explain}
+                  {explainText}
                 </div>
               </div>
             )}
@@ -570,14 +796,23 @@ function CodeTracer({ mobile }) {
   const [exIdx, setExIdx] = useState(0);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
+  const [lang, setLang] = useState("pseudo"); // "pseudo" | "python"
   const timerRef = useRef(null);
 
+  const isPy = lang === "python";
+  const accent = isPy ? C.blue : C.purple;
+  const accentLight = isPy ? C.blueLight : C.purpleLight;
+  const codeBg = isPy ? "#0F172A" : "#1E1B4B";
+  const codeColor = isPy ? "#93C5FD" : "#E0E7FF";
+
   const example = TRACER_EXAMPLES[exIdx];
-  const current = example.steps[step];
+  const codeLines = isPy ? (example.pythonCode || example.code) : example.code;
+  const stepsData = isPy ? (example.pythonSteps || example.steps) : example.steps;
+  const current = stepsData[step];
 
   // Collect all var keys across all steps for table header
   const allVars = [];
-  example.steps.forEach(s => {
+  stepsData.forEach(s => {
     Object.keys(s.vars).forEach(k => {
       if (!allVars.includes(k)) allVars.push(k);
     });
@@ -586,13 +821,13 @@ function CodeTracer({ mobile }) {
   useEffect(() => {
     setStep(0);
     setPlaying(false);
-  }, [exIdx]);
+  }, [exIdx, lang]);
 
   useEffect(() => {
     if (playing) {
       timerRef.current = setInterval(() => {
         setStep(prev => {
-          if (prev >= example.steps.length - 1) {
+          if (prev >= stepsData.length - 1) {
             setPlaying(false);
             return prev;
           }
@@ -601,20 +836,49 @@ function CodeTracer({ mobile }) {
       }, 1200);
     }
     return () => clearInterval(timerRef.current);
-  }, [playing, example.steps.length]);
+  }, [playing, stepsData.length]);
 
-  const traceRows = example.steps.slice(0, step + 1);
+  const traceRows = stepsData.slice(0, step + 1);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      {/* Language toggle */}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div style={{
+          display: "flex", borderRadius: 10, overflow: "hidden",
+          border: `1.5px solid ${C.border}`,
+        }}>
+          {[
+            { key: "pseudo", label: "의사코드", icon: "📝" },
+            { key: "python", label: "Python", icon: "🐍" },
+          ].map(opt => (
+            <button key={opt.key} onClick={() => setLang(opt.key)} style={{
+              padding: "7px 14px",
+              border: "none",
+              background: lang === opt.key
+                ? (opt.key === "python" ? C.blue : C.purple)
+                : C.white,
+              color: lang === opt.key ? "#fff" : C.sub,
+              fontWeight: 700, fontSize: 13,
+              cursor: "pointer", fontFamily: F,
+              display: "flex", alignItems: "center", gap: 4,
+              transition: "all .15s",
+            }}>
+              <span style={{ fontSize: 14 }}>{opt.icon}</span>
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Example selector */}
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
         {TRACER_EXAMPLES.map((ex, i) => (
           <button key={i} onClick={() => { setExIdx(i); setPlaying(false); }} style={{
             padding: "6px 12px", borderRadius: 8,
-            border: exIdx === i ? `2px solid ${C.blue}` : `1px solid ${C.border}`,
-            background: exIdx === i ? C.blueLight : C.white,
-            color: exIdx === i ? C.blue : C.sub,
+            border: exIdx === i ? `2px solid ${accent}` : `1px solid ${C.border}`,
+            background: exIdx === i ? accentLight : C.white,
+            color: exIdx === i ? accent : C.sub,
             fontWeight: 700, fontSize: 12, cursor: "pointer", fontFamily: F,
           }}>
             {i + 1}. {ex.title}
@@ -635,10 +899,10 @@ function CodeTracer({ mobile }) {
           marginBottom: mobile ? 12 : 0,
         }}>
           <div style={{
-            background: "#1E1B4B", borderRadius: 12,
+            background: codeBg, borderRadius: 12,
             padding: 16, overflow: "auto",
           }}>
-            {example.code.map((line, i) => {
+            {codeLines.map((line, i) => {
               const isActive = current.line === i;
               return (
                 <div key={i} style={{
@@ -664,7 +928,7 @@ function CodeTracer({ mobile }) {
                     </span>
                   )}
                   <span style={{
-                    color: isActive ? "#FACC15" : "#E0E7FF",
+                    color: isActive ? "#FACC15" : codeColor,
                     fontFamily: "'Courier New', monospace",
                     fontSize: 13, fontWeight: isActive ? 700 : 400,
                     whiteSpace: "pre",
@@ -685,8 +949,8 @@ function CodeTracer({ mobile }) {
             ...cardS, padding: 0, overflow: "hidden",
           }}>
             <div style={{
-              background: C.purpleLight, padding: "8px 12px",
-              fontWeight: 800, fontSize: 13, color: C.purple,
+              background: accentLight, padding: "8px 12px",
+              fontWeight: 800, fontSize: 13, color: accent,
             }}>
               추적표 (Trace Table)
             </div>
@@ -759,7 +1023,7 @@ function CodeTracer({ mobile }) {
           <span style={{
             display: "block", fontSize: 11, color: C.sub, marginTop: 4,
           }}>
-            스텝 {step + 1} / {example.steps.length}
+            스텝 {step + 1} / {stepsData.length}
           </span>
         </div>
       </div>
@@ -794,12 +1058,12 @@ function CodeTracer({ mobile }) {
         <TracerBtn label="↺ 처음" onClick={() => { setStep(0); setPlaying(false); }} />
         <TracerBtn label="◀ 이전" onClick={() => { setStep(s => Math.max(0, s - 1)); setPlaying(false); }}
           disabled={step === 0} />
-        <TracerBtn label="▶ 다음" onClick={() => { setStep(s => Math.min(example.steps.length - 1, s + 1)); setPlaying(false); }}
-          disabled={step === example.steps.length - 1} />
+        <TracerBtn label="▶ 다음" onClick={() => { setStep(s => Math.min(stepsData.length - 1, s + 1)); setPlaying(false); }}
+          disabled={step === stepsData.length - 1} />
         <TracerBtn
           label={playing ? "⏸ 일시정지" : "▶▶ 자동"}
           onClick={() => {
-            if (step >= example.steps.length - 1) setStep(0);
+            if (step >= stepsData.length - 1) setStep(0);
             setPlaying(p => !p);
           }}
           highlight

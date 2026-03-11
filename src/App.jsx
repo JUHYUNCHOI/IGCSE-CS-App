@@ -48,7 +48,7 @@ export default function App() {
       case "pseudocode":
         return <PseudocodeTutor />;
       case "teaching":
-        return <TeachingMode initialSubtopic={viewContext?.subtopicId} />;
+        return <TeachingMode initialSubtopic={viewContext?.subtopicId} navigateTo={navigateTo} fromView={viewContext?.fromView} />;
       default:
         return null;
     }

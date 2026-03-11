@@ -153,7 +153,7 @@ function TopicView({ paperFilter, counts, expandedTopic, setExpandedTopic, navig
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span onClick={(e) => {
                         e.stopPropagation();
-                        navigateTo("teaching", { subtopicId: st.id });
+                        navigateTo("teaching", { subtopicId: st.id, fromView: "papers" });
                       }} style={{
                         ...btnS, fontSize: 11, padding: "4px 10px",
                         background: color + "15", color: color,
