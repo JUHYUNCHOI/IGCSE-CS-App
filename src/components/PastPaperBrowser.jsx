@@ -343,85 +343,150 @@ function InteractiveQuestion({ q, color, qKey }) {
         </div>
       </div>
 
-      {/* Question text */}
-      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10 }}>
-        {cleanQText(q.context) && (
+      {/* Question text + inline answer for MC/short */}
+      {(() => {
+        const isInline = q.answerType === "mc" || q.marks <= 2;
+        return (
           <div style={{
-            color: C.sub, marginBottom: 8, fontSize: 13, fontStyle: "italic",
-            background: C.border + "40", padding: "6px 10px", borderRadius: 6,
-            lineHeight: 1.7,
+            display: isInline ? "flex" : "block",
+            gap: isInline ? 12 : 0,
+            alignItems: isInline ? "flex-start" : undefined,
           }}>
-            {cleanQText(q.context).slice(0, 300)}
-            {cleanQText(q.context).length > 300 ? "..." : ""}
-          </div>
-        )}
-        <RenderQText text={q.text} />
-      </div>
-
-      {/* Answer input */}
-      {!saved ? (
-        <div style={{ display: "flex", gap: 6, alignItems: "flex-start" }}>
-          {q.answerType === "mc" ? (
-            <div style={{ display: "flex", gap: 4 }}>
-              {["A", "B", "C", "D"].map(opt => (
-                <button key={opt} onClick={() => setUserAnswer(opt)} style={{
-                  ...btnS,
-                  width: 36, height: 36, padding: 0,
-                  fontSize: 14, fontWeight: 700,
-                  background: userAnswer === opt ? color : C.border + "80",
-                  color: userAnswer === opt ? "#fff" : C.text,
+            {/* Question text */}
+            <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: isInline ? 0 : 10, flex: isInline ? 1 : undefined }}>
+              {cleanQText(q.context) && (
+                <div style={{
+                  color: C.sub, marginBottom: 8, fontSize: 13, fontStyle: "italic",
+                  background: C.border + "40", padding: "6px 10px", borderRadius: 6,
+                  lineHeight: 1.7,
                 }}>
-                  {opt}
-                </button>
-              ))}
+                  {cleanQText(q.context).slice(0, 300)}
+                  {cleanQText(q.context).length > 300 ? "..." : ""}
+                </div>
+              )}
+              <RenderQText text={q.text} />
             </div>
-          ) : (
-            <textarea
-              value={userAnswer}
-              onChange={e => setUserAnswer(e.target.value)}
-              placeholder="답을 입력하세요..."
-              rows={q.marks > 3 ? 4 : 2}
-              style={{
-                flex: 1, padding: "8px 10px", borderRadius: 8,
-                border: `1px solid ${C.border}`, fontSize: 13,
-                fontFamily: F, resize: "vertical", background: C.white,
-                color: C.text,
-              }}
-            />
-          )}
-          <button onClick={handleSubmit} disabled={!userAnswer.trim()} style={{
-            ...btnS, padding: "8px 14px",
-            background: userAnswer.trim() ? color : C.border,
-            color: userAnswer.trim() ? "#fff" : C.sub,
-            opacity: userAnswer.trim() ? 1 : 0.6,
-          }}>
-            제출
-          </button>
-        </div>
-      ) : (
-        <div>
-          {/* Show user's answer */}
-          <div style={{
-            padding: "8px 12px", borderRadius: 8, fontSize: 13, marginBottom: 8,
-            background: saved.correct === true ? "#ECFDF5" : saved.correct === false ? "#FEF2F2" : "#FFF7ED",
-            border: `1px solid ${saved.correct === true ? C.green + "40" : saved.correct === false ? C.red + "40" : C.orange + "40"}`,
-            color: C.text,
-          }}>
-            <span style={{ fontWeight: 600 }}>내 답: </span>{saved.answer}
-            {saved.correct === true && <span style={{ color: C.green, marginLeft: 8 }}>✓ 정답</span>}
-            {saved.correct === false && (
-              <span style={{ color: C.red, marginLeft: 8 }}>✗ 정답: {q.answer}</span>
+
+            {/* Inline answer area (MC / short ≤2 marks) */}
+            {isInline && (
+              <div style={{ flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 4, paddingTop: 2 }}>
+                {!saved ? (
+                  <>
+                    {q.answerType === "mc" ? (
+                      <div style={{ display: "flex", gap: 4 }}>
+                        {["A", "B", "C", "D"].map(opt => (
+                          <button key={opt} onClick={() => { setUserAnswer(opt); }} style={{
+                            ...btnS,
+                            width: 34, height: 34, padding: 0,
+                            fontSize: 13, fontWeight: 700,
+                            background: userAnswer === opt ? color : C.border + "80",
+                            color: userAnswer === opt ? "#fff" : C.text,
+                          }}>
+                            {opt}
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <input
+                        value={userAnswer}
+                        onChange={e => setUserAnswer(e.target.value)}
+                        onKeyDown={e => e.key === "Enter" && handleSubmit()}
+                        placeholder="답 입력"
+                        style={{
+                          width: 120, padding: "6px 8px", borderRadius: 8,
+                          border: `1px solid ${C.border}`, fontSize: 13,
+                          fontFamily: F, background: C.white, color: C.text,
+                          textAlign: "center",
+                        }}
+                      />
+                    )}
+                    <button onClick={handleSubmit} disabled={!userAnswer.trim()} style={{
+                      ...btnS, padding: "5px 12px", fontSize: 12,
+                      background: userAnswer.trim() ? color : C.border,
+                      color: userAnswer.trim() ? "#fff" : C.sub,
+                      opacity: userAnswer.trim() ? 1 : 0.6,
+                      width: "100%",
+                    }}>
+                      제출
+                    </button>
+                  </>
+                ) : (
+                  <div style={{ textAlign: "right" }}>
+                    <div style={{
+                      padding: "5px 10px", borderRadius: 8, fontSize: 12, marginBottom: 4,
+                      background: saved.correct === true ? "#ECFDF5" : saved.correct === false ? "#FEF2F2" : "#FFF7ED",
+                      border: `1px solid ${saved.correct === true ? C.green + "40" : saved.correct === false ? C.red + "40" : C.orange + "40"}`,
+                      color: C.text, whiteSpace: "nowrap",
+                    }}>
+                      <span style={{ fontWeight: 600 }}>{saved.answer}</span>
+                      {saved.correct === true && <span style={{ color: C.green, marginLeft: 4 }}>✓</span>}
+                      {saved.correct === false && (
+                        <span style={{ color: C.red, marginLeft: 4 }}>✗ {q.answer}</span>
+                      )}
+                    </div>
+                    <button onClick={handleReset} style={{
+                      ...btnS, fontSize: 10, padding: "3px 8px",
+                      background: C.border + "60", color: C.sub,
+                    }}>
+                      다시 풀기
+                    </button>
+                  </div>
+                )}
+              </div>
             )}
           </div>
+        );
+      })()}
 
-          {/* Reset button */}
-          <button onClick={handleReset} style={{
-            ...btnS, fontSize: 11, padding: "4px 10px",
-            background: C.border + "60", color: C.sub,
-          }}>
-            다시 풀기
-          </button>
-        </div>
+      {/* Below-question answer area (long answer, marks > 2) */}
+      {!(q.answerType === "mc" || q.marks <= 2) && (
+        <>
+          {!saved ? (
+            <div style={{ display: "flex", gap: 6, alignItems: "flex-start" }}>
+              <textarea
+                value={userAnswer}
+                onChange={e => setUserAnswer(e.target.value)}
+                placeholder="답을 입력하세요..."
+                rows={q.marks > 3 ? 4 : 2}
+                style={{
+                  flex: 1, padding: "8px 10px", borderRadius: 8,
+                  border: `1px solid ${C.border}`, fontSize: 13,
+                  fontFamily: F, resize: "vertical", background: C.white,
+                  color: C.text,
+                }}
+              />
+              <button onClick={handleSubmit} disabled={!userAnswer.trim()} style={{
+                ...btnS, padding: "8px 14px",
+                background: userAnswer.trim() ? color : C.border,
+                color: userAnswer.trim() ? "#fff" : C.sub,
+                opacity: userAnswer.trim() ? 1 : 0.6,
+              }}>
+                제출
+              </button>
+            </div>
+          ) : (
+            <div>
+              <div style={{
+                padding: "8px 12px", borderRadius: 8, fontSize: 13, marginBottom: 8,
+                background: saved.correct === true ? "#ECFDF5" : saved.correct === false ? "#FEF2F2" : "#FFF7ED",
+                border: `1px solid ${saved.correct === true ? C.green + "40" : saved.correct === false ? C.red + "40" : C.orange + "40"}`,
+                color: C.text,
+              }}>
+                <span style={{ fontWeight: 600 }}>내 답: </span>{saved.answer}
+                {saved.correct === true && <span style={{ color: C.green, marginLeft: 8 }}>✓ 정답</span>}
+                {saved.correct === false && (
+                  <span style={{ color: C.red, marginLeft: 8 }}>✗ 정답: {q.answer}</span>
+                )}
+              </div>
+              <button onClick={handleReset} style={{
+                ...btnS, fontSize: 11, padding: "4px 10px",
+                background: C.border + "60", color: C.sub,
+              }}>
+                다시 풀기
+              </button>
+            </div>
+          )}
+        </>
       )}
 
       {/* Mark scheme toggle */}
