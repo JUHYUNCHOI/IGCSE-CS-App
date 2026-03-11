@@ -4,6 +4,8 @@ import { useIsMobile } from "../hooks";
 import syllabusData from "../data/syllabus_topics.json";
 import { getQuestionsBySubtopic } from "../data/quizData";
 import QuizQuestion from "./QuizQuestion";
+import { TEACHING_SECTIONS } from "../data/teachingContent";
+import { renderExplain, splitExplainPages } from "../utils/explainRenderer";
 
 // ─── TEACHING CONTENT: Korean translations + teaching notes ───
 export const TC = {
@@ -469,12 +471,50 @@ function TopicOverview({ onSelect, mobile }) {
 // ─── SLIDE VIEW ───
 function SlideView({ topic, subtopic, subIdx, mobile, onBack }) {
   const [showQuiz, setShowQuiz] = useState(false);
+  const [activeSec, setActiveSec] = useState(0);
+  const [page, setPage] = useState(0);
+  const [showPQ, setShowPQ] = useState(false);
+  const [showConcepts, setShowConcepts] = useState(false);
+
   const color = PAPER_COLORS[topic.paper];
   const bg = PAPER_BG[topic.paper];
   const tc = TC[subtopic.id];
   const questions = getQuestionsBySubtopic(subtopic.id);
+  const sections = TEACHING_SECTIONS[subtopic.id] || [];
 
-  useEffect(() => { setShowQuiz(false); }, [subtopic.id]);
+  useEffect(() => {
+    setShowQuiz(false);
+    setActiveSec(0);
+    setPage(0);
+    setShowPQ(false);
+    setShowConcepts(false);
+  }, [subtopic.id]);
+
+  const currentSection = sections[activeSec];
+  const explainPages = currentSection ? splitExplainPages(currentSection.explain) : [];
+  const totalPages = explainPages.length;
+  const currentPageLines = explainPages[page] || [];
+
+  // Widgets for current page
+  const rawWidgets = currentSection?.widgets?.[page];
+  const widgetList = rawWidgets ? (Array.isArray(rawWidgets) ? rawWidgets : [rawWidgets]) : [];
+
+  // PageQuestions for current page
+  const currentPQ = currentSection?.pageQuestions?.[page] || [];
+
+  const goPage = (dir) => {
+    const next = page + dir;
+    if (next >= 0 && next < totalPages) {
+      setPage(next);
+      setShowPQ(false);
+    }
+  };
+
+  const switchSection = (idx) => {
+    setActiveSec(idx);
+    setPage(0);
+    setShowPQ(false);
+  };
 
   return (
     <div>
@@ -507,71 +547,160 @@ function SlideView({ topic, subtopic, subIdx, mobile, onBack }) {
         </div>
       </div>
 
-      {/* Concept Cards */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-        {subtopic.key_concepts.map((concept, i) => {
-          const data = tc?.concepts[i];
-          return (
-            <div key={i} style={{
-              ...cardS,
-              padding: mobile ? 16 : 24,
-              borderLeftWidth: 4,
-              borderLeftColor: color,
+      {/* ── Section tabs (if multiple sections exist for this subtopic) ── */}
+      {sections.length > 1 && (
+        <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          {sections.map((sec, i) => (
+            <button key={sec.id} onClick={() => switchSection(i)} style={{
+              ...btnS, flex: 1,
+              background: i === activeSec ? color : bg,
+              color: i === activeSec ? "#fff" : color,
+              border: `2px solid ${color}`,
             }}>
-              {/* Number badge */}
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
-                <span style={{
-                  background: bg, color: color,
-                  width: 28, height: 28, borderRadius: 8,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontWeight: 800, fontSize: 13, flexShrink: 0,
-                }}>
-                  {i + 1}
-                </span>
-                <div style={{ flex: 1 }}>
-                  {/* English concept */}
-                  <div style={{
-                    fontSize: mobile ? 16 : 20, fontWeight: 700,
-                    color: C.text, lineHeight: 1.4,
-                  }}>
-                    {concept}
-                  </div>
-                  {/* Korean translation */}
-                  {data?.ko && (
-                    <div style={{
-                      fontSize: mobile ? 15 : 18, color: color,
-                      fontWeight: 600, marginTop: 4,
-                    }}>
-                      {data.ko}
-                    </div>
-                  )}
-                  {/* Teaching notes */}
-                  {data?.teach && (
-                    <div style={{
-                      fontSize: mobile ? 14 : 16, color: C.sub,
-                      lineHeight: 1.7, marginTop: 10,
-                      whiteSpace: "pre-wrap",
-                    }}>
-                      {data.teach}
-                    </div>
-                  )}
-                  {/* Exam tip */}
-                  {data?.examTip && (
-                    <div style={{
-                      marginTop: 10, padding: "8px 12px",
-                      background: C.orangeLight, borderRadius: 8,
-                      borderLeft: `3px solid ${C.orange}`,
-                      fontSize: mobile ? 13 : 14, color: "#92400E",
-                    }}>
-                      💡 {data.examTip}
-                    </div>
-                  )}
-                </div>
-              </div>
+              {sec.title}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* ── Detailed Explain Pages ── */}
+      {sections.length > 0 && totalPages > 0 && (
+        <div style={{ ...cardS, marginBottom: 12, padding: mobile ? 16 : 24 }}>
+          {/* Section title + page indicator */}
+          <div style={{
+            display: "flex", alignItems: "center", justifyContent: "space-between",
+            marginBottom: 14,
+          }}>
+            <div style={{ fontWeight: 800, fontSize: 16, color, display: "flex", alignItems: "center", gap: 8 }}>
+              <span>📖</span> {currentSection.title}
             </div>
-          );
-        })}
-      </div>
+            {totalPages > 1 && (
+              <span style={{
+                fontSize: 12, fontWeight: 700, color: C.sub,
+                background: "#F3F4F6", borderRadius: 20, padding: "4px 12px",
+              }}>
+                {page + 1} / {totalPages}
+              </span>
+            )}
+          </div>
+
+          {/* Main content: explain + widgets side by side */}
+          <div style={{ display: mobile ? "block" : "flex", gap: 20 }}>
+            {/* Explain text */}
+            <div style={{ flex: 1, minWidth: 0 }}>
+              {renderExplain(currentPageLines, color)}
+            </div>
+
+            {/* Widgets */}
+            {widgetList.length > 0 && (
+              <div style={{
+                width: mobile ? "100%" : 320,
+                marginTop: mobile ? 16 : 0,
+                flexShrink: 0,
+              }}>
+                {widgetList.map((Widget, i) => (
+                  <div key={i} style={{ marginBottom: 10 }}>
+                    <Widget />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Page Questions */}
+          {currentPQ.length > 0 && (
+            <div style={{ marginTop: 14, borderTop: `1px solid ${C.border}`, paddingTop: 12 }}>
+              <button onClick={() => setShowPQ(!showPQ)} style={{
+                ...btnS, width: "100%",
+                background: showPQ ? C.green : C.greenLight,
+                color: showPQ ? "#fff" : "#065F46",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}>
+                ✏️ 이 페이지 연습문제 ({currentPQ.length}문제)
+                <span style={{
+                  transform: showPQ ? "rotate(180deg)" : "rotate(0)",
+                  transition: "transform .2s", display: "inline-block",
+                }}>▼</span>
+              </button>
+              {showPQ && (
+                <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 8 }}>
+                  {currentPQ.map((pq, i) => (
+                    <InlinePageQuestion key={`${activeSec}-${page}-${i}`} q={pq} index={i} color={color} mobile={mobile} />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Page navigation */}
+          {totalPages > 1 && (
+            <div style={{
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              marginTop: 14, paddingTop: 12, borderTop: `1px solid ${C.border}`,
+            }}>
+              <button onClick={() => goPage(-1)} disabled={page === 0} style={{
+                ...btnS,
+                background: page === 0 ? "#F3F4F6" : bg,
+                color: page === 0 ? C.light : color,
+                cursor: page === 0 ? "not-allowed" : "pointer",
+              }}>
+                ← 이전
+              </button>
+
+              {/* Page dots */}
+              <div style={{ display: "flex", gap: 4 }}>
+                {explainPages.map((_, i) => (
+                  <button key={i} onClick={() => { setPage(i); setShowPQ(false); }} style={{
+                    width: i === page ? 20 : 8, height: 8, borderRadius: 4,
+                    background: i === page ? color : C.border,
+                    border: "none", cursor: "pointer", padding: 0,
+                    transition: "all .2s",
+                  }} />
+                ))}
+              </div>
+
+              <button onClick={() => goPage(1)} disabled={page === totalPages - 1} style={{
+                ...btnS,
+                background: page === totalPages - 1 ? "#F3F4F6" : bg,
+                color: page === totalPages - 1 ? C.light : color,
+                cursor: page === totalPages - 1 ? "not-allowed" : "pointer",
+              }}>
+                다음 →
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── Concept Cards (collapsible if explain sections exist) ── */}
+      {sections.length > 0 ? (
+        <div style={{ marginBottom: 12 }}>
+          <button onClick={() => setShowConcepts(!showConcepts)} style={{
+            ...cardS, width: "100%", cursor: "pointer",
+            display: "flex", alignItems: "center", justifyContent: "space-between",
+            border: `2px solid ${color}`,
+            padding: "12px 16px",
+          }}>
+            <span style={{ fontWeight: 700, fontSize: 14, color }}>
+              💡 핵심 개념 카드 ({subtopic.key_concepts.length}개)
+            </span>
+            <span style={{
+              fontSize: 16, color,
+              transform: showConcepts ? "rotate(180deg)" : "rotate(0)",
+              transition: "transform .2s", display: "inline-block",
+            }}>▼</span>
+          </button>
+          {showConcepts && (
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 8 }}>
+              {renderConceptCards(subtopic, tc, color, bg, mobile)}
+            </div>
+          )}
+        </div>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          {renderConceptCards(subtopic, tc, color, bg, mobile)}
+        </div>
+      )}
 
       {/* Quiz section */}
       {questions.length > 0 && (
@@ -596,6 +725,228 @@ function SlideView({ topic, subtopic, subIdx, mobile, onBack }) {
 
           {showQuiz && (
             <SlideQuizPanel questions={questions} mobile={mobile} />
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── CONCEPT CARDS RENDERER ───
+function renderConceptCards(subtopic, tc, color, bg, mobile) {
+  return subtopic.key_concepts.map((concept, i) => {
+    const data = tc?.concepts[i];
+    return (
+      <div key={i} style={{
+        ...cardS,
+        padding: mobile ? 16 : 24,
+        borderLeftWidth: 4,
+        borderLeftColor: color,
+      }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+          <span style={{
+            background: bg, color: color,
+            width: 28, height: 28, borderRadius: 8,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            fontWeight: 800, fontSize: 13, flexShrink: 0,
+          }}>
+            {i + 1}
+          </span>
+          <div style={{ flex: 1 }}>
+            <div style={{
+              fontSize: mobile ? 16 : 20, fontWeight: 700,
+              color: C.text, lineHeight: 1.4,
+            }}>
+              {concept}
+            </div>
+            {data?.ko && (
+              <div style={{
+                fontSize: mobile ? 15 : 18, color: color,
+                fontWeight: 600, marginTop: 4,
+              }}>
+                {data.ko}
+              </div>
+            )}
+            {data?.teach && (
+              <div style={{
+                fontSize: mobile ? 14 : 16, color: C.sub,
+                lineHeight: 1.7, marginTop: 10,
+                whiteSpace: "pre-wrap",
+              }}>
+                {data.teach}
+              </div>
+            )}
+            {data?.examTip && (
+              <div style={{
+                marginTop: 10, padding: "8px 12px",
+                background: C.orangeLight, borderRadius: 8,
+                borderLeft: `3px solid ${C.orange}`,
+                fontSize: mobile ? 13 : 14, color: "#92400E",
+              }}>
+                💡 {data.examTip}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  });
+}
+
+// ─── INLINE PAGE QUESTION ───
+function InlinePageQuestion({ q, index, color, mobile }) {
+  const [userAnswer, setUserAnswer] = useState("");
+  const [selectedMC, setSelectedMC] = useState(Array.isArray(q.answer) ? [] : null);
+  const [submitted, setSubmitted] = useState(false);
+  const [showHint, setShowHint] = useState(false);
+  const [showExpl, setShowExpl] = useState(false);
+
+  const isCorrect = () => {
+    if (q.type === "mc") {
+      if (Array.isArray(q.answer)) {
+        return Array.isArray(selectedMC) &&
+          q.answer.length === selectedMC.length &&
+          q.answer.every(a => selectedMC.includes(a));
+      }
+      return selectedMC === q.answer;
+    }
+    const norm = userAnswer.trim().toUpperCase().replace(/\s+/g, "");
+    const accepted = q.accept || [q.answer];
+    return accepted.some(a => String(a).toUpperCase().replace(/\s+/g, "") === norm);
+  };
+
+  const checkAnswer = () => setSubmitted(true);
+
+  return (
+    <div style={{
+      ...cardS, padding: mobile ? 12 : 16,
+      border: `1.5px solid ${submitted ? (isCorrect() ? C.green : C.red) : C.border}`,
+    }}>
+      {/* Question text */}
+      <div style={{ fontSize: 13, fontWeight: 600, color: C.text, marginBottom: 10, whiteSpace: "pre-wrap", lineHeight: 1.7 }}>
+        <span style={{ color, fontWeight: 800, marginRight: 6 }}>Q{index + 1}.</span>
+        {q.q}
+        {q.marks != null && (
+          <span style={{ color: C.light, fontWeight: 500, marginLeft: 6 }}>
+            [{q.marks} mark{q.marks > 1 ? "s" : ""}]
+          </span>
+        )}
+      </div>
+
+      {/* MC options or text input */}
+      {q.type === "mc" ? (
+        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+          {(q.options || []).map((opt, i) => {
+            const multiSelect = Array.isArray(q.answer);
+            const isSelected = multiSelect
+              ? (selectedMC || []).includes(i)
+              : selectedMC === i;
+            const isAnswer = multiSelect ? q.answer.includes(i) : q.answer === i;
+            return (
+              <button key={i} onClick={() => {
+                if (submitted) return;
+                if (multiSelect) {
+                  setSelectedMC(prev => {
+                    const arr = prev || [];
+                    return arr.includes(i) ? arr.filter(x => x !== i) : [...arr, i];
+                  });
+                } else {
+                  setSelectedMC(i);
+                }
+              }} style={{
+                ...btnS, textAlign: "left", padding: "8px 12px",
+                background: submitted
+                  ? (isAnswer ? C.greenLight : (isSelected ? C.redLight : "#F9FAFB"))
+                  : (isSelected ? `${color}15` : "#F9FAFB"),
+                color: C.text,
+                border: `1.5px solid ${submitted
+                  ? (isAnswer ? C.green : (isSelected ? C.red : C.border))
+                  : (isSelected ? color : C.border)}`,
+                cursor: submitted ? "default" : "pointer",
+              }}>
+                <span style={{
+                  fontWeight: 700, marginRight: 8,
+                  color: submitted ? (isAnswer ? C.green : C.sub) : color,
+                }}>
+                  {String.fromCharCode(65 + i)}
+                </span>
+                {opt}
+              </button>
+            );
+          })}
+        </div>
+      ) : (
+        <input
+          value={userAnswer}
+          onChange={e => setUserAnswer(e.target.value)}
+          disabled={submitted}
+          placeholder="답을 입력하세요"
+          onKeyDown={e => e.key === "Enter" && !submitted && checkAnswer()}
+          style={{
+            width: "100%", padding: "8px 12px", borderRadius: 8,
+            border: `1.5px solid ${submitted ? (isCorrect() ? C.green : C.red) : C.border}`,
+            fontSize: 14, fontFamily: F, outline: "none",
+            background: submitted ? (isCorrect() ? C.greenLight : C.redLight) : "#fff",
+            boxSizing: "border-box",
+          }}
+        />
+      )}
+
+      {/* Actions row */}
+      <div style={{ marginTop: 8, display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center" }}>
+        {!submitted && (
+          <>
+            <button onClick={checkAnswer} style={{ ...btnS, background: color, color: "#fff" }}>
+              확인
+            </button>
+            {q.hint && (
+              <button onClick={() => setShowHint(!showHint)} style={{
+                ...btnS, background: C.orangeLight, color: "#92400E",
+              }}>
+                💡 힌트
+              </button>
+            )}
+          </>
+        )}
+        {submitted && (
+          <div style={{ fontSize: 13, fontWeight: 700, color: isCorrect() ? C.green : C.red }}>
+            {isCorrect() ? "✅ 정답!" : `❌ 오답 — 정답: ${q.answer}`}
+          </div>
+        )}
+      </div>
+
+      {/* Hint */}
+      {showHint && !submitted && (
+        <div style={{
+          marginTop: 6, padding: "6px 10px",
+          background: C.orangeLight, borderRadius: 8,
+          fontSize: 12, color: "#78350F", lineHeight: 1.6,
+        }}>
+          💡 {q.hint}
+        </div>
+      )}
+
+      {/* Explanation */}
+      {submitted && q.explanation && (
+        <div style={{ marginTop: 6 }}>
+          <button onClick={() => setShowExpl(!showExpl)} style={{
+            ...btnS, background: C.blueLight, color: C.blue, fontSize: 12,
+          }}>
+            {showExpl ? "풀이 닫기" : "📝 풀이 보기"}
+          </button>
+          {showExpl && (
+            <div style={{
+              marginTop: 6, padding: "8px 12px", background: "#F9FAFB",
+              borderRadius: 8, fontSize: 12, fontFamily: "monospace",
+              whiteSpace: "pre-wrap", lineHeight: 1.7, color: C.text,
+            }}>
+              {q.explanationTitle && (
+                <div style={{ fontWeight: 700, marginBottom: 4, color, fontFamily: F }}>
+                  {q.explanationTitle}
+                </div>
+              )}
+              {q.explanation}
+            </div>
           )}
         </div>
       )}
