@@ -32,16 +32,67 @@ function isValidQuestion(q) {
   return t.length >= 20 && q.marks > 0 && q.marks <= 30;
 }
 
-// 문제 텍스트를 줄바꿈이 있는 JSX로 변환
-function formatQText(rawText) {
-  const t = cleanQText(rawText);
+// 문제 텍스트를 구조화된 JSX로 변환
+function RenderQText({ text }) {
+  const t = cleanQText(text);
   if (!t) return null;
+
+  // ── 보기 목록이 있는 "Complete... from the list" 패턴 감지 ──
+  // 보기 아이템: 1~10자 단어가 4개 이상 연속 (단, 2단어 이상 문장이 시작되면 중단)
+  const listMatch = t.match(
+    /^(.*?(?:from the list|from the box|item once|once\.)\.?\s*)((?:(?:[A-Z0-9][\w-]*|[a-z][\w-]*)\s+)*?(?:[A-Z0-9][\w-]*|[a-z][\w-]*))(\s+(?:The|A |An |Each |It |This |In |When |Give |State |Describe |Explain |Identify ).*)/s
+  );
+  if (listMatch) {
+    const instruction = listMatch[1].trim();
+    const items = listMatch[2].trim().split(/\s+/);
+    const body = listMatch[3].trim()
+      .replace(/\s*(_{3,})/g, "\n$1")
+      .replace(/(_{3,}\s*[.,])\s+/g, "$1\n");
+    return (
+      <>
+        <div style={{ marginBottom: 10 }}>{instruction}</div>
+        <div style={{
+          display: "flex", flexWrap: "wrap", gap: "6px 8px",
+          padding: "8px 12px", borderRadius: 8,
+          background: "#F0F4FF", border: "1px solid #D0D8F0",
+          marginBottom: 10,
+        }}>
+          {items.map((item, i) => (
+            <span key={i} style={{
+              padding: "2px 8px", borderRadius: 6, fontSize: 13, fontWeight: 600,
+              background: "#fff", border: "1px solid #C8D0E8", color: "#374151",
+            }}>{item}</span>
+          ))}
+        </div>
+        <div style={{ whiteSpace: "pre-line" }}>{body}</div>
+      </>
+    );
+  }
+
+  // ── "Draw a line" 매칭 문제 ──
+  const drawMatch = t.match(/^(.*?Draw a line.*?\.)\s+(.*)/s);
+  if (drawMatch) {
+    const instruction = drawMatch[1].trim();
+    const pairs = drawMatch[2].trim();
+    return (
+      <>
+        <div style={{ marginBottom: 10 }}>{instruction}</div>
+        <div style={{
+          padding: "8px 12px", borderRadius: 8,
+          background: "#F9FAFB", border: "1px solid #E5E7EB",
+          whiteSpace: "pre-line", fontSize: 13, lineHeight: 1.7,
+        }}>{pairs}</div>
+      </>
+    );
+  }
+
+  // ── 일반 문제 ── 빈칸/이진수 줄바꿈
   const formatted = t
-    .replace(/\s*(_{3,})/g, "\n$1")                    // _____ 앞 줄바꿈
-    .replace(/\s+(\d{4,}\s*\+?\s*\d{4,})/g, "\n$1")   // 이진수 연산
-    .replace(/(_{3,}\s*\.)\s+/g, "$1\n")               // _____ . 뒤 줄바꿈
+    .replace(/\s*(_{3,})/g, "\n$1")
+    .replace(/\s+(\d{4,}\s*\+?\s*\d{4,})/g, "\n$1")
+    .replace(/(_{3,}\s*[.,])\s+/g, "$1\n")
     .trim();
-  return formatted;
+  return <span style={{ whiteSpace: "pre-line" }}>{formatted}</span>;
 }
 
 // ── Progress storage ──
@@ -293,18 +344,18 @@ function InteractiveQuestion({ q, color, qKey }) {
       </div>
 
       {/* Question text */}
-      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10, whiteSpace: "pre-line" }}>
+      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10 }}>
         {cleanQText(q.context) && (
           <div style={{
             color: C.sub, marginBottom: 8, fontSize: 13, fontStyle: "italic",
             background: C.border + "40", padding: "6px 10px", borderRadius: 6,
-            lineHeight: 1.7, whiteSpace: "normal",
+            lineHeight: 1.7,
           }}>
             {cleanQText(q.context).slice(0, 300)}
             {cleanQText(q.context).length > 300 ? "..." : ""}
           </div>
         )}
-        {formatQText(q.text)}
+        <RenderQText text={q.text} />
       </div>
 
       {/* Answer input */}
