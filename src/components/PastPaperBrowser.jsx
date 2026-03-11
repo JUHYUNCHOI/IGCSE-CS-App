@@ -8,9 +8,22 @@ import { TC } from "./TeachingMode";
 // ── Text cleanup (PDF parsing artifacts) ──
 function cleanQText(s) {
   if (!s) return "";
-  // Strip leading "number [spaces/commas]*," from PDF parsing residue
-  // "1 ," → "", "3 , ," → "", "2 , Some text" → "Some text"
-  return s.replace(/^\d+[\s,]*,\s*/g, "").trim();
+  let t = s;
+  // 1) 선행 "숫자 콤마" 제거: "1 ," → "", "2 , Some text" → "Some text"
+  t = t.replace(/^\d+[\s,]*,\s*/g, "");
+  // 2) UCLES 워터마크 제거: "UCLES 2021 0478/12/F/M/21"
+  t = t.replace(/\s*UCLES\s+\d{4}\s+0478\/\d{2,3}\/[A-Z]\/[A-Z]\/\d{2}\s*/g, " ");
+  // 3) [Turn over 제거
+  t = t.replace(/\s*\[Turn over\s*/g, "");
+  // 4) 다음 문제 번호 이후 잘라내기: "... answer. 10 A number game..."
+  t = t.replace(/([.?!])\s+\d{1,2}\s+[A-Z][a-z].*$/, "$1");
+  // 5) "DFD" placeholder 제거
+  t = t.replace(/\s*DFD\s*/g, " ");
+  // 6) 빈 bullet 정리: "• • •" → "•"
+  t = t.replace(/[•]\s*(?=[•])/g, "");
+  // 7) 연속 공백 정리
+  t = t.replace(/\s{2,}/g, " ");
+  return t.trim();
 }
 
 // ── Progress storage ──
@@ -264,8 +277,13 @@ function InteractiveQuestion({ q, color, qKey }) {
       {/* Question text */}
       <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10 }}>
         {cleanQText(q.context) && (
-          <div style={{ color: C.sub, marginBottom: 6 }}>
-            {cleanQText(q.context).slice(0, 120)}{cleanQText(q.context).length > 120 ? "..." : ""}
+          <div style={{
+            color: C.sub, marginBottom: 8, fontSize: 13, fontStyle: "italic",
+            background: C.border + "40", padding: "6px 10px", borderRadius: 6,
+            lineHeight: 1.7,
+          }}>
+            {cleanQText(q.context).slice(0, 200)}
+            {cleanQText(q.context).length > 200 ? "..." : ""}
           </div>
         )}
         {cleanQText(q.text) || q.text}
@@ -367,7 +385,7 @@ function MarkSchemeDisplay({ markScheme, acceptedAnswers }) {
         📋 Mark Scheme
       </div>
       <div style={{ color: C.text, whiteSpace: "pre-line" }}>
-        {markScheme}
+        {cleanQText(markScheme)}
       </div>
       {acceptedAnswers && acceptedAnswers.length > 0 && (
         <div style={{ marginTop: 6 }}>
