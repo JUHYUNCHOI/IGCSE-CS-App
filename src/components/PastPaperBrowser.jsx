@@ -5,6 +5,14 @@ import { pastPapers, getPastQuestionsBySubtopic, getPastQuestionCountBySubtopic 
 import syllabusData from "../data/syllabus_topics.json";
 import { TC } from "./TeachingMode";
 
+// ── Text cleanup (PDF parsing artifacts) ──
+function cleanQText(s) {
+  if (!s) return "";
+  // Strip leading "number [spaces/commas]*," from PDF parsing residue
+  // "1 ," → "", "3 , ," → "", "2 , Some text" → "Some text"
+  return s.replace(/^\d+[\s,]*,\s*/g, "").trim();
+}
+
 // ── Progress storage ──
 const PP_STORAGE = "igcse-pp-progress";
 function loadPPProgress() {
@@ -227,11 +235,11 @@ function InteractiveQuestion({ q, color, qKey }) {
 
   return (
     <div style={{
-      padding: "10px 0",
+      padding: "14px 0",
       borderTop: `1px solid ${C.border}`,
     }}>
       {/* Question header */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
         <span style={{ fontWeight: 700, color, fontSize: 12 }}>
           {q.paper} Q{q.qNum}
         </span>
@@ -254,9 +262,13 @@ function InteractiveQuestion({ q, color, qKey }) {
       </div>
 
       {/* Question text */}
-      <div style={{ color: C.text, fontSize: 13, lineHeight: 1.5, marginBottom: 8 }}>
-        {q.context && <div style={{ color: C.sub, marginBottom: 4 }}>{q.context.slice(0, 120)}{q.context.length > 120 ? "..." : ""}</div>}
-        {q.text}
+      <div style={{ color: C.text, fontSize: 14, lineHeight: 1.8, marginBottom: 10 }}>
+        {cleanQText(q.context) && (
+          <div style={{ color: C.sub, marginBottom: 6 }}>
+            {cleanQText(q.context).slice(0, 120)}{cleanQText(q.context).length > 120 ? "..." : ""}
+          </div>
+        )}
+        {cleanQText(q.text) || q.text}
       </div>
 
       {/* Answer input */}
