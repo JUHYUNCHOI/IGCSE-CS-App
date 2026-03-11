@@ -1,8 +1,11608 @@
 // Auto-generated from IGCSE CS 0478 past papers + mark schemes
-// 68 papers, 1469 questions
-// Answer types: 20 MC, 63 short, 1257 mark scheme
+// 116 papers, 2324 questions
+// Answer types: 20 MC, 109 short, 2066 mark scheme
 
 export const pastPapers = [
+  {
+    "year": 2017,
+    "session": "m",
+    "sessionLabel": "Mar",
+    "paper": 1,
+    "variant": 2,
+    "label": "2017 Mar P1v2",
+    "qpFile": "0478_m17_qp_12.pdf",
+    "msFile": "0478_m17_ms_12.pdf",
+    "qpPath": "papers/2017/0478_m17_qp_12.pdf",
+    "msPath": "papers/2017/0478_m17_ms_12.pdf",
+    "totalMarks": 73,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Name three different sensors. Sensor 1 Sensor 2 Sensor 3",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from, must include at least one difference: Text based password • (a minimum number of) characters that can be typed at a keyboard • set / can be changed by the user Biometric password • a stored physical measurement e.g. fingerprint • that is compared to a previously scanned human measurement Difference • text based passwords are easier to hack than biometric passwords • biometric passwords are unique to that person/cannot be shared",
+        "acceptedAnswers": [
+          "(a minimum number of) characters that can be typed at a keyboard",
+          "set / can be changed by the user",
+          "a stored physical measurement e.g. fingerprint",
+          "that is compared to a previously scanned human measurement",
+          "text based passwords are easier to hack than biometric passwords",
+          "biometric passwords are unique to that person/cannot be shared"
+        ]
+      },
+      {
+        "qNum": "2",
+        "text": "2 The diagram below shows five logic gate symbols and five names. Draw a line between each logic gate symbol and its correct name. Logic Gate Symbol Name AND NOT NOR XOR NAND UCLES 2017 0478/12/F/M/17",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "10.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "v w x y z a b c d e f g h i 2 marks • shift right • all characters shifted five places"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "State, with reasons, which data transmission, serial or parallel, should be used. Type Reasons",
+        "context": "3 A company has a number of offices on one site. Data are transmitted, using a wired network, from one office and stored at another office.",
+        "marks": 3,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for: • serial"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Give one method, other than parity checking, that could be used for checking for errors in the transmission of data. Method UCLES 2017 0478/12/F/M/17 [Turn over",
+        "context": "1 Register 2 State which type of parity each register is using. Register 1 Register 2",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Convert the following plain text to cypher text. Plain text: data security Cypher text:",
+        "context": "4 A simple symmetric encryption system is used to encrypt messages. Each letter of the alphabet is substituted by another letter. Plain text a b c d e f g h i j k l m n o p q r s t u v w x y i e m d z Cypher text v p n a q b r u z s c o y k w f x j t l h g",
+        "marks": 2,
+        "subtopics": [
+          "2.3",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "A new cypher text is created by shifting each letter of the alphabet five places to the right. Show the new cypher text below. Plain text a b c d e f g h i j k l m n o p q r s t u v w x y z New cypher text",
+        "context": "4 A simple symmetric encryption system is used to encrypt messages. Each letter of the alphabet is substituted by another letter. Plain text a b c d e f g h i j k l m n o p q r s t u v w x y i e m d z Cypher text v p n a q b r u z s c o y k w f x j t l h g",
+        "marks": 2,
+        "subtopics": [
+          "2.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "a v m v e q n d i z m h (2 marks, 1 for each correct word)"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "State, giving a reason, which cypher text would be more secure.",
+        "context": "4 A simple symmetric encryption system is used to encrypt messages. Each letter of the alphabet is substituted by another letter. Plain text a b c d e f g h i j k l m n o p q r s t u v w x y i e m d z Cypher text v p n a q b r u z s c o y k w f x j t l h g",
+        "marks": 2,
+        "subtopics": [
+          "2.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• •"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Give the meaning of the following terms. HTML http https UCLES 2017 0478/12/F/M/17",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "A B X C This is one example, many others exist. Alternative example A X B C UCLES 2017"
+      },
+      {
+        "qNum": "6",
+        "text": "6 The diagram shows five operating system functions and five descriptions. Draw a line between each operating system function and its description. Function Description Interrupt Many processes appear to run simultaneously Utility Data are temporarily held in a buffer waiting for an output device to ",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "4.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Secondary storage non-volatile/persistant memory that is accessed by a device that is part of a computer system / not directly accessed by the CPU Example HDD / SSD Off-line storage Example"
+      },
+      {
+        "qNum": "7",
+        "text": "7 A high definition video and a large text file are to be sent as email attachments. Both files are compressed before sending. Each file is compressed using a different type of data compression algorithm. Explain, with reasons, which type of data compression algorithm should be chosen for each file.",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Function Description Interrupt Many processes appear to run simultaneously Utility Data are temporarily held in a buffer waiting for an output device to access it Memory management A signal that causes the operating system to take a specified action Spooling A program that performs a specific task required for the operation of a computer system Multitasking A process of assigning blocks of memory to programs running in a computer High definition video lossy (algorithm) images may contain less de"
+      },
+      {
+        "qNum": "1(a)",
+        "text": "The contents of the register could represent a binary integer. Convert the binary integer to denary and hexadecimal. Denary Hexadecimal",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "The contents of the register could represent the ASCII value for the single denary digit 7 . Write down the ASCII value for 9 in binary, denary and hexadecimal. Binary Denary Hexadecimal",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Write in Register X the binary number you would use with AND gates to convert the ASCII value of 7 to its binary integer value. 0 0 1 1 0 1 1 1 ASCII Register X",
+        "context": "1",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9",
+        "text": "9 Passwords are used to keep data safe. Explain the differences between a text-based password and a biometric password. UCLES 2017 0478/12/F/M/17",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "0/1"
+      },
+      {
+        "qNum": "7",
+        "text": "7 10 Describe the differences between a barcode and a Quick Response (QR) code.",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Function Description Interrupt Many processes appear to run simultaneously Utility Data are temporarily held in a buffer waiting for an output device to access it Memory management A signal that causes the operating system to take a specified action Spooling A program that performs a specific task required for the operation of a computer system Multitasking A process of assigning blocks of memory to programs running in a computer High definition video lossy (algorithm) images may contain less de"
+      },
+      {
+        "qNum": "11",
+        "text": "11 Three programmers are working on different projects: Alice is developing a program written in a low-level language Akbar is developing a program written in a high-level language Alex is preparing a program written in a high-level language for sale State, with reasons, which type of translator eac",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Alice • Assembler • translates low level language into machine code / only option for low-level language programs"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Identify three uses for hexadecimal and for each one give an example of hexadecimal that matches the use. Use 1 Example Use 2 Example Use 3 Example",
+        "context": "8 12",
+        "marks": 6,
+        "subtopics": [
+          "1.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Denary 55 Hexadecimal 37"
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Explain why hexadecimal is used to represent binary numbers. UCLES 2017 0478/12/F/M/17",
+        "context": "8 12",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Binary (00)111001 Denary 57 Hexadecimal 39"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Explain what is meant by primary, secondary and off-line storage. Give an example of each. Primary storage Example Secondary storage Example Off-line storage Example",
+        "context": "9 13",
+        "marks": 6,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "A set of photographs has been taken for a wedding. All the guests are to be sent digitally stored copies through the ordinary postal service. There are fifty photographs and each photograph is between 1.8 and 2.5 megabytes in size. Work out the maximum storage space required for a set of photographs",
+        "context": "9 13",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "10(a)",
+        "text": "Design a logic circuit for the system. A B X C UCLES 2017 0478/12/F/M/17",
+        "context": "10 14 A system controls the flow of vehicles through a barrier based on three lights, A, B and C. When a light is red, the signal is zero. When a light is green, the signal is one. The barrier will open when the output X is one. The barrier opens if either: light A is red and lights B and C are both",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2017 0478/12/F/M/17",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from, must include at least one difference: Text based password • (a minimum number of) characters that can be typed at a keyboard • set / can be changed by the user Biometric password • a stored physical measurement e.g. fingerprint • that is compared to a previously scanned human measurement Difference • text based passwords are easier to hack than biometric passwords • biometric passwords are unique to that person/cannot be shared",
+        "acceptedAnswers": [
+          "(a minimum number of) characters that can be typed at a keyboard",
+          "set / can be changed by the user",
+          "a stored physical measurement e.g. fingerprint",
+          "that is compared to a previously scanned human measurement",
+          "text based passwords are easier to hack than biometric passwords",
+          "biometric passwords are unique to that person/cannot be shared"
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "m",
+    "sessionLabel": "Mar",
+    "paper": 2,
+    "variant": 2,
+    "label": "2017 Mar P2v2",
+    "qpFile": "0478_m17_qp_22.pdf",
+    "msFile": "0478_m17_ms_22.pdf",
+    "qpPath": "papers/2017/0478_m17_qp_22.pdf",
+    "msPath": "papers/2017/0478_m17_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Declare the array used to store the reaction times for the whole school.",
+        "context": "1",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Change this declaration so the array can only hold records for a sample of 50 students.",
+        "context": "1",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(iii)",
+        "text": "Explain why an array is an effective data structure for storing the reaction time records.",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Write an algorithm to complete Task 1 for the whole school, using either pseudocode, programming statements or a flowchart. DO NOT include any validation routines. UCLES 2017 0478/22/F/M/17 [Turn over",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from:",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Identify three different types of test data you used to test the validation checks on the age input in Task 1. For each type, give an example of appropriate data. Type of test data Example data",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(d)",
+        "text": "Explain how you calculated and outputted the average reaction time based on the user inputs of age and school house, as part of Task 3. Any programming statements used in your answer must be fully explained. UCLES 2017 0478/22/F/M/17",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(e)",
+        "text": "Explain how you would change your solution to Task 3 to output the age of the student with the fastest reaction time. UCLES 2017 0478/22/F/M/17 [Turn over",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "08 Num18 = 0 INPUT Age WHILE Age >= 0 DO IF Age >= 18 THEN Num18 = Num18 + Age ENDIF ENDWHILE PRINT Num18 - Age There are four errors in this code. Locate these errors and suggest code correction to remove each error. Error 1 Correction Error 2 Correction Error 3 Correction Error 4 Correction UCLES ",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Output",
+        "markScheme": "Output"
+      },
+      {
+        "qNum": "3",
+        "text": "3 There is a program that stores the following data: EmployeeID, an employee ID which must be two letters followed by 4 numbers, e.g. TY4587 Manager, whether the employee is a manager or not AnnualHoliday, number of whole days annual holiday PayGrade, the employee s pay grade which must be a single ",
+        "context": "",
+        "marks": 8,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 UCLES 2017"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Study the flowchart. START INPUT A IS A > 0 ? OUTPUT B Yes B C A A B B + A No C C 1 IS C <= 1 ? OUTPUT 'Exit' Yes No END Complete the trace table for the input values 4, 3, 1: A B C OUTPUT UCLES 2017 0478/22/F/M/17",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Example: INPUT Num Counter 1 WHILE Counter <= 12 DO Num Num * Counter A [Counter] Num Counter Counter + 1 ENDWHILE"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Rewrite the following pseudocode algorithm using a WHILE DO ENDWHILE loop. INPUT Num FOR Counter 1 TO 12 Num Num * Counter A[Counter] Num NEXT",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "initialising counter outside the loop updating counter inside loop suitable exit value at start of loop correct use of WHILE DO ENDWHILE"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Explain the differences between a WHILE DO ENDWHILE and a REPEAT UNTIL loop. UCLES 2017 0478/22/F/M/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "WHILE has criteria check at start / pre-test may never run REPEAT UNTIL has criteria check at end / post-test will always run at least once"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "The query-by-example grid below selects certain records. Field: User Portable Purchase Price ($) Table: DEVICE DEVICE DEVICE Sort: Ascending Show: 3 Y >1000 Criteria: or: Show what would be the output from the query-by-example.",
+        "context": "7 Laptop Alan Swales 15/03/2016 1700.00 Y 8 Tablet Taona Jaji 16/12/2016 470.00 Y",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Complete the query-by-example grid below to select all Desktop devices that were either purchased before 31/12/2016 or cost under $1000. Only show the Device ID and Device Type. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/22/F/M/17",
+        "context": "7 Laptop Alan Swales 15/03/2016 1700.00 Y 8 Tablet Taona Jaji 16/12/2016 470.00 Y",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 1,
+    "label": "2017 May/Jun P1v1",
+    "qpFile": "0478_s17_qp_11.pdf",
+    "msFile": "0478_s17_ms_11.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_11.pdf",
+    "msPath": "papers/2017/0478_s17_ms_11.pdf",
+    "totalMarks": 69,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Convert the instruction into hexadecimal.",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for any two correct values, 2 marks for all 4 correct values. 29FC"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain why a programmer might prefer to read the instruction in hexadecimal rather than in binary.",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Easier/quicker to understand/read • Easier to debug/identify errors • Fewer digits are used / shorter // takes up less space on screen // more can be shown on screen / page"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Give two other uses of hexadecimal. Use 1 Use 2",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Notations for colour in HTML // HTML colour (codes) • Error messages • MAC address // IP address • Locations in memory • Memory dump"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Explain what is meant by the term high-level language . UCLES 2017 0478/11/M/J/17",
+        "context": "2 Programmers can use a high-level language to write a computer program.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Closer to human language // closer to English • Independent of a particular type of computer/device/platform // portable language • A language such as Python, Java, Pascal, etc. (any suitable example)"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "A program written in a high-level language is translated into machine code. This is so that it can be processed by a computer. Name one type of translator that can be used.",
+        "context": "3",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "translates this program.",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Steffi has a number of files of different sizes that contain her work. Tick (3) to show whether each statement is true or false. true (3) Statement false (3) 47KB is larger than 10MB. 250bytes is smaller than 0.5MB. 50GB is larger than 100MB. 1TB is smaller than 4GB. UCLES 2017 0478/11/M/J/17 [Tur",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Five statements about serial half-duplex data transmission are shown in the table below. Tick (3) to show whether each statement is true or false. Statement true (3) false (3) Data is transmitted in one direction only, one bit at a time. Data is transmitted in both directions, multiple bits at a t",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "2.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Gas (sensor) • e.g. to measure the levels of oxygen/carbon dioxide / nitrogen in the factory to make sure they are not too high / low • Temperature (sensor) • e.g. to measure the temperature of the chemicals to make sure it is not too high/low • Motion / Infra-red (sensor) • e.g. to detect any persons in an unauthorised area of the factory • Pressure (sensor) • e.g. to measure the pressure of chemicals flowing through pipes to check that level are not too high / low • pH (sensor) • t"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Parity checks are often used to detect errors that may occur during data transmission. The received bytes in the table below were transmitted using odd parity. Tick (3) to show whether each byte has been corrupted during transmission or not corrupted during transmission. Received byte corrupted duri",
+        "context": "5",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per correct tick Received byte"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Another method of error detection is Automatic Repeat reQuest (ARQ). Explain how ARQ is used in error detection. UCLES 2017 0478/11/M/J/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • Uses acknowledgement and time out • Check performed on received data // error is detected by e.g. parity check, check sum • If error detected, request sent to resend data // negative acknowledgment is used • If no acknowledgement is sent that data is received // positive acknowledgement is used • Data is resent / Resend request repeated, till data is resent correctly • or request times out // limit is reached"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Signals are sent to and from the components of a processor using buses. Identify and describe the purpose of two different buses. Bus 1 Purpose Bus 2 Purpose UCLES 2017 0478/11/M/J/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Input devices Two from: • Keypad / Keyboard • e.g. to allow customer to input the quantity of an item • Touchscreen • e.g. to allow a customer to select a payment method • Barcode scanner / Barcode reader • e.g. to allow a customer to scan in their shopping • Card reader // Cash deposit / intake • e.g. to allow a customer to pay for their shopping • Weighing scales • e.g. to allow a customer to weigh fresh produce Output devices One from: • Display / Touchscreen • e.g. to allow a customer to see"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Six security terms and six statements are listed below. Draw a line to match the security term with the most appropriate statement. Security term Statement Encryption Provides a secure connection between web browsers and websites allowing secure transmission of private data. Secure Socket Layer (S",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "5.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 Complete the paragraph by choosing six correct terms from the list. Optical On-line RAM HDD Primary SSD Secondary ROM Off-line A computer has two different types of memory. memory is not directly accessed by the CPU, but it allows a user to store data that can easily be accessed by applications. T",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 • • • • • •"
+      },
+      {
+        "qNum": "1",
+        "text": "1 Output (X) UCLES 2017 0478/11/M/J/17 [Turn over",
+        "context": "",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "A B Output",
+        "markScheme": "A B Output"
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Write a logic statement that corresponds with the following logic circuit. A B X C X =",
+        "context": "10",
+        "marks": 3,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for four correct outputs only"
+      },
+      {
+        "qNum": "11",
+        "text": "11 State three functions provided by an operating system. Function 1 Function 2 Function 3 UCLES 2017 0478/11/M/J/17",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Identify two different sensors used in this application. Give an example of how each sensor could be used in the chemical factory. Sensor 1 Use Sensor 2 Use",
+        "context": "11 12 The processes in a chemical factory are monitored by sensors connected to a microprocessor.",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe how the sensors and a microprocessor are used to monitor a process. UCLES 2017 0478/11/M/J/17 [Turn over",
+        "context": "11 12 The processes in a chemical factory are monitored by sensors connected to a microprocessor.",
+        "marks": 5,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "12(a)",
+        "text": "Gurdeep wants to send a large file to Jennifer over the Internet. State two benefits of compressing the file to send it. Benefit 1 Benefit 2",
+        "context": "12 13",
+        "marks": 2,
+        "subtopics": [
+          "3.4",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from e.g. : • (Provides an) interface • Loads / opens / installs / closes software • Manages the hardware // manages peripherals // spooling • Manages the transfer of programs into and out of memory • Divides processing time // processor management • Manages file handling • Manages error handling // manages interrupts • Manages security software • Manages utility software • Manages user accounts • Multitasking • Multiprogramming // time slicing • Batch processing 1 mark for appropriate sen"
+      },
+      {
+        "qNum": "12(i)(i)",
+        "text": "Downloading the code for a computer program: Type of compression Explanation",
+        "context": "12 13",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "12(i)(ii)",
+        "text": "Streaming a video file: Type of compression Explanation Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any ",
+        "context": "12 13",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 2,
+    "label": "2017 May/Jun P1v2",
+    "qpFile": "0478_s17_qp_12.pdf",
+    "msFile": "0478_s17_ms_12.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_12.pdf",
+    "msPath": "papers/2017/0478_s17_ms_12.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Name three different buses that are used in the fetch-execute cycle. Bus 1 Bus 2 Bus 3",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "4 marks for 8 correct outputs 3 marks for 6 or 7 correct outputs 2 marks for 4 or 5 correct outputs 1 mark for 2 or 3 correct outputs UCLES 2017"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Give two examples of primary, secondary and off-line storage. Primary Example 1 Example 2 Secondary Example 1 Example 2 Off-line Example 1 Example 2 UCLES 2017 0478/12/M/J/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Simplex e.g.: Microphone to computer Sensor to computer Computer to printer Computer to speaker Computer to monitor Webcam to computer Sending data to a device // sending data from a device Duplex e.g.: Telephone call Voice over IP Computer to printer (only award once) Instant messaging Broadband connections Video conferencing Sending data to and from devices e.g wireless technology Computer to modem"
+      },
+      {
+        "qNum": "3",
+        "text": "3 The diagram shows five output devices and five descriptions. Draw a line between each output device and its description. Output Device Description Inkjet printer Flat panel display that uses the light modulating properties of liquid crystals. LCD screen Flat panel display that uses an array of lig",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "address (bus) control (bus) data (bus) 2 marks for each type of storage"
+      },
+      {
+        "qNum": "4",
+        "text": "4 There are various methods used to detect errors that can occur during data transmission and storage. Describe each of the following error detection methods. Parity check Check digit Checksum Automatic Repeat request (ARQ) UCLES 2017 0478/12/M/J/17",
+        "context": "",
+        "marks": 8,
+        "subtopics": [
+          "2.2",
+          "2.1"
+        ],
+        "answerType": "short",
+        "answer": "A B C X",
+        "markScheme": "A B C X"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "The denary number 57 is to be stored in two different computer registers. Convert 57 from denary to binary and show your working.",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct method, 1 mark for correct answer"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "as it would be stored in the following registers. Register 1 Register 2",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct method, 1 mark for correct answer"
+      },
+      {
+        "qNum": "5(c)",
+        "text": "A binary number stored in a register can have many different uses, for example an address in main memory. Give two other uses for a binary number stored in a register. Use 1 Use 2",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 0 The contents of the register represent a binary integer. Convert the binary integer to hexadecimal. . . UCLES 2017 0478/12/M/J/17 [Turn over",
+        "context": "",
+        "marks": 1,
+        "subtopics": [
+          "1.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "4 marks for 8 correct outputs 3 marks for 6 or 7 correct outputs 2 marks for 4 or 5 correct outputs 1 mark for 2 or 3 correct outputs UCLES 2017"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Airline boarding passes can be read from a smartphone instead of a printout. Back Boarding Pass A TSA Pre Passenger Webb / Alan B 15 Boarding Boarding Position Group Flight 683 JFK LAX Date Thursday, November 10, 2016 Departs 8.15 pm Gate C4 Time, gate and terminals may change - check monitors Fly",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "temperature sensor analogue data / temperature is converted to digital data (with an ADC) sensor sends signal to the microprocessor microprocessor compares input values with stored values/pre-set values if the temperature value input is too high/low a signal is sent from the microprocessor to turn on / off / up / down the cooling unit if temperature matches the stored values no action is taken an actuator is used to turn the cooling unit on / off / up / down the process is a continuous loop"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Draw an arrow or arrows to show simplex, duplex and half-duplex data transmission. The direction of the data transmission must be fully labelled. Simplex data transmission Computer A Computer B Duplex data transmission Computer A Computer B Half-duplex data transmission Computer A Computer B",
+        "context": "7 Computer A is communicating with computer B.",
+        "marks": 6,
+        "subtopics": [
+          "2.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct arrow(s), one mark for correct description OR (Direction of data is) one way only // unidirectional # (Direction of data is both ways) at same time / simultaneously / concurrently AND (Direction of data is both ways) but at different times / not at the same time / not simultaneously / not concurrently UCLES 2017"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "State a use for the following data transmission methods. The use must be different for each data transmission method. Simplex Duplex UCLES 2017 0478/12/M/J/17 [Turn over",
+        "context": "7 Computer A is communicating with computer B.",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark each use, must be different."
+      },
+      {
+        "qNum": "8(c)",
+        "text": "A computer includes an Integrated Circuit (IC) and a Universal Serial Bus (USB) for data transmission. Describe how the computer uses these for data transmission, including the type of data transmission used. IC USB UCLES 2017 0478/12/M/J/17",
+        "context": "8",
+        "marks": 4,
+        "subtopics": [
+          "2.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Data is transmitted between the offices over the Internet. In order to keep the data safe the company is using Secure Socket Layer (SSL) protocol and a firewall at each office. Explain how SSL protocol and a firewall will keep the company s data safe. SSL protocol Firewall",
+        "context": "8 A company has a number of offices around the world.",
+        "marks": 4,
+        "subtopics": [
+          "5.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(b)",
+        "text": "A company stores personal details of its customers on a computer system behind a firewall. Explain, with reasons, what else the company should do to keep this data safe. UCLES 2017 0478/12/M/J/17 [Turn over",
+        "context": "8 A company has a number of offices around the world.",
+        "marks": 6,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from:"
+      },
+      {
+        "qNum": "9",
+        "text": "9 A cold store is kept at a constant low temperature using a sensor, a microprocessor and a cooling unit. Explain how the sensor and microprocessor will maintain a constant low temperature. UCLES 2017 0478/12/M/J/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from: • • • • • • • • • • UCLES 2017"
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Draw the logic circuit. A B X C",
+        "context": "11 10 For this logic statement: X = 1 if (( A is 1 AND B is 1 ) OR ( B is 1 AND C is NOT 1 ))",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2017 0478/12/M/J/17 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "4 marks for 8 correct outputs 3 marks for 6 or 7 correct outputs 2 marks for 4 or 5 correct outputs 1 mark for 2 or 3 correct outputs UCLES 2017"
+      },
+      {
+        "qNum": "11",
+        "text": "11 A company sells smartphones over the Internet. Explain how the information stored on the company s website is requested by the customer, sent to the customer s computer and displayed on the screen. Permission to reproduce items where third-party owned material protected by copyright is included h",
+        "context": "",
+        "marks": 7,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Seven from:"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 3,
+    "label": "2017 May/Jun P1v3",
+    "qpFile": "0478_s17_qp_13.pdf",
+    "msFile": "0478_s17_ms_13.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_13.pdf",
+    "msPath": "papers/2017/0478_s17_ms_13.pdf",
+    "totalMarks": 69,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Convert the instruction into hexadecimal.",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for any two correct values, 2 marks for all 4 correct values. 29FC"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain why a programmer might prefer to read the instruction in hexadecimal rather than in binary.",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Easier/quicker to understand/read • Easier to debug/identify errors • Fewer digits are used / shorter // takes up less space on screen // more can be shown on screen / page"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Give two other uses of hexadecimal. Use 1 Use 2",
+        "context": "1 0 0",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Notations for colour in HTML // HTML colour (codes) • Error messages • MAC address // IP address • Locations in memory • Memory dump"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Explain what is meant by the term high-level language . UCLES 2017 0478/13/M/J/17",
+        "context": "2 Programmers can use a high-level language to write a computer program.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Closer to human language // closer to English • Independent of a particular type of computer/device/platform // portable language • A language such as Python, Java, Pascal, etc. (any suitable example)"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "A program written in a high-level language is translated into machine code. This is so that it can be processed by a computer. Name one type of translator that can be used.",
+        "context": "3",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "translates this program.",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Steffi has a number of files of different sizes that contain her work. Tick (3) to show whether each statement is true or false. true (3) Statement false (3) 47KB is larger than 10MB. 250bytes is smaller than 0.5MB. 50GB is larger than 100MB. 1TB is smaller than 4GB. UCLES 2017 0478/13/M/J/17 [Tur",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Five statements about serial half-duplex data transmission are shown in the table below. Tick (3) to show whether each statement is true or false. Statement true (3) false (3) Data is transmitted in one direction only, one bit at a time. Data is transmitted in both directions, multiple bits at a t",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "2.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Gas (sensor) • e.g. to measure the levels of oxygen/carbon dioxide / nitrogen in the factory to make sure they are not too high / low • Temperature (sensor) • e.g. to measure the temperature of the chemicals to make sure it is not too high/low • Motion / Infra-red (sensor) • e.g. to detect any persons in an unauthorised area of the factory • Pressure (sensor) • e.g. to measure the pressure of chemicals flowing through pipes to check that level are not too high / low • pH (sensor) • t"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Parity checks are often used to detect errors that may occur during data transmission. The received bytes in the table below were transmitted using odd parity. Tick (3) to show whether each byte has been corrupted during transmission or not corrupted during transmission. Received byte corrupted duri",
+        "context": "5",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per correct tick Received byte"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Another method of error detection is Automatic Repeat reQuest (ARQ). Explain how ARQ is used in error detection. UCLES 2017 0478/13/M/J/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • Uses acknowledgement and time out • Check performed on received data // error is detected by e.g. parity check, check sum • If error detected, request sent to resend data // negative acknowledgment is used • If no acknowledgement is sent that data is received // positive acknowledgement is used • Data is resent / Resend request repeated, till data is resent correctly • or request times out // limit is reached"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Signals are sent to and from the components of a processor using buses. Identify and describe the purpose of two different buses. Bus 1 Purpose Bus 2 Purpose UCLES 2017 0478/13/M/J/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Input devices Two from: • Keypad / Keyboard • e.g. to allow customer to input the quantity of an item • Touchscreen • e.g. to allow a customer to select a payment method • Barcode scanner / Barcode reader • e.g. to allow a customer to scan in their shopping • Card reader // Cash deposit / intake • e.g. to allow a customer to pay for their shopping • Weighing scales • e.g. to allow a customer to weigh fresh produce Output devices One from: • Display / Touchscreen • e.g. to allow a customer to see"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Six security terms and six statements are listed below. Draw a line to match the security term with the most appropriate statement. Security term Statement Encryption Provides a secure connection between web browsers and websites allowing secure transmission of private data. Secure Socket Layer (S",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "5.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 Complete the paragraph by choosing six correct terms from the list. Optical On-line RAM HDD Primary SSD Secondary ROM Off-line A computer has two different types of memory. memory is not directly accessed by the CPU, but it allows a user to store data that can easily be accessed by applications. T",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 • • • • • •"
+      },
+      {
+        "qNum": "1",
+        "text": "1 Output (X) UCLES 2017 0478/13/M/J/17 [Turn over",
+        "context": "",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "A B Output",
+        "markScheme": "A B Output"
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Write a logic statement that corresponds with the following logic circuit. A B X C X =",
+        "context": "10",
+        "marks": 3,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for four correct outputs only"
+      },
+      {
+        "qNum": "11",
+        "text": "11 State three functions provided by an operating system. Function 1 Function 2 Function 3 UCLES 2017 0478/13/M/J/17",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Identify two different sensors used in this application. Give an example of how each sensor could be used in the chemical factory. Sensor 1 Use Sensor 2 Use",
+        "context": "11 12 The processes in a chemical factory are monitored by sensors connected to a microprocessor.",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe how the sensors and a microprocessor are used to monitor a process. UCLES 2017 0478/13/M/J/17 [Turn over",
+        "context": "11 12 The processes in a chemical factory are monitored by sensors connected to a microprocessor.",
+        "marks": 5,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "12(a)",
+        "text": "Gurdeep wants to send a large file to Jennifer over the Internet. State two benefits of compressing the file to send it. Benefit 1 Benefit 2",
+        "context": "12 13",
+        "marks": 2,
+        "subtopics": [
+          "3.4",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from e.g. : • (Provides an) interface • Loads / opens / installs / closes software • Manages the hardware // manages peripherals // spooling • Manages the transfer of programs into and out of memory • Divides processing time // processor management • Manages file handling • Manages error handling // manages interrupts • Manages security software • Manages utility software • Manages user accounts • Multitasking • Multiprogramming // time slicing • Batch processing 1 mark for appropriate sen"
+      },
+      {
+        "qNum": "12(i)(i)",
+        "text": "Downloading the code for a computer program: Type of compression Explanation",
+        "context": "12 13",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "12(i)(ii)",
+        "text": "Streaming a video file: Type of compression Explanation Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any ",
+        "context": "12 13",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 1,
+    "label": "2017 May/Jun P2v1",
+    "qpFile": "0478_s17_qp_21.pdf",
+    "msFile": "0478_s17_ms_21.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_21.pdf",
+    "msPath": "papers/2017/0478_s17_ms_21.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Name two constants you used for Task 1 and state the value of each one. Constant 1 Value Constant 2 Value",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Name two arrays you used for Task 2 and state the purpose of each one. Array 1 Purpose Array 2 Purpose UCLES 2017 0478/21/M/J/17 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2017 0478/21/M/J/17 5 UCLES 2017 0478/21/M/J/17 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Name and describe one suitable validation check you used for Task 1, and one suitable validation check for Task 2. Each check MUST be different. Task 1 Name Description Task 2 Name Description",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Task 2 Reason for choice UCLES 2017 0478/21/M/J/17",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(d)",
+        "text": "Explain how your program calculates whether or not you have made a profit (Task 3). Any programming statements used in your answer must be fully explained. UCLES 2017 0478/21/M/J/17 [Turn over",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 Total = 0 Counter = 50 PRINT When prompted, enter 50 numbers, one at a time REPEAT PRINT Enter a number INPUT Number Total + Number = Total Number = Number + 1 UNTIL Counter = 50 Average = Number * Counter PRINT The average of the numbers you entered is , Average There are four errors in this cod",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 A satellite navigation system works using destination details entered by the user, either a new destination or chosen from previously saved destinations. The satellite navigation system will then output directions to the destination in the form of either a visual map or a list of directions. A sat",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for every two correct data types"
+      },
+      {
+        "qNum": "4",
+        "text": "4 For each of the four statements in the table, place a tick in the correct column to show whether it is an example of validation or verification. Statements Validation Verification To automatically check the accuracy of a bar code To check if the data input is sensible To check if the data input ma",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Verification",
+        "markScheme": "Verification"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Describe the purpose of each statement in this algorithm. 1 TO 300 FOR I INPUT Name[I] NEXT I",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Loop with 300 repetitions (starting at 1) / Loops from 1 to 300 Values input/stored (in consecutive/different locations) in an array (at position I) Increases the loop counter/I value by 1 (and returns to the start of the loop)",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(a)",
+        "text": "could have used.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Loop with 300 repetitions (starting at 1) / Loops from 1 to 300 Values input/stored (in consecutive/different locations) in an array (at position I) Increases the loop counter/I value by 1 (and returns to the start of the loop)",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Write an algorithm, using pseudocode, to input a number between 0 and 100 inclusive. The algorithm should prompt for the input and output an error message if the number is outside this range. UCLES 2017 0478/21/M/J/17 [Turn over",
+        "context": "5",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "- Prompt and input number Checking the input number is between 0 and 100 - both limits Correct error message (1) (1) (1)"
+      },
+      {
+        "qNum": "13",
+        "text": "13 Complete the trace table for the input data: 68, 46, 50, 86, 65, 50, 40, 30, 1 HighF HighC TempF OUTPUT UCLES 2017 0478/21/M/J/17 [Turn over",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(a)",
+        "text": "State the type of the field TVID and give a reason for your choice.",
+        "context": "7 A television (TV) store has a database table, TVSTOCK, for its new range of televisions. The table stores the screen size of each TV, whether it will show 3D, whether the screen is curved or flat, if the internet is available on the TV, if it has a built-in hard disk drive and the price. Part of t",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Complete the table with the most appropriate data type for each field. Field name Data type ScreenSize 3D CurvedFlat Internet HDD Price UCLES 2017 0478/21/M/J/17",
+        "context": "7 A television (TV) store has a database table, TVSTOCK, for its new range of televisions. The table stores the screen size of each TV, whether it will show 3D, whether the screen is curved or flat, if the internet is available on the TV, if it has a built-in hard disk drive and the price. Part of t",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: It is the primary key/key field with unique data (Fixed length) text field with alphanumeric data Field name Data type ScreenSize Number 3D Boolean CurvedFlat Text Internet Boolean HDD Boolean Price Currency",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "15(c)",
+        "text": "Use the query-by-example grid below to provide a list of all of the curved screen TVs that have a built-in hard disk drive. Make sure the list only displays the TVID, the price and the screen size in ascending order of price. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/21/M/J/17",
+        "context": "15",
+        "marks": 5,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 2,
+    "label": "2017 May/Jun P2v2",
+    "qpFile": "0478_s17_qp_22.pdf",
+    "msFile": "0478_s17_ms_22.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_22.pdf",
+    "msPath": "papers/2017/0478_s17_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "For a variable that you have used to record information about the cost of the outing in Task 1, state the name, data type and its use. Variable name Data type Use",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State two constants that you could have used for Task 1. Give the value that would be assigned to each one and explain what it is used for. Constant 1 name Value 1 Use 1 Constant 2 name Value 2 Use 2",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how you would need to change your calculation in Task 1 if each carer were paid $20.00 for coming on the outing. UCLES 2017 0478/22/M/J/17 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "- UCLES 2017 calculate cost of carers // if more than 24 senior citizens on the trip cost is 60 otherwise cost is 40 add to the cost of the outing"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements or a flowchart. You can assume that Task 1 has been completed. You do not need to produce the list of people on the outing. UCLES 2017 0478/22/M/J/17 5 UCLES 2017 0478/22/M/J/17 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program completes Task 3. Any programming statements used in your answer must be fully explained. UCLES 2017 0478/22/M/J/17",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Write an algorithm to input three different numbers, and then output the largest number. Use either pseudocode or a flowchart.",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "award full marks for any working solution Input three numbers Attempt to select largest number Working method print out largest number"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "and explain why you chose each set. Test data set 1 Reason Test data set 2 Reason UCLES 2017 0478/22/M/J/17 [Turn over",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "award full marks for any working solution Input three numbers Attempt to select largest number Working method print out largest number"
+      },
+      {
+        "qNum": "9",
+        "text": "9 Complete the trace table for the input data: 13, 17, 26, 25, 5, 10, 15, 35, 20, 15 Weight Reject TotalWeight OUTPUT UCLES 2017 0478/22/M/J/17 [Turn over",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Find the error in the pseudocode and suggest a correction. Error Correction",
+        "context": "4 An algorithm has been written in pseudocode to input 100 numbers and print out the sum. A REPEAT UNTIL loop has been used. Count 0 Sum 0 REPEAT INPUT Number Sum Sum + Number Count Count + 1 UNTIL Count > 100 PRINT Sum",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "- Count - Count"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Rewrite the correct algorithm using a more suitable loop structure. UCLES 2017 0478/22/M/J/17",
+        "context": "4 An algorithm has been written in pseudocode to input 100 numbers and print out the sum. A REPEAT UNTIL loop has been used. Count 0 Sum 0 REPEAT INPUT Number Sum Sum + Number Count Count + 1 UNTIL Count > 100 PRINT Sum",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "- use of FOR with correct start and end values use of NEXT removal of increment for Count"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Identify the four fields required for the database. Give each field a suitable name and data type. Provide a sample of data that you could expect to see in the field. Field 1 name Data type Data sample Field 2 name Data type Data sample Field 3 name Data type Data sample Field 4 name Data type Data ",
+        "context": "5 A database table, SHEEP, is used to keep a record of the sheep on a farm. Each sheep has a unique ear tag, EARnnnn; n is a single digit. The farmer keeps a record of the date of birth, the gender and the current weight of each sheep in kilograms.",
+        "marks": 8,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "for each field name (1), data type and sample (1) The following are examples there are many different correct answers. EarTag (1), text, EAR1011 (1) DOB (1), date, 4/3/2017 (1) Gender (1), text, M (1) Weight (1), number, 5.9 (1) UCLES 2017"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "State the field that you would choose as the primary key.",
+        "context": "5 A database table, SHEEP, is used to keep a record of the sheep on a farm. Each sheep has a unique ear tag, EARnnnn; n is a single digit. The farmer keeps a record of the date of birth, the gender and the current weight of each sheep in kilograms.",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "EarTag",
+        "markScheme": "EarTag"
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Using the query-by-example grid below, write a query to identify the ear tags of all male sheep weighing over 10 kilograms. Only display the ear tags. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/22/M/J/17",
+        "context": "5 A database table, SHEEP, is used to keep a record of the sheep on a farm. Each sheep has a unique ear tag, EARnnnn; n is a single digit. The farmer keeps a record of the date of birth, the gender and the current weight of each sheep in kilograms.",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field:"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 3,
+    "label": "2017 May/Jun P2v3",
+    "qpFile": "0478_s17_qp_23.pdf",
+    "msFile": "0478_s17_ms_23.pdf",
+    "qpPath": "papers/2017/0478_s17_qp_23.pdf",
+    "msPath": "papers/2017/0478_s17_ms_23.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Name two constants you used for Task 1 and state the value of each one. Constant 1 Value Constant 2 Value",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Name two arrays you used for Task 2 and state the purpose of each one. Array 1 Purpose Array 2 Purpose UCLES 2017 0478/23/M/J/17 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2017 0478/23/M/J/17 5 UCLES 2017 0478/23/M/J/17 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Name and describe one suitable validation check you used for Task 1, and one suitable validation check for Task 2. Each check MUST be different. Task 1 Name Description Task 2 Name Description",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Task 2 Reason for choice UCLES 2017 0478/23/M/J/17",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(d)",
+        "text": "Explain how your program calculates whether or not you have made a profit (Task 3). Any programming statements used in your answer must be fully explained. UCLES 2017 0478/23/M/J/17 [Turn over",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 Total = 0 Counter = 50 PRINT When prompted, enter 50 numbers, one at a time REPEAT PRINT Enter a number INPUT Number Total + Number = Total Number = Number + 1 UNTIL Counter = 50 Average = Number * Counter PRINT The average of the numbers you entered is , Average There are four errors in this cod",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 A satellite navigation system works using destination details entered by the user, either a new destination or chosen from previously saved destinations. The satellite navigation system will then output directions to the destination in the form of either a visual map or a list of directions. A sat",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for every two correct data types"
+      },
+      {
+        "qNum": "4",
+        "text": "4 For each of the four statements in the table, place a tick in the correct column to show whether it is an example of validation or verification. Statements Validation Verification To automatically check the accuracy of a bar code To check if the data input is sensible To check if the data input ma",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Verification",
+        "markScheme": "Verification"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Describe the purpose of each statement in this algorithm. 1 TO 300 FOR I INPUT Name[I] NEXT I",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Loop with 300 repetitions (starting at 1) / Loops from 1 to 300 Values input/stored (in consecutive/different locations) in an array (at position I) Increases the loop counter/I value by 1 (and returns to the start of the loop)",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(a)",
+        "text": "could have used.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Loop with 300 repetitions (starting at 1) / Loops from 1 to 300 Values input/stored (in consecutive/different locations) in an array (at position I) Increases the loop counter/I value by 1 (and returns to the start of the loop)",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Write an algorithm, using pseudocode, to input a number between 0 and 100 inclusive. The algorithm should prompt for the input and output an error message if the number is outside this range. UCLES 2017 0478/23/M/J/17 [Turn over",
+        "context": "5",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "- Prompt and input number Checking the input number is between 0 and 100 - both limits Correct error message (1) (1) (1)"
+      },
+      {
+        "qNum": "13",
+        "text": "13 Complete the trace table for the input data: 68, 46, 50, 86, 65, 50, 40, 30, 1 HighF HighC TempF OUTPUT UCLES 2017 0478/23/M/J/17 [Turn over",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(a)",
+        "text": "State the type of the field TVID and give a reason for your choice.",
+        "context": "7 A television (TV) store has a database table, TVSTOCK, for its new range of televisions. The table stores the screen size of each TV, whether it will show 3D, whether the screen is curved or flat, if the internet is available on the TV, if it has a built-in hard disk drive and the price. Part of t",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Complete the table with the most appropriate data type for each field. Field name Data type ScreenSize 3D CurvedFlat Internet HDD Price UCLES 2017 0478/23/M/J/17",
+        "context": "7 A television (TV) store has a database table, TVSTOCK, for its new range of televisions. The table stores the screen size of each TV, whether it will show 3D, whether the screen is curved or flat, if the internet is available on the TV, if it has a built-in hard disk drive and the price. Part of t",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: It is the primary key/key field with unique data (Fixed length) text field with alphanumeric data Field name Data type ScreenSize Number 3D Boolean CurvedFlat Text Internet Boolean HDD Boolean Price Currency",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "15(c)",
+        "text": "Use the query-by-example grid below to provide a list of all of the curved screen TVs that have a built-in hard disk drive. Make sure the list only displays the TVID, the price and the screen size in ascending order of price. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/23/M/J/17",
+        "context": "15",
+        "marks": 5,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 1,
+    "label": "2017 Oct/Nov P1v1",
+    "qpFile": "0478_w17_qp_11.pdf",
+    "msFile": "0478_w17_ms_11.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_11.pdf",
+    "msPath": "papers/2017/0478_w17_ms_11.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "State whether the display screen is an input, output or storage device.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "3.3"
+        ],
+        "answerType": "short",
+        "answer": "Output",
+        "markScheme": "Output"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "The display screen shows a hexadecimal error code: E04 This error code means that the water will not empty out of the washing machine. Convert this error code to binary.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct conversion"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "State why hexadecimal is used to display the error code.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: Hexadecimal codes can fit in a smaller display rather than a full text based message Smaller amount of memory needed to store the hex error messages than text based",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(d)",
+        "text": "Identify three sensors that could be used in the washing machine. State what each sensor could be used for. Sensor 1 Use Sensor 2 Use Sensor 3 Use UCLES 2017 0478/11/O/N/17",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct sensor, 1 mark for corresponding use Possible examples could include:"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Data files are stored in different file formats. Complete the table by providing a suitable file format for each file type. The first one has been done for you. File type Pictures File format .JPEG Text Sound Video",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct file format e.g."
+      },
+      {
+        "qNum": "3(a)",
+        "text": "An example of a Uniform Resource Locator (URL) is: http://www.cie.org.uk/index.htm Part 1 Part 2 Part 3 Identify the three parts that make up this URL. Part 1 Part 2 Part 3",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Describe what is meant by an Internet Protocol (IP) address. UCLES 2017 0478/11/O/N/17 [Turn over",
+        "context": "3",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 File format Pictures .JPEG Text .doc, .txt, .rtf, .docx, .odt .pdf Sound .mp3, .wav, .aif, .flac, .mid Video .mp4, .flv, .wmv Part 1 Part 2 Part 3"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Six components of a computer system and six descriptions are shown. Draw a line to match each component with the most suitable description. Component Description Arithmetic Logic Unit (ALU) Used to connect together the internal components of the CPU. Buses Used to carry out calculations on data. C",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Primary RAM and ROM Secondary HDD and SSD Primary is directly accessible by CPU Secondary is not directly accessible by CPU Primary is internal to computer Secondary can be internal or external to the computer Primary stores boot up instructions and can hold data whilst being processed Secondary stores files/software Primary has faster access speed Secondary has a slower access speed Primary has both volatile and non-volatile Secondary is non-volatile"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Draw a logic circuit for the logic statement: X = 1 if ((A is 1 AND B is 1) OR (A is NOT 1 AND C is 1)) A X B C UCLES 2017 0478/11/O/N/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1 mark for each correct logic gate 2017"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Draw the symbol for an XOR gate and explain the function of this logic gate. Explanation",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "10.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6",
+        "text": "6 Describe the operation of a 2D scanner and a 3D scanner. 2D 3D UCLES 2017 0478/11/O/N/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "short",
+        "answer": "true (9) Statement",
+        "markScheme": "true (9) Statement"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Six statements about firewalls are shown. Tick (3) to show whether each statement is true or false. Statement true (3) false (3) Firewalls can monitor incoming and outgoing traffic. Firewalls operate by checking traffic against a set of rules. Firewalls cannot block access to a certain website. Fi",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2017 1 mark for each correct tick"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Data is valuable. It needs to be kept secure and it can easily be damaged. Give three different ways that data can be accidentally damaged. 1 2 3",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Human error (e.g. deleting/overwriting data) Physical damage Power failure/surge Hardware failure Software crashing",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(b)",
+        "text": "The Secure Socket Layer (SSL) protocol can be used to securely transmit data in online banking. State three other different applications that use SSL. Application 1 Application 2 Application 3 UCLES 2017 0478/11/O/N/17",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Online shopping // Online payment systems // Online booking Email Cloud based storage Intranet/extranet VPN VoIP // video conferencing Instant messaging (IM) // social networking // online gaming",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Online banking is increasing in popularity. Online banking can be a risk as it can raise a number of security issues. SSL can be used as a security method to make online banking safer. Identify and describe three other security methods that could be used to make online banking safer. Security method",
+        "context": "9",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1000 16 16000/8 Answer is 2000 bytes Four from: (Max 2 for either primary or secondary)"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Optical storage media can be used to store data. Describe how the data is read from a Compact Disc (CD).",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "3.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: (Red) laser is used (Laser beams) shines onto surface of the disk It is rotated (at a constant speed) to be read Surface is covered in a track (that spirals from the centre) Data is represented on the surface using pits and lands Pits and lands represent binary values Pits reflect light back differently (to the area in between/land) Optical device can determine the binary value from the light reflection",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Kamil wants to store a 16-bit colour image file. The image size is 1000 pixels. Calculate the size of the file. Give your answer in bytes. Show your working. Working Answer bytes",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "1.2",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for calculation, 1 mark for correct answer:"
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Describe the differences between primary and secondary storage. UCLES 2017 0478/11/O/N/17",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1000 16 16000/8 Answer is 2000 bytes Four from: (Max 2 for either primary or secondary)"
+      },
+      {
+        "qNum": "11",
+        "text": "11 10 Six statements about assembly language are shown. Tick (3) whether the statement is true or false. Statement true (3) false (3) Assembly language uses mnemonic codes. Assembly language programs do not need a translator to be executed. Assembly language is a low-level programming language. Asse",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 2,
+    "label": "2017 Oct/Nov P1v2",
+    "qpFile": "0478_w17_qp_12.pdf",
+    "msFile": "0478_w17_ms_12.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_12.pdf",
+    "msPath": "papers/2017/0478_w17_ms_12.pdf",
+    "totalMarks": 69,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 C Convert the values and write down the operation (e.g. RIGHT) carried out by the robot arm. 9 1 C 3 F UCLES 2017 0478/12/O/N/17",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per correct instruction: 2017"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Explain the differences between the binary number system and the denary number system.",
+        "context": "2 Storage devices and storage media can be categorised as primary, secondary or off-line. Write primary, secondary or off-line next to each storage device or medium to indicate its most suitable category. 3 HDD RAM ROM CD-ROM SSD DVD-RAM",
+        "marks": 4,
+        "subtopics": [
+          "3.3",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Explain the process of converting the binary number 1010 into a denary number. UCLES 2017 0478/12/O/N/17 [Turn over",
+        "context": "2 Storage devices and storage media can be categorised as primary, secondary or off-line. Write primary, secondary or off-line next to each storage device or medium to indicate its most suitable category. 3 HDD RAM ROM CD-ROM SSD DVD-RAM",
+        "marks": 5,
+        "subtopics": [
+          "3.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Use ticks (3) to identify the most suitable data transmission methods for this application. Method 1 Tick (3) Method 2 Serial Simplex Parallel Half-duplex Tick (3) Duplex",
+        "context": "4 A file server is used as a central data store for a network of computers. Rory sends data from his computer to a file server that is approximately 100 metres away. It is important that the data is transmitted accurately. Rory needs to be able to read data from and write data to the file server at ",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "is the most suitable data transmission. UCLES 2017 0478/12/O/N/17",
+        "context": "4 A file server is used as a central data store for a network of computers. Rory sends data from his computer to a file server that is approximately 100 metres away. It is important that the data is transmitted accurately. Rory needs to be able to read data from and write data to the file server at ",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Identify and describe two methods of error checking that can be used to make sure that the data stored after transmission is accurate. Method 1 Method 2 UCLES 2017 0478/12/O/N/17 [Turn over",
+        "context": "5",
+        "marks": 6,
+        "subtopics": [
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: e.g. • To store personal information/data • To store login details • To save items in an online shopping basket • To track/save internet surfing habits // to track website traffic • To carry out targeted advertising • To store payment details • To customise a webpage // to store user preferences • Store progress in online games/quizzes",
+        "acceptedAnswers": [
+          "To store personal information/data",
+          "To store login details",
+          "To save items in an online shopping basket",
+          "To track/save internet surfing habits // to track website traffic",
+          "To carry out targeted advertising",
+          "To store payment details",
+          "To customise a webpage // to store user preferences",
+          "Store progress in online games/quizzes"
+        ]
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Explain what is meant by the term cookies.",
+        "context": "5 Raj is using the Internet to do some online shopping. He visits a website that tells him that it uses cookies.",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: • Data / files • Stored in a text file • Downloaded to a user s computer when a website is visited // webserver sends to web browser • Stored on a user s computer • Stored by a browser • Detected by the website when it is visited again",
+        "acceptedAnswers": [
+          "Data / files",
+          "Stored in a text file",
+          "Downloaded to a user’s computer when a website is visited // webserver sends to web browser",
+          "Stored on a user’s computer",
+          "Stored by a browser",
+          "Detected by the website when it is visited again"
+        ]
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Give two examples of the use of cookies. Example 1 Example 2 UCLES 2017 0478/12/O/N/17",
+        "context": "5 Raj is using the Internet to do some online shopping. He visits a website that tells him that it uses cookies.",
+        "marks": 2,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: e.g. • To store personal information/data • To store login details • To save items in an online shopping basket • To track/save internet surfing habits // to track website traffic • To carry out targeted advertising • To store payment details • To customise a webpage // to store user preferences • Store progress in online games/quizzes",
+        "acceptedAnswers": [
+          "To store personal information/data",
+          "To store login details",
+          "To save items in an online shopping basket",
+          "To track/save internet surfing habits // to track website traffic",
+          "To carry out targeted advertising",
+          "To store payment details",
+          "To customise a webpage // to store user preferences",
+          "Store progress in online games/quizzes"
+        ]
+      },
+      {
+        "qNum": "6",
+        "text": "6 Selma writes the following four answers in her Computer Science examination. State which computer terms she is describing. It is a signal. When the signal is received it tells the operating system that an event has occurred. Selma is describing It takes source code written in a high level language",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "4.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Moisture (sensor) • To measure the water content of the soil • To alert when the soil is too dry or too wet/needs watering pH (sensor) • To measure how acidic/alkaline the soil is • To alert when there may be something polluting the soil Light (sensor) • To measure the brightness of the environment • To alert when the fruit has too little/too much light Temperature (sensor) • To measure the temperature of the environment • To alert when it is too hot/too cold for the fruit to grow Gas (sensor) •"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Draw a logic circuit to represent the logic statement: X = 1 if (A is NOT 1 AND B is 1) AND (A is NOT 1 AND C is NOT 1) OR (B is 1 AND C is 1) A X B C UCLES 2017 0478/12/O/N/17",
+        "context": "",
+        "marks": 7,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1 mark for each correct logic gate with the correct input(s) 2017"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "A computer has 2048 MB of RAM. How many GB of RAM does the computer have? Show your working. GB",
+        "context": "8",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Describe one item that is stored in RAM.",
+        "context": "8",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(c)",
+        "text": "Explain three ways that RAM is different to ROM. 1 2 3 UCLES 2017 0478/12/O/N/17 [Turn over",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 2017 1 mark for correct calculation method, 1 mark for correct answer: • • 2048/1024 (or 1024 2) 2 GB • • Instructions/programs/data currently in use"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Explain what is meant by the term sensor.",
+        "context": "9 Anna has a farm that grows fruit. She has a system that monitors the conditions for growing the fruit. Sensors are used in this system.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "State two sensors that could be used in this system and describe how they could be used. Sensor 1 Use Sensor 2 Use UCLES 2017 0478/12/O/N/17",
+        "context": "9 Anna has a farm that grows fruit. She has a system that monitors the conditions for growing the fruit. Sensors are used in this system.",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • It is an input device It measures/takes (physical) readings of the surrounding environment / environment by example / physical properties 1 mark for each sensor, 2 marks for each description:"
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Describe what is meant by Transport Layer Security (TLS).",
+        "context": "11 10",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Name three different applications of TLS. 1 2 3 UCLES 2017 0478/12/O/N/17 [Turn over",
+        "context": "11 10",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 Complete the paragraphs choosing the correct five terms from the list. Each term can only be used once: Ethics Freeware Free Software Hacking Malware Plagiarism Shareware Virus Taking another person s work from the Internet and claiming it as your own is called . It is possible to protect your wo",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "5.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct missing word, in the correct order: • • • • • UCLES 2017 Plagiarism Free software Freeware Shareware Ethics"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 3,
+    "label": "2017 Oct/Nov P1v3",
+    "qpFile": "0478_w17_qp_13.pdf",
+    "msFile": "0478_w17_ms_13.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_13.pdf",
+    "msPath": "papers/2017/0478_w17_ms_13.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "State whether the display screen is an input, output or storage device.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "3.3"
+        ],
+        "answerType": "short",
+        "answer": "Output",
+        "markScheme": "Output"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "The display screen shows a hexadecimal error code: E04 This error code means that the water will not empty out of the washing machine. Convert this error code to binary.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct conversion"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "State why hexadecimal is used to display the error code.",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: Hexadecimal codes can fit in a smaller display rather than a full text based message Smaller amount of memory needed to store the hex error messages than text based",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(d)",
+        "text": "Identify three sensors that could be used in the washing machine. State what each sensor could be used for. Sensor 1 Use Sensor 2 Use Sensor 3 Use UCLES 2017 0478/13/O/N/17",
+        "context": "1 A washing machine has a small display screen built into it. One use of the display screen is to show an error code when a problem has occurred with a washing cycle.",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct sensor, 1 mark for corresponding use Possible examples could include:"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Data files are stored in different file formats. Complete the table by providing a suitable file format for each file type. The first one has been done for you. File type Pictures File format .JPEG Text Sound Video",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct file format e.g."
+      },
+      {
+        "qNum": "3(a)",
+        "text": "An example of a Uniform Resource Locator (URL) is: http://www.cie.org.uk/index.htm Part 1 Part 2 Part 3 Identify the three parts that make up this URL. Part 1 Part 2 Part 3",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Describe what is meant by an Internet Protocol (IP) address. UCLES 2017 0478/13/O/N/17 [Turn over",
+        "context": "3",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 File format Pictures .JPEG Text .doc, .txt, .rtf, .docx, .odt .pdf Sound .mp3, .wav, .aif, .flac, .mid Video .mp4, .flv, .wmv Part 1 Part 2 Part 3"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Six components of a computer system and six descriptions are shown. Draw a line to match each component with the most suitable description. Component Description Arithmetic Logic Unit (ALU) Used to connect together the internal components of the CPU. Buses Used to carry out calculations on data. C",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Primary RAM and ROM Secondary HDD and SSD Primary is directly accessible by CPU Secondary is not directly accessible by CPU Primary is internal to computer Secondary can be internal or external to the computer Primary stores boot up instructions and can hold data whilst being processed Secondary stores files/software Primary has faster access speed Secondary has a slower access speed Primary has both volatile and non-volatile Secondary is non-volatile"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Draw a logic circuit for the logic statement: X = 1 if ((A is 1 AND B is 1) OR (A is NOT 1 AND C is 1)) A X B C UCLES 2017 0478/13/O/N/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1 mark for each correct logic gate 2017"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Draw the symbol for an XOR gate and explain the function of this logic gate. Explanation",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "10.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6",
+        "text": "6 Describe the operation of a 2D scanner and a 3D scanner. 2D 3D UCLES 2017 0478/13/O/N/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "short",
+        "answer": "true (9) Statement",
+        "markScheme": "true (9) Statement"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Six statements about firewalls are shown. Tick (3) to show whether each statement is true or false. Statement true (3) false (3) Firewalls can monitor incoming and outgoing traffic. Firewalls operate by checking traffic against a set of rules. Firewalls cannot block access to a certain website. Fi",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2017 1 mark for each correct tick"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Data is valuable. It needs to be kept secure and it can easily be damaged. Give three different ways that data can be accidentally damaged. 1 2 3",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Human error (e.g. deleting/overwriting data) Physical damage Power failure/surge Hardware failure Software crashing",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(b)",
+        "text": "The Secure Socket Layer (SSL) protocol can be used to securely transmit data in online banking. State three other different applications that use SSL. Application 1 Application 2 Application 3 UCLES 2017 0478/13/O/N/17",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Online shopping // Online payment systems // Online booking Email Cloud based storage Intranet/extranet VPN VoIP // video conferencing Instant messaging (IM) // social networking // online gaming",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Online banking is increasing in popularity. Online banking can be a risk as it can raise a number of security issues. SSL can be used as a security method to make online banking safer. Identify and describe three other security methods that could be used to make online banking safer. Security method",
+        "context": "9",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1000 16 16000/8 Answer is 2000 bytes Four from: (Max 2 for either primary or secondary)"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Optical storage media can be used to store data. Describe how the data is read from a Compact Disc (CD).",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "3.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: (Red) laser is used (Laser beams) shines onto surface of the disk It is rotated (at a constant speed) to be read Surface is covered in a track (that spirals from the centre) Data is represented on the surface using pits and lands Pits and lands represent binary values Pits reflect light back differently (to the area in between/land) Optical device can determine the binary value from the light reflection",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Kamil wants to store a 16-bit colour image file. The image size is 1000 pixels. Calculate the size of the file. Give your answer in bytes. Show your working. Working Answer bytes",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "1.2",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for calculation, 1 mark for correct answer:"
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Describe the differences between primary and secondary storage. UCLES 2017 0478/13/O/N/17",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2017 1000 16 16000/8 Answer is 2000 bytes Four from: (Max 2 for either primary or secondary)"
+      },
+      {
+        "qNum": "11",
+        "text": "11 10 Six statements about assembly language are shown. Tick (3) whether the statement is true or false. Statement true (3) false (3) Assembly language uses mnemonic codes. Assembly language programs do not need a translator to be executed. Assembly language is a low-level programming language. Asse",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 1,
+    "label": "2017 Oct/Nov P2v1",
+    "qpFile": "0478_w17_qp_21.pdf",
+    "msFile": "0478_w17_ms_21.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_21.pdf",
+    "msPath": "papers/2017/0478_w17_ms_21.pdf",
+    "totalMarks": 150,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Declare suitable arrays for each of the planes to store time slots booked.",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "3.4",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Name one variable and one constant you used for Task 1 and state the purpose of each one. Variable Purpose Constant Purpose UCLES 2017 0478/21/O/N/17 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2017 0478/21/O/N/17 5 UCLES 2017 0478/21/O/N/17 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for explanation and 1 mark for an expansion • • • • •"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Describe how you could validate and test the inputs for Task 1.",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program checks and displays whether any of the planes are available at a given time of the day (Task 2). Any programming statements used must be fully explained. UCLES 2017 0478/21/O/N/17",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7",
+        "text": "7 Num = Number",
+        "context": "",
+        "marks": 80,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 IF Number > 500 THEN Count = Count + 1 9 UNTIL Index = 80 10 PRINT Index 11 PRINT ' numbers were larger than 500' There are four lines of code that contain errors. State the line number for each error and write the correct code for that line. Error 1 Line Number Correct Code Error 2 Line Number Co",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Explain the difference between a validation check and a verification check.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "5.3",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Describe, using an example, how data could be verified on data entry.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per bullet:"
+      },
+      {
+        "qNum": "3(c)",
+        "text": "Explain what is meant by the term library routine.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Four pseudocode descriptions and five pseudocode statements are shown. Draw one line to link each pseudocode description to the correct pseudocode statement. Not all pseudocode statements will be used. Pseudocode description Pseudocode statement A loop that will iterate at least once. FOR TO NEXT A ",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2017 1 mark per bullet: • • •"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Write an algorithm in pseudocode, using a single loop, to print 50 names that have been stored in an array. UCLES 2017 0478/21/O/N/17 [Turn over",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(a)",
+        "text": "The array used in the flowchart contains the following data: Name Name Name Name Jamal Amir Eve Tara Complete the trace table using the data given in the array. Flag Count Name Name Name Name Jamal Amir Eve Tara Temp",
+        "context": "11",
+        "marks": 25,
+        "subtopics": [
+          "7.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe what the algorithm represented by the flowchart is doing. Question 6 begins on Page 12. Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Suggest another appropriate field that could be added to this database by stating its name and data type. State its purpose and give an example of the data it could contain. Field name Data Type Purpose Example of data",
+        "context": "2",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Use the query-by-example grid below to provide a list of all four legged mammals that are herbivores, sorted alphabetically by species, with only the species displayed. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/21/O/N/17",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 2,
+    "label": "2017 Oct/Nov P2v2",
+    "qpFile": "0478_w17_qp_22.pdf",
+    "msFile": "0478_w17_ms_22.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_22.pdf",
+    "msPath": "papers/2017/0478_w17_ms_22.pdf",
+    "totalMarks": 45,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "For one variable that you have used to record the information about a single boat in Task 1, state the name, data type and its use. Variable name Data type Use",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State one constant and its value that you could have used for Task 1. Constant name Value",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Give two different validation checks you could have used for data entry in Task 1. For each check explain why it could be used and provide a set of data for testing. Validation check 1 Reason for choice Set of test data Validation check 2 Reason for choice Set of test data UCLES 2017 0478/22/O/N/17 ",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for validation check, all checks must be different, 1 mark for the reason and 1 mark for the test data. The only inputs for task 1 can be length of hire, money taken, time of hire and time of return. There are many possible correct answers these are examples only. Validation check Reason Test data Validation check Reason Test data UCLES 2017 range check for time of hire cannot be hired before 10:00 returned after 17:00 12:00, 19:00 type check for money taken must be a numeric value 20.00,"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm to complete Task 3, using either pseudocode, programming statements or a flowchart. You may assume Task 2 has been completed. UCLES 2017 0478/22/O/N/17",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(d)",
+        "text": "Explain how your program finds out how many boats are available for hire (Task 2). Any programming statements used must be fully explained. UCLES 2017 0478/22/O/N/17 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 Write an algorithm using either pseudocode or a flowchart, to: input a positive integer use this value to set up how many other numbers are to be input input these numbers calculate and output the total and the average of these numbers. UCLES 2017 0478/22/O/N/17",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "50.3"
+      },
+      {
+        "qNum": "3",
+        "text": "3 The following diagram shows four data structures and four descriptions. Draw a line to connect each data structure to the correct description. Data structure Description Constant A collection of related data Array A value that can change whilst a program is running Table A value that never changes",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Sort: Show: ; Criteria: Like P* // Like P? <10/11/2016 (1 mark) (1 mark) or: (1 mark) UCLES 2017"
+      },
+      {
+        "qNum": "4",
+        "text": "4 IF THEN ELSE ENDIF is one type of conditional statement used when writing pseudocode. Identify and describe another type of conditional statement that you could use when writing pseudocode. Give a reason why you would use this type of conditional statement. Conditional statement Description Reason",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "50.3"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "The size of the batch has increased to 50 sacks. It has been decided to only reject sacks that are underweight. State the changes that need to be made to the flowchart. UCLES 2017 0478/22/O/N/17 [Turn over",
+        "context": "9 Complete the trace table for the input data: 50.4, 50.3, 49.1, 50.3, 50.0, 49.5, 50.2, 50.3, 50.5, 50.6 Accept Reject Count Sack OUTPUT",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Identify the three fields required for the database. Give each field a suitable name and data type. Provide a sample of data that you could expect to see in the field. Field 1 Name Data type Data sample Field 2 Name Data type Data sample Field 3 Name Data type Data sample",
+        "context": "6 A database table, TRAIN, is to be set up for a railway company to keep a record of the engines available for use. Each engine has a unique number made up of 5 digits, nnnnn. The engines are classified as freight (F) or passenger (P) together with a power classification that is a whole number betwe",
+        "marks": 6,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2017 1 mark for each field suitable name, 1 mark for appropriate data type and appropriate data sample"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "State the field that you should choose as the primary key.",
+        "context": "6 A database table, TRAIN, is to be set up for a railway company to keep a record of the engines available for use. Each engine has a unique number made up of 5 digits, nnnnn. The engines are classified as freight (F) or passenger (P) together with a power classification that is a whole number betwe",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Using the query-by-example grid below, write a query to identify all passenger engines that have not been serviced in the past 12 months. Only display the engine numbers. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/22/O/N/17",
+        "context": "6 A database table, TRAIN, is to be set up for a railway company to keep a record of the engines available for use. Each engine has a unique number made up of 5 digits, nnnnn. The engines are classified as freight (F) or passenger (P) together with a power classification that is a whole number betwe",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Engine Number, text, 21012 Class, text, P6 Service Date, date, 4/3/2017 Engine Number // Correct field number"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 3,
+    "label": "2017 Oct/Nov P2v3",
+    "qpFile": "0478_w17_qp_23.pdf",
+    "msFile": "0478_w17_ms_23.pdf",
+    "qpPath": "papers/2017/0478_w17_qp_23.pdf",
+    "msPath": "papers/2017/0478_w17_ms_23.pdf",
+    "totalMarks": 150,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Declare suitable arrays for each of the planes to store time slots booked.",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "3.4",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Name one variable and one constant you used for Task 1 and state the purpose of each one. Variable Purpose Constant Purpose UCLES 2017 0478/23/O/N/17 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2017 0478/23/O/N/17 5 UCLES 2017 0478/23/O/N/17 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for explanation and 1 mark for an expansion • • • • •"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Describe how you could validate and test the inputs for Task 1.",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program checks and displays whether any of the planes are available at a given time of the day (Task 2). Any programming statements used must be fully explained. UCLES 2017 0478/23/O/N/17",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7",
+        "text": "7 Num = Number",
+        "context": "",
+        "marks": 80,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 IF Number > 500 THEN Count = Count + 1 9 UNTIL Index = 80 10 PRINT Index 11 PRINT ' numbers were larger than 500' There are four lines of code that contain errors. State the line number for each error and write the correct code for that line. Error 1 Line Number Correct Code Error 2 Line Number Co",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Explain the difference between a validation check and a verification check.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "5.3",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Describe, using an example, how data could be verified on data entry.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per bullet:"
+      },
+      {
+        "qNum": "3(c)",
+        "text": "Explain what is meant by the term library routine.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Four pseudocode descriptions and five pseudocode statements are shown. Draw one line to link each pseudocode description to the correct pseudocode statement. Not all pseudocode statements will be used. Pseudocode description Pseudocode statement A loop that will iterate at least once. FOR TO NEXT A ",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2017 1 mark per bullet: • • •"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Write an algorithm in pseudocode, using a single loop, to print 50 names that have been stored in an array. UCLES 2017 0478/23/O/N/17 [Turn over",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(a)",
+        "text": "The array used in the flowchart contains the following data: Name Name Name Name Jamal Amir Eve Tara Complete the trace table using the data given in the array. Flag Count Name Name Name Name Jamal Amir Eve Tara Temp",
+        "context": "11",
+        "marks": 25,
+        "subtopics": [
+          "7.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe what the algorithm represented by the flowchart is doing. Question 6 begins on Page 12. Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Suggest another appropriate field that could be added to this database by stating its name and data type. State its purpose and give an example of the data it could contain. Field name Data Type Purpose Example of data",
+        "context": "2",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Use the query-by-example grid below to provide a list of all four legged mammals that are herbivores, sorted alphabetically by species, with only the species displayed. Field: Table: Sort: Show: Criteria: or: UCLES 2017 0478/23/O/N/17",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "m",
+    "sessionLabel": "Mar",
+    "paper": 1,
+    "variant": 2,
+    "label": "2018 Mar P1v2",
+    "qpFile": "0478_m18_qp_12.pdf",
+    "msFile": "0478_m18_ms_12.pdf",
+    "qpPath": "papers/2018/0478_m18_qp_12.pdf",
+    "msPath": "papers/2018/0478_m18_ms_12.pdf",
+    "totalMarks": 72,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Some types of software can be described as free software or freeware. Draw lines to link each description to a correct type of software. A description can be linked to more than one type of software. Description Type of software Free to download Free software Code can be modified and redistributed",
+        "context": "",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per gate in correct location"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "State three tasks carried out by anti-virus software. Task 1 Task 2 Task 3 UCLES 2018 0478/12/F/M/18",
+        "context": "2 David has installed anti-virus software on his computer.",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from:",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "3(b)",
+        "text": "David is still concerned that his computer might get infected by a computer virus. State three other ways in which David can reduce the risk of his computer getting a computer virus. 1 2 3",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Odd parity used Counted / added the number 1 s // Most Bytes have an odd number of 1 s Byte 3 has an even number of 1 s // Byte 3 didn t follow odd parity"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "State which byte was incorrectly transmitted.",
+        "context": "3 Parity checks can be used to check for errors during data transmission. One of the bytes has been transmitted incorrectly. Byte 1 Byte 2 Byte 3 Byte 4 10110011 10101000 10110100 10110101",
+        "marks": 1,
+        "subtopics": [
+          "1.3",
+          "2.1"
+        ],
+        "answerType": "short",
+        "answer": "Byte 3 / 10110100",
+        "markScheme": "Byte 3 / 10110100"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Explain how you identified the incorrectly transmitted byte. UCLES 2018 0478/12/F/M/18 [Turn over",
+        "context": "3 Parity checks can be used to check for errors during data transmission. One of the bytes has been transmitted incorrectly. Byte 1 Byte 2 Byte 3 Byte 4 10110011 10101000 10110100 10110101",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Odd parity used Counted / added the number 1 s // Most Bytes have an odd number of 1 s Byte 3 has an even number of 1 s // Byte 3 didn t follow odd parity"
+      },
+      {
+        "qNum": "4",
+        "text": "4 An air conditioning system is used to control the temperature in a hospital. The air conditioning system uses temperature sensors and a microprocessor. The temperature must remain between 21 C and 24 C. Describe how the sensors and the microprocessor are used to control the temperature of the hosp",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "(Provides an) interface Loads / opens / installs / closes software Manages the hardware // manages peripherals // spooling Manages the transfer of programs into and out of memory Divides processing time // processor management Manages file handling Manages error handling / interrupts Manages security software Manages utility software Manages user accounts Multitasking // Multiprocessing // Multiprogramming // Time slicing Batch processing // real time processing"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Complete the table to show the hexadecimal equivalent of the binary IP address. The first number has already been converted. Binary IP address 11000100 00010000 11111110 00001001 Hexadecimal C4",
+        "context": "5 The IP address of a computer is stored as a set of four 8-bit binary numbers. The network administrator converts each binary number into hexadecimal.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Explain why the network administrator uses hexadecimal. UCLES 2018 0478/12/F/M/18",
+        "context": "5 The IP address of a computer is stored as a set of four 8-bit binary numbers. The network administrator converts each binary number into hexadecimal.",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct Hexadecimal value C4"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Primary, secondary and off-line are types of storage. Give an example of each type of storage. For each example state how it is used. Primary storage Example Use Secondary storage Example Use Off-line storage Example Use UCLES 2018 0478/12/F/M/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 1 mark for suitable example and 1 mark for suitable associated use. Primary RAM stores OS when running / data currently in use / instructions currently in use ROM stores boot instructions / BIOS Cache stores frequently used instructions Secondary HDD / SSD stores files / applications (by example) Offline CD/DVD/Blu-ray/Flash Memory/USB stick/Removable HDD/Removable SSD stores files / applications (by example)"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/12/F/M/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per gate in correct location"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "For this logic statement: X = 1 if (B is 1 OR C is NOT 1) AND ((A is NOT 1) AND (B is 1 OR C is 1)) Draw a logic circuit. A B X C",
+        "context": "7",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 4 marks for 8 correct outputs 3 marks for 6 correct outputs 2 marks for 4 correct outputs 1 mark for 2 correct outputs A B C"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/12/F/M/18 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per gate in correct location"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Three descriptions and two methods of data transmission are given. Tick ( ) the correct box to show the Method of data transmission for each description. Description Method Serial Parallel Multiple bits are sent and received at the same time. Bits are sent one at a time in a single direction. Bits a",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "2.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Descriptions",
+        "markScheme": "Descriptions"
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Three descriptions and three types of data transmission are given. Tick ( ) the correct box to show the Type of data transmission for each description. Description Type Simplex Half-duplex Duplex Multiple bits are sent and received at the same time. Bits are sent one at a time in a single direction.",
+        "context": "8",
+        "marks": 3,
+        "subtopics": [
+          "2.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Type",
+        "markScheme": "Type"
+      },
+      {
+        "qNum": "9(i)(i)",
+        "text": "State the data that will be placed in the memory address register (MAR).",
+        "context": "9 A 32-second sound clip will be recorded. The sound will be sampled 16000 times a second. Each sample will be stored using 8 bits. Calculate the file size in kilobytes. You must show all of your working. File Size kB 10 The table shows a segment of primary memory from a Von Neumann model computer. ",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(i)(ii)",
+        "text": "State the data that will be placed in the memory data register (MDR). UCLES 2018 0478/12/F/M/18 [Turn over",
+        "context": "9 A 32-second sound clip will be recorded. The sound will be sampled 16000 times a second. Each sample will be stored using 8 bits. Calculate the file size in kilobytes. You must show all of your working. File Size kB 10 The table shows a segment of primary memory from a Von Neumann model computer. ",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Describe the stored program concept when applied to the Von Neumann model.",
+        "context": "10",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from:",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "11(a)",
+        "text": "State why a smaller file size is appropriate for this situation.",
+        "context": "11 Miriam needs to use a large high-resolution photo as a thumbnail image on a website. She will use lossy compression to reduce the file size of the photo to create the thumbnail image.",
+        "marks": 1,
+        "subtopics": [
+          "1.3",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Smaller file size reduces download / display time // reduces upload time"
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Explain how lossy compression reduces the file size. UCLES 2018 0478/12/F/M/18",
+        "context": "11 Miriam needs to use a large high-resolution photo as a thumbnail image on a website. She will use lossy compression to reduce the file size of the photo to create the thumbnail image.",
+        "marks": 4,
+        "subtopics": [
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from:",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Explain two benefits of using barcodes in this situation. Benefit 1 Benefit 2",
+        "context": "11 12 A hospital stores the results of medical tests on a computer system. Each patient is given a wristband containing a unique barcode. The barcode is used every time the patient has a medical test.",
+        "marks": 4,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Smaller file size reduces download / display time // reduces upload time"
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe how the barcode is read. UCLES 2018 0478/12/F/M/18 [Turn over",
+        "context": "11 12 A hospital stores the results of medical tests on a computer system. Each patient is given a wristband containing a unique barcode. The barcode is used every time the patient has a medical test.",
+        "marks": 4,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from:",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "12",
+        "text": "12 13 State four functions of an operating system. Function 1 Function 2 Function 3 Function 4 Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) ",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "m",
+    "sessionLabel": "Mar",
+    "paper": 2,
+    "variant": 2,
+    "label": "2018 Mar P2v2",
+    "qpFile": "0478_m18_qp_22.pdf",
+    "msFile": "0478_m18_ms_22.pdf",
+    "qpPath": "papers/2018/0478_m18_qp_22.pdf",
+    "msPath": "papers/2018/0478_m18_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name and data structure that you have used to record student names in Task 1. Name Data structure",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State the name of one constant and the name of one variable that you could have used in your programmed solution. State the value that would be assigned to the constant. State the data type for the variable. Explain what each one would be used for in your programmed solution. Constant name Value Use",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how you would change your program for Task 2 if the maximum group size for each subject is increased to 25. UCLES 2018 0478/22/F/M/18 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 Constant name Value Use classSize"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2018 0478/22/F/M/18 5 UCLES 2018 0478/22/F/M/18 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program calculates the total number of spare places in Task 3. Any programming statements shown in your answer must be fully explained. UCLES 2018 0478/22/F/M/18",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Find the four errors in the pseudocode and suggest corrections. Error 1 Correction Error 2 Correction Error 3 Correction Error 4 Correction",
+        "context": "2 An algorithm has been written in pseudocode to input some numbers and print out any numbers that are greater than or equal to 100. The number 999 stops the algorithm. INPUT Number WHILE NUMBERS <> 999 DO IF Number > 100 THEN PRINT Number ENDIF ENDWHILE PRINT Number",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each error identified + suggested correction NUMBERS should be Number IF Number > 100 should be IF Number >= 100 INPUT Number is missing from inside the loop insert INPUT Number after the IF statement The final PRINT Number is not needed remove it"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Show, using pseudocode, how you would change the corrected algorithm to print out any numbers between 100 and 200 inclusive. UCLES 2018 0478/22/F/M/18 [Turn over",
+        "context": "2 An algorithm has been written in pseudocode to input some numbers and print out any numbers that are greater than or equal to 100. The number 999 stops the algorithm. INPUT Number WHILE NUMBERS <> 999 DO IF Number > 100 THEN PRINT Number ENDIF ENDWHILE PRINT Number",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for both ends of the range and correct inequality symbols and one mark for the AND. The test should be IF Number >= 100 AND Number <= 200"
+      },
+      {
+        "qNum": "9",
+        "text": "9 Complete the trace table for the passenger input data: 50, 70, 65, 100, 95, 50, 55, 85, 70, 75 Weight totalWeight totalNumber OUTPUT UCLES 2018 0478/22/F/M/18 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "OUTPUT Lift overload, step out One mark for each correct column. UCLES 2018"
+      },
+      {
+        "qNum": "4",
+        "text": "4 A program checks if the weight of a baby is at least 2 kilograms. Give, with reasons, two different values of test data that could be used for the baby s weight. Each reason must be different. Value 1 Reason Value 2 Reason",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Sequence is the concept of one statement being executed after another(1) whereas selection decides which statement(s) are to be executed depending upon the result of a question (1) sequence example (1) PRINT X PRINT Y Selection example (1) IF X > Y THEN PRINT X ELSE PRINT Y"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Explain the difference between the programming concepts of sequence and selection. Include an example of a programming statement for each concept in your explanation. UCLES 2018 0478/22/F/M/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2 marks for appropriate explanation, 1 mark example programming statements showing sequence, 1 mark example programming statement(s) showing selection e.g."
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Identify the four fields required for the database. Give each field a suitable name and data type. Explain why you chose the data type for each field. Field 1 Name Data type Explanation Field 2 Name Data type Explanation Field 3 Name Data type Explanation Field 4 Name Data type Explanation",
+        "context": "6 A database table, JEWEL, is used to keep a record of jewellery for sale in a shop. Each item of jewellery can be made of silver, platinum or gold metal. The shop stocks rings, bracelets and necklaces. The number in stock and the price is also stored.",
+        "marks": 8,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for appropriate field name and appropriate data type, then 1 mark for appropriate explanation. e.g."
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Explain why none of these fields could be used as a primary key.",
+        "context": "6 A database table, JEWEL, is used to keep a record of jewellery for sale in a shop. Each item of jewellery can be made of silver, platinum or gold metal. The shop stocks rings, bracelets and necklaces. The number in stock and the price is also stored.",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 All fields could contain duplicate values"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Using the query-by-example grid below, write a query to identify the silver bracelets. Only display the number in stock and the price. Field: Table: Sort: Show: Criteria: or: UCLES 2018 0478/22/F/M/18",
+        "context": "6 A database table, JEWEL, is used to keep a record of jewellery for sale in a shop. Each item of jewellery can be made of silver, platinum or gold metal. The shop stocks rings, bracelets and necklaces. The number in stock and the price is also stored.",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field: Metal Item Number in Stock Price Table: JEWEL JEWEL JEWEL JEWEL"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 1,
+    "label": "2018 May/Jun P1v1",
+    "qpFile": "0478_s18_qp_11.pdf",
+    "msFile": "0478_s18_ms_11.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_11.pdf",
+    "msPath": "papers/2018/0478_s18_ms_11.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "2",
+        "text": "2 Dheeraj identifies three hexadecimal numbers. Write the denary number for each of the three hexadecimal numbers: 2A 101 21E Working Space UCLES 2018 0478/11/M/J/18",
+        "context": "",
+        "marks": 9,
+        "subtopics": [
+          "1.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018"
+      },
+      {
+        "qNum": "1",
+        "text": "1 One binary number has been transmitted incorrectly. This is identified through the use of a parity bit. Identify which register contains the binary number that has been transmitted incorrectly. Explain the reason for your choice. The binary number that has been transmitted incorrectly is in Regist",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct answer, in the given order: 1 mark for each correct conversion:"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Name two types of compression that Michele could use. Compression type 1 Compression type 2",
+        "context": "4 Michele wants to email a file to Elsa. The file is too large so it must be compressed.",
+        "marks": 2,
+        "subtopics": [
+          "1.3",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct answer:"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "The file Michele is sending contains the source code for a large computer program. Identify which type of compression would be most suitable for Michele to use. Explain your choice. Compression type Explanation UCLES 2018 0478/11/M/J/18",
+        "context": "4 Michele wants to email a file to Elsa. The file is too large so it must be compressed.",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct compression, 3 marks for description: Lossless (compression) Any three from: The file can be restored/decompressed to the exact same state it was before compression/ to original (It is a computer program so) no data can be lost // Lossy would remove data Will not run correctly (with any other compression) (Lossless) will give repeating words/sections of word a value// RLE is used // Other valid examples of methods of lossless compression Value is recorded in an index UCLES 201",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5",
+        "text": "5 Six components of the Von Neumann model for a computer system and six descriptions are given. Draw a line to match each component to the most suitable description. Component Description Immediate access store (IAS) Holds data and instructions when they are loaded from main memory and are waiting t",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct line, up to a maximum of 5 marks: Component Immediate access store (IAS) UCLES 2018 Description Holds data and instructions when they are loaded from main memory and are waiting to be processed. Register Holds data temporarily that is currently being used in a calculation. Control unit (CU) Holds data or instructions temporarily when they are being processed. Accumulator (ACC) Manages the flow of data and interaction between the components of the processor. Arithmetic log"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Draw a logic circuit to represent the given logic statement. A B X C",
+        "context": "6 Consider the logic statement: X = 1 if ((A is NOT 1 OR B is 1) NOR C is 1) NAND ((A is 1 AND C is 1) NOR B is 1)",
+        "marks": 6,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 1 mark for each correct logic gate (with the correct direction of input(s))"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/11/M/J/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct answer, in the given order: 1 mark for each correct conversion:"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Translators, such as a compiler and an interpreter, are used when writing and running computer programs. Describe how a compiler and an interpreter translates a computer program. Compiler Interpreter UCLES 2018 0478/11/M/J/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Compiler Any three from: Translates high-level language into machine code/low level language Translates (the source code) all in one go/all at once Produces an executable file Produces an error report",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Describe how the barcode scanner reads the barcode.",
+        "context": "8 A supermarket uses a barcode scanner to read the barcodes on its products.",
+        "marks": 4,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: Shines light / (red) laser at barcode Light is called an illuminator Light is reflected back // White lines reflect light // Black lines reflect less light/absorbs light Sensors / photoelectric cells detect the light Different reflections / bars will give different binary values / digital values // pattern converted to digital values A microprocessor interprets the data",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Explain how the barcode system could help the supermarket manage its stock.",
+        "context": "8 A supermarket uses a barcode scanner to read the barcodes on its products.",
+        "marks": 3,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: barcode identifies a (unique) product barcode can be used to look up product (in a database) data about stock levels can be stored on a system stock can be automatically deducted from the system can check stock is below a certain level // check stock level automatic re-order // Alerts when stock is low automatically update new stock level to locate if an item of stock is available in another location",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(c)",
+        "text": "An infrared touch screen is used to view and navigate the supermarket stock system. Explain how the infrared touch screen detects a user s touch. UCLES 2018 0478/11/M/J/18",
+        "context": "8 A supermarket uses a barcode scanner to read the barcodes on its products.",
+        "marks": 4,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: (Infrared) rays are sent across screen (from the edges) Has sensors around edge // Sensors capture beams (Infrared) rays form a grid across the screen (Infrared) ray is broken (by a finger blocking a beam) Calculation is made (on where beam is broken) to locate the touch // Co-ordinates are used to locate the touch",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(d)",
+        "text": "The supermarket uses secondary storage and off-line storage to store data about its stock. Explain what is meant by secondary storage and off-line storage. Secondary storage Off-line storage",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9",
+        "text": "9 A business wants to use a biometric security system to control entry to the office. The system will use a biometric device and a microprocessor. Explain how the biometric security system will make use of the biometric device and the microprocessor to control entry to the office. UCLES 2018 0478/11",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 Any six from: Suitable biometric device, such as fingerprint scanner/retina/eye/iris scanner/face recognition/voice recognition/palm scanner // description of use e.g. use fingerprint on device Sensor (in biometric device) captures/takes data/readings (of user) Data/readings are converted from analogue to digital (using ADC) Data/reading sent to the microprocessor Data/readings compared to stored values/data if data/readings match user can enter if data/readings do not match user is d",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "10(a)",
+        "text": "Describe what is meant by HTML structure and presentation for a web page.",
+        "context": "10 10 RockICT is a music business that has a website to allow customers to view and buy the products it sells. The website consists of web pages.",
+        "marks": 4,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: Structure and presentation are defined using (mark-up) tags Structure and presentation dictate the appearance of the website Structure is used for layout Example of structure Presentation is used for formatting / style Example of formatting Separate file / CSS can be used for presentation content",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "10(i)(i)",
+        "text": "Part 2 Identify what Part 1 and Part 2 represent in this URL. Part 1 Part 2",
+        "context": "10 10 RockICT is a music business that has a website to allow customers to view and buy the products it sells. The website consists of web pages.",
+        "marks": 2,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "10(i)(ii)",
+        "text": "Describe what is meant by https. UCLES 2018 0478/11/M/J/18",
+        "context": "10 10 RockICT is a music business that has a website to allow customers to view and buy the products it sells. The website consists of web pages.",
+        "marks": 2,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(c)",
+        "text": "When a customer enters the website, a message is displayed: RockICT makes use of cookies. By continuing to browse you are agreeing to our use of cookies. Explain why the music company uses cookies.",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(d)",
+        "text": "The music company is concerned about the security of its website. The company uses a proxy server as part of its security system. Describe the role of a proxy server in the security system. UCLES 2018 0478/11/M/J/18",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 2,
+    "label": "2018 May/Jun P1v2",
+    "qpFile": "0478_s18_qp_12.pdf",
+    "msFile": "0478_s18_ms_12.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_12.pdf",
+    "msPath": "papers/2018/0478_s18_ms_12.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Different units of data can be used to represent the size of a file, as it changes in size. Fill in the missing units of data, using the list given: byte gigabyte (GB) megabyte (MB) nibble The units of data increase in size from smallest to largest. Smallest bit .. .. kilobyte (kB) .. .. Largest t",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Nancy has captured images of her holiday with her camera. The captured images are stored as digital photo files on her camera. Explain how the captured images are converted to digital photo files. UCLES 2018 0478/12/M/J/18",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: Image is converted from analogue to digital (using ADC) Image is turned into pixels Each pixel is given a binary value Pixels form a grid (to create the image) Each pixel has a colour Pixels are stored in sequence (in a file) Meta data is stored (to describe the dimensions/resolution of the image) // It stores the dimensions/colour depth .etc. An example of a suitable photo file format e.g. JPEG",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Nancy wants to email the photos to Nadia. Many of the photos are very large files, so Nancy needs to reduce their file size as much as possible. Identify which type of compression would be most suitable for Nancy to use. Explain your choice. Compression type Explanation",
+        "context": "3",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Write the 8-bit binary numbers that are currently stored for the Hours, Minutes and Seconds. Hours Minutes Seconds UCLES 2018 0478/12/M/J/18 [Turn over",
+        "context": "3 A stopwatch uses six digits to display hours, minutes and seconds. The stopwatch is stopped at: 0 2 Hours 3 1 Minutes 5 8 Seconds An 8-bit register is used to store each pair of digits.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 Write the denary values that will now be shown on the stopwatch. Hours Minutes Seconds",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark"
+      },
+      {
+        "qNum": "4",
+        "text": "4 Jafar is using the Internet when he gets the message: D03, page is not available Jafar remembers that hexadecimal is often used to represent binary values in error codes. Convert the hexadecimal number in the error message into 12-bit binary. UCLES 2018 0478/12/M/J/18",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Compiler Any three from: Does not require recompilation // compiled program can be executed without a compiler ... therefore, allows faster execution Provides an executable file therefore, allows him to just send machine code Dimitri s friend does not need translation/compilation software to execute the program",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1",
+        "text": "1 Only one binary number has been transmitted correctly. This is identified through the use of a parity bit. Identify which register contains the binary number that has been transmitted correctly. Explain the reason for your choice. The binary number that has been transmitted correctly is in Registe",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Kelvin correctly answers an examination question about the Von Neumann model. Eight different terms have been removed from his answer. Complete the sentences in Kelvin s answer, using the list given. Not all items in the list need to be used. accumulator (ACC) address bus arithmetic logic unit (AL",
+        "context": "",
+        "marks": 8,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct missing word, in the given order: UCLES 2018 fetches immediate access store // IAS program counter // PC memory address register // MAR memory data register // MDR executed arithmetic logic unit // ALU accumulator // ACC"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Draw a logic circuit to represent the given logic statement. A B X C",
+        "context": "7 Consider the logic statement: X = 1 if ((A is 1 AND B is NOT 1) NAND C is 1) XOR ((A is 1 AND C is 1) OR B is 1)",
+        "marks": 6,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct logic gate with correct direct of input(s):"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/12/M/J/18 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark"
+      },
+      {
+        "qNum": "8",
+        "text": "8 Dimitri is writing a computer program in a high-level language. He needs to send just the machine code for the program to his friend, electronically. It is important that the program is executed as quickly as possible. Identify which translator will be most suitable for Dimitri to use. Explain you",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct translator, 3 marks for explanation:"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Identify this type of barcode.",
+        "context": "9 An advertisement in a magazine displays this barcode:",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "short",
+        "answer": "QR/Quick response",
+        "markScheme": "QR/Quick response"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Explain how the data stored in this barcode is read. UCLES 2018 0478/12/M/J/18",
+        "context": "9 An advertisement in a magazine displays this barcode:",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any four from: Read/scanned using app (on mobile device) It is the camera that is used to scan/capture the image The three large squares are used to define the alignment // uses alignment targets/modules Black squares reflect less light // white squares reflect more light The app/device processes the image Each small square/pixel is converted to a binary value",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Describe how a capacitive touch screen registers Alexandra s touch.",
+        "context": "9 10 Alexandra has a new mobile device. It has a touch screen that uses capacitive technology.",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "QR/Quick response",
+        "markScheme": "QR/Quick response"
+      },
+      {
+        "qNum": "9(i)(i)",
+        "text": "Explain why the touch screen will not register her touch.",
+        "context": "9 10 Alexandra has a new mobile device. It has a touch screen that uses capacitive technology.",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(i)(ii)",
+        "text": "Alexandra does not want to remove her gloves. Explain how Alexandra could use her mobile device whilst still wearing gloves. UCLES 2018 0478/12/M/J/18 [Turn over",
+        "context": "9 10 Alexandra has a new mobile device. It has a touch screen that uses capacitive technology.",
+        "marks": 2,
+        "subtopics": [
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 A factory uses a security system to control a security light. The system uses a sensor and a microprocessor. Explain how the security system makes use of the sensor and the microprocessor to control the security light. UCLES 2018 0478/12/M/J/18",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any six from: Suitable sensor (motion/infra-red) Data converted (from analogue) to digital (using ADC) Data sent to microprocessor Data is compared to stored value/range if data matches/out of range data security light turned on waits for suitable period/until no motion detected light turned off Continuous loop/process",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "11(i)(i)",
+        "text": "State how Selma could email her personal data more securely.",
+        "context": "11 12",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(i)(ii)",
+        "text": "Describe how your chosen solution works.",
+        "context": "11 12",
+        "marks": 5,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Selma wants to make sure that the information received is correct. A parity check can be used to detect errors. Describe another error detection method that can be used to check the information received is correct. Error detection method Description UCLES 2018 0478/12/M/J/18",
+        "context": "11 12",
+        "marks": 3,
+        "subtopics": [
+          "2.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 3,
+    "label": "2018 May/Jun P1v3",
+    "qpFile": "0478_s18_qp_13.pdf",
+    "msFile": "0478_s18_ms_13.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_13.pdf",
+    "msPath": "papers/2018/0478_s18_ms_13.pdf",
+    "totalMarks": 73,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 State five sensors that could be used in the following applications. Give a different type of sensor for each application. Application Sensor Weighing a baby in a hospital Turning off a kettle when the water boils Controlling an automatic door Monitoring the air quality in an aeroplane Counting ca",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark per each sensor (sensors must be different):"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Draw a line to connect each term to the correct application. Term Application Simplex A telephone that can receive and transmit audio signals simultaneously. Duplex A two-way radio (walkie-talkie) that can receive and transmit messages, but not at the same time. Half-duplex A microphone that trans",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018"
+      },
+      {
+        "qNum": "3",
+        "text": "3 Three security issues that could affect users online are phishing, pharming and spam. Explain what is meant by each security issue. Phishing Pharming Spam UCLES 2018 0478/13/M/J/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "51 200 16 = 102 400"
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Tick ( ) to show for each of the received bytes whether they have been transmitted correctly or transmitted incorrectly. Received byte Transmitted correctly ( ) Transmitted incorrectly ( ) 10001011 10101110 01011101 00100101",
+        "context": "4 A company transmits data to external storage at the end of each day.",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "State one other method that could be used to check for transmission errors.",
+        "context": "4 A company transmits data to external storage at the end of each day.",
+        "marks": 1,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Describe what is meant by parallel data transmission.",
+        "context": "4 A company transmits data to external storage at the end of each day.",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "Give one application of parallel data transmission. UCLES 2018 0478/13/M/J/18",
+        "context": "4 A company transmits data to external storage at the end of each day.",
+        "marks": 1,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Explain how encryption improves data security.",
+        "context": "5 Explain why serial data transmission is normally used for transferring data over a long distance.",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "2.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "Explain one method that could be used to increase the level of security provided by the encryption. UCLES 2018 0478/13/M/J/18 [Turn over",
+        "context": "5 Explain why serial data transmission is normally used for transferring data over a long distance.",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "2.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Convert the denary number 107 to binary.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "(0)1101011"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Represent the denary number 300 as it would be stored in a 12-bit binary register.",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "000 100101100 1 mark for three leading zeros, 1 mark for correct binary number"
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Convert the denary number 179 to hexadecimal.",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "B3 1 mark for each correct character"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Explain the term interrupt.",
+        "context": "6 One of the roles of an operating system is to deal with interrupts.",
+        "marks": 2,
+        "subtopics": [
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: A signal sent from a device / software Requests processor time // Processor stops to service interrupt Interrupts have different priorities",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Identify three devices that make use of interrupts. Device 1 Device 2 Device 3 UCLES 2018 0478/13/M/J/18",
+        "context": "6 One of the roles of an operating system is to deal with interrupts.",
+        "marks": 3,
+        "subtopics": [
+          "4.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from e.g.: Keyboard Printer Mouse",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "7(a)",
+        "text": "State three benefits of using a touch screen in the train station. Benefit 1 Benefit 2 Benefit 3",
+        "context": "7 A train station uses large touch screens to allow passengers to search for train information and buy tickets.",
+        "marks": 3,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "The touch screens at the station use resistive touch technology. Describe how resistive touch technology works. UCLES 2018 0478/13/M/J/18 [Turn over",
+        "context": "7 A train station uses large touch screens to allow passengers to search for train information and buy tickets.",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/13/M/J/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark per each sensor (sensors must be different):"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Draw a logic circuit corresponding to this logic statement: X = 1 if (A is NOT 1) OR ((B is 1 OR C is 1) AND (B is NOT 1 OR A is NOT 1)) A B X C",
+        "context": "9",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9",
+        "text": "9 Three types of translators are assemblers, compilers and interpreters. Tick ( ) the appropriate boxes to show which statements apply to each type of translator. Statement Assembler ( ) Compiler ( ) Interpreter ( ) Translates highlevel language into machine code Provides error diagnostics Translate",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct column"
+      },
+      {
+        "qNum": "10",
+        "text": "10 10 Explain how an instruction is fetched in a computer based on the Von Neumann model.",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 Any six from: Program counter (PC) holds address / location of the instruction The address held in PC is sent to MAR Address is sent using address bus PC is incremented The instruction is sent from address in memory to MDR Instruction is transferred using the data bus Instruction sent to CIR",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "11",
+        "text": "11 Identify three similarities between CDs and DVDs. 1 2 3 UCLES 2018 0478/13/M/J/18",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Optical media Non-volatile Offline Single (continuous spiral) track Data stored using lands / pits Read using (red) lasers Can be read only (R) or read write (RW)",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "11",
+        "text": "11 12 An image is to be stored electronically. The image is 256 pixels high by 200 pixels wide with a 16-bit colour depth. Calculate the file size of the image. You must show all of your working. File size kB 13 Describe the role of an Internet Service Provider (ISP). UCLES 2018 0478/13/M/J/18",
+        "context": "",
+        "marks": 9,
+        "subtopics": [
+          "1.2",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Optical media Non-volatile Offline Single (continuous spiral) track Data stored using lands / pits Read using (red) lasers Can be read only (R) or read write (RW)",
+        "acceptedAnswers": []
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 1,
+    "label": "2018 May/Jun P2v1",
+    "qpFile": "0478_s18_qp_21.pdf",
+    "msFile": "0478_s18_ms_21.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_21.pdf",
+    "msPath": "papers/2018/0478_s18_ms_21.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "You recorded information for the estimate of the cost of building a computer in Task 1. Give a data structure that you created for Task 1, its name, data type and use. Data structure Name Data type Use",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Describe the data structures that you have used in Task 2 to record the customer details. Include sample data in the description.",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how your program for Task 1 produces a unique estimate number. UCLES 2018 0478/21/M/J/18 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for method, one mark for an extension or reason. Many correct answers, an example is given. Use a previously stored number//generates/uses an initial value (1) Update it (by 1) every time an estimate is made (1) UCLES 2018"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for part of Task 2 to check that the chosen processor and chosen RAM are in stock, using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed. Do not check the other components or produce the order. UCLES 2018 0478/21/M/J/18",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(d)",
+        "text": "Explain how your program completes Task 3. Any programming statements used in your answer must be fully explained. UCLES 2018 0478/21/M/J/18 [Turn over",
+        "context": "5",
+        "marks": 5,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Write an algorithm to input 1000 numbers. Count how many numbers are positive and how many numbers are zero. Then output the results. Use either pseudocode or a flowchart. UCLES 2018 0478/21/M/J/18",
+        "context": "2",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any six from: 1 Initialisation of counters for positive numbers and zeros 2 Appropriate loop for 1000 iterations 3 Input number inside loop 4 Test for positive numbers 5 Update positive number counter 6 Test for zeros 7 Update zero counter 8 Output counters with appropriate messages outside loop",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Give one change you could make to your algorithm to ensure initial testing is more manageable. Question 3 starts on page 8. UCLES 2018 0478/21/M/J/18 [Turn over",
+        "context": "7",
+        "marks": 1,
+        "subtopics": [
+          "3.4",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Complete the trace table for the input data: 5, 7, 0, 1, 2, 3, 4 Digit(1) Digit(2) Digit(3) Digit(4) Digit(5) Digit(6) Digit(7) Digit(8) Sum OUTPUT Sum OUTPUT Complete the trace table for the input data: 4, 3, 1, 0, 2, 3, 1 Digit(1) Digit(2) Digit(3) Digit(4) Digit(5) Digit(6) Digit(7) Digit(8) UCLE",
+        "context": "3 The global trade item number (GTIN-8) barcode has seven digits and a check digit. This pseudocode algorithm inputs seven digits and calculates the eighth digit, then outputs the GTIN-8. DIV(X,Y), finds the number of divides in division for example DIV(23,10) is 2. MOD(X,Y), finds the remainder in ",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Digit(1) Digit(2) Digit(3) Digit(4) Digit(5) Digit(6) Digit(7) Digit(8) Sum OUTPUT"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Explain how you would change the algorithm to input eight digits (seven digits and the check digit) and output if the check digit entered is correct or not. Question 4 starts on page 10. UCLES 2018 0478/21/M/J/18 [Turn over",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "2.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4",
+        "text": "4 A programmer has written a routine to check that prices are below $10.00. These values are used as test data. 10.00 9.99 ten Explain why each value was chosen. 10.00 9.99 ten",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field: Type Sold Out Date Title Table: PERFORMANCE PERFORMANCE PERFORMANCE PERFORMANCE Sort: Show: Criteria: Like Jazz False or: One mark per correct column. UCLES 2018 ; ;"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Explain the difference between the programming concepts of counting and totalling. Include an example of a programming statement for each concept in your explanation. UCLES 2018 0478/21/M/J/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "There are many possible answers. e.g.:"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "State the number of fields and records in the table. Fields Records",
+        "context": "6 A database table, PERFORMANCE, is used to keep a record of the performances at a local theatre. Show Number Type Title Date Sold Out SN091 Comedy An Evening at Home 01 Sept Yes SN102 Drama Old Places 02 Oct No SN113 Jazz Acoustic Evening 03 Nov No SN124 Classical Mozart Evening 04 Dec Yes SN021 Cl",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "Fields Records",
+        "markScheme": "Fields Records"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Give two validation checks that could be performed on the Show Number field. Validation check 1 Validation check 2",
+        "context": "6 A database table, PERFORMANCE, is used to keep a record of the performances at a local theatre. Show Number Type Title Date Sold Out SN091 Comedy An Evening at Home 01 Sept Yes SN102 Drama Old Places 02 Oct No SN113 Jazz Acoustic Evening 03 Nov No SN124 Classical Mozart Evening 04 Dec Yes SN021 Cl",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Length check Type check Presence check Format check UCLES 2018",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Using the query-by-example grid, write a query to identify jazz performances that are not sold out. Only display the date and the title. Field: Table: Sort: Show: Criteria: or: UCLES 2018 0478/21/M/J/18",
+        "context": "6 A database table, PERFORMANCE, is used to keep a record of the performances at a local theatre. Show Number Type Title Date Sold Out SN091 Comedy An Evening at Home 01 Sept Yes SN102 Drama Old Places 02 Oct No SN113 Jazz Acoustic Evening 03 Nov No SN124 Classical Mozart Evening 04 Dec Yes SN021 Cl",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 2,
+    "label": "2018 May/Jun P2v2",
+    "qpFile": "0478_s18_qp_22.pdf",
+    "msFile": "0478_s18_ms_22.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_22.pdf",
+    "msPath": "papers/2018/0478_s18_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name, the data type and the use of two variables that you have used in Task 2. Variable 1 name Data type Use Variable 2 name Data type Use",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Describe, with the aid of some sample data, the data structures that you have used to record the data for the cows in Task 1.",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how your program for Task 1 ensures that each 3-digit identity code is unique. UCLES 2018 0478/22/M/J/18 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Entering/selecting the identity code (1) method to ensure it is not a duplicate (1) Example Enter new identity code number Check if already in the list of code numbers UCLES 2018"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed. UCLES 2018 0478/22/M/J/18",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Explain how your program for Task 3 finds the cows with a daily yield of less than 12 litres of milk for four days or more in the week. Any programming statements used in your answer must be fully explained.",
+        "context": "5",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(s)",
+        "text": "of those cows with a yield of less than 12 litres of milk for four days or more in the week. UCLES 2018 0478/22/M/J/18 [Turn over",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Draw a flowchart for an algorithm to input numbers. Reject any numbers that are negative and count how many numbers are positive. When the number zero is input, the process ends and the count of positive numbers is output. UCLES 2018 0478/22/M/J/18",
+        "context": "2",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark per correct pair of actions, process, Input/Output, Tests (apart from START and END) max 3 One mark complete Flowlines, one mark working flowlines, one mark correct use flowchart symbols"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Explain the changes you will make to your algorithm to also count the negative numbers. Question 3 starts on Page 8. UCLES 2018 0478/22/M/J/18 [Turn over",
+        "context": "7",
+        "marks": 2,
+        "subtopics": [
+          "3.4",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Complete the trace table for the input data: 5, 7, +, 6, 2, , 4, 3, , 7, 8, ?, 0, 0, / * Number1 Number2 Sign Answer OUTPUT",
+        "context": "3 This pseudocode algorithm inputs two non-zero numbers and a sign, and then performs the calculation shown by the sign. An input of zero for the first number terminates the process. INPUT Number1, Number2, Sign WHILE Number1 <> 0 Number1 + Number2 ENDIF IF Sign = '+' THEN Answer Number1 - Number2 E",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Number1 Number2 Sign"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Show how you could improve the algorithm written in pseudocode by writing an alternative type of conditional statement in pseudocode. UCLES 2018 0478/22/M/J/18",
+        "context": "3 This pseudocode algorithm inputs two non-zero numbers and a sign, and then performs the calculation shown by the sign. An input of zero for the first number terminates the process. INPUT Number1, Number2, Sign WHILE Number1 <> 0 Number1 + Number2 ENDIF IF Sign = '+' THEN Answer Number1 - Number2 E",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "The programmer has chosen to verify the name, email address and password. Explain why verification was chosen and describe how the programmer would verify this data.",
+        "context": "4 A programmer has written a routine to store the name, email address and password of a contributor to a website s discussion group.",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "5.3"
+        ],
+        "answerType": "short",
+        "answer": "OUTPUT",
+        "markScheme": "OUTPUT"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "The programmer has also decided to validate the email address and the password. Describe validation checks that could be used. Email address Password UCLES 2018 0478/22/M/J/18 [Turn over",
+        "context": "4 A programmer has written a routine to store the name, email address and password of a contributor to a website s discussion group.",
+        "marks": 2,
+        "subtopics": [
+          "5.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for email and one mark for password Email check for @ / format check / no spaces /valid characters // presence check // length check (not more than 254 characters) // uniqueness check Password length check / numbers and letters etc. // uniqueness check not been used before // presence check UCLES 2018"
+      },
+      {
+        "qNum": "5",
+        "text": "5 A program checks that the weight of a basket of fruit is over 1.00 kilograms and under 1.10 kilograms. Weights are recorded to an accuracy of two decimal places and any weight not in this form has already been rejected. Give three weights as test data and for each weight state a reason for choosin",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark per value and reason, max 3 Example 1.00 boundary rejected//rejected (underweight) // out of range(1) 1.02 normal // valid // accepted weight in range (1) 1.10 abnormal // erroneous // invalid // rejected (overweight) (1)"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "State the number of fields in the table.",
+        "context": "3 N",
+        "marks": 1,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Number1 Number2 Sign"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "The tree numbering system uses TN followed by three digits. The numbering system will not work if there are over 1000 trees. Describe, with the aid of an example, how you could change the tree numbering system to allow for over 1000 trees. Existing tree numbers must not be changed.",
+        "context": "3 N",
+        "marks": 2,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(c)",
+        "text": "Using the query-by-example grid, write a query to identify at risk trees over 100 years old. Display only the type and the position on the map. Field: Table: Sort: Show: Criteria: or: UCLES 2018 0478/22/M/J/18",
+        "context": "3 N",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 3,
+    "label": "2018 May/Jun P2v3",
+    "qpFile": "0478_s18_qp_23.pdf",
+    "msFile": "0478_s18_ms_23.pdf",
+    "qpPath": "papers/2018/0478_s18_qp_23.pdf",
+    "msPath": "papers/2018/0478_s18_ms_23.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name, data type and use of two arrays you created for Task 1. Array 1 name Data type Use Array 2 name Data type Use",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State the name, value and use of two constants you could have created for Task 3. Constant 1 name Value Use Constant 2 name Value Use UCLES 2018 0478/23/M/J/18 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to perform the set up and On Entry part of Task 1, using either pseudocode, programming statements or a flowchart. UCLES 2018 0478/23/M/J/18",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Explain how your program calculates if a car has overstayed the permitted parking time and how the charge is calculated and output (part of Task 3). Any programming statements you use in your answer must be fully explained.",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(d)",
+        "text": "One of the inputs required On Exit in Task 1 is ticket number. State two items of suitable test data you could use to test your input validation and state why you chose them. Test data 1 Reason Test data 2 Reason UCLES 2018 0478/23/M/J/18 [Turn over",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Validation check",
+        "context": "2 Describe, using an example, the purpose of the following checks during data entry.",
+        "marks": 2,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for description one mark for example e.g."
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Verification check",
+        "context": "2 Describe, using an example, the purpose of the following checks during data entry.",
+        "marks": 2,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for description one mark for example e.g."
+      },
+      {
+        "qNum": "9",
+        "text": "9 PRINT The sum of the numbers you entered is , Number 10 PRINT The average of the numbers you entered is , Number / Counter UCLES 2018 0478/23/M/J/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "17.30 50.10"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Describe the purpose of the algorithm.",
+        "context": "4 An algorithm is written in pseudocode: INPUT Number IF Number > 100 THEN OUTPUT The number is too large ELSE OUTPUT The number is acceptable ENDIF",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: • Expects a number to be input • Checks if the number is greater than 100 • Outputs the result of the test • Specific output example",
+        "acceptedAnswers": [
+          "Expects a number to be input",
+          "Checks if the number is greater than 100",
+          "Outputs the result of the test",
+          "Specific output example"
+        ]
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "The algorithm only allows one attempt at inputting an acceptable value. State how you would change the algorithm so that it continues until a suitable input is supplied.",
+        "context": "4 An algorithm is written in pseudocode: INPUT Number IF Number > 100 THEN OUTPUT The number is too large ELSE OUTPUT The number is acceptable ENDIF",
+        "marks": 1,
+        "subtopics": [
+          "7.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": ". UCLES 2018 0478/23/M/J/18 [Turn over",
+        "context": "4 An algorithm is written in pseudocode: INPUT Number IF Number > 100 THEN OUTPUT The number is too large ELSE OUTPUT The number is acceptable ENDIF",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Complete the trace table for the input data: 6.30, 18.62, 50.01, 3.13, 2.05, 50.10, 40.35, 30.69, 0.85, 17.30 Max Counter Num OUTPUT",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Describe two different changes you should make to the flowchart to find the smallest number instead of the largest number. Change 1 Change 2 UCLES 2018 0478/23/M/J/18 [Turn over",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(a)",
+        "text": "State the number of records in this part of the table.",
+        "context": "6 A shop that sells copies of movies to the public has set up a new database table called 2018MOV to store some new releases. Part of this table is given, showing the catalogue number, title, genres and available formats (Blu-ray, DVD or streaming) of each movie. CatNo Title Genre 1 Genre 2 Blu-ray ",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "short",
+        "answer": "One mark for correct answer",
+        "markScheme": "One mark for correct answer"
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Give the name of the field that should be used for the primary key.",
+        "context": "6 A shop that sells copies of movies to the public has set up a new database table called 2018MOV to store some new releases. Part of this table is given, showing the catalogue number, title, genres and available formats (Blu-ray, DVD or streaming) of each movie. CatNo Title Genre 1 Genre 2 Blu-ray ",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "State the reason for choosing this field for the primary key. UCLES 2018 0478/23/M/J/18",
+        "context": "6 A shop that sells copies of movies to the public has set up a new database table called 2018MOV to store some new releases. Part of this table is given, showing the catalogue number, title, genres and available formats (Blu-ray, DVD or streaming) of each movie. CatNo Title Genre 1 Genre 2 Blu-ray ",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(c)",
+        "text": "Complete the table to show the most appropriate data type for each field based on the data shown in the table at the start of question 6. Field Data type CatNo Title Genre 1 Stream",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(d)",
+        "text": "List the output that would be given by this query-by-example. Field: CatNo Title Genre 1 Blu-ray DVD Stream Table: 2018MOV 2018MOV 2018MOV 2018MOV 2018MOV 2018MOV 3 3 3 3 3 Sort: Show: Criteria: = Comedy or:",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(e)",
+        "text": "Using the query-by-example grid, write a query to identify all the movies that are categorised as Sci-Fi and available to stream. Only display the catalogue number and title of the film, with the titles listed in alphabetical order. Field: Table: Sort: Show: Criteria: or: UCLES 2018 0478/23/M/J/18",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 1,
+    "label": "2018 Oct/Nov P1v1",
+    "qpFile": "0478_w18_qp_11.pdf",
+    "msFile": "0478_w18_ms_11.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_11.pdf",
+    "msPath": "papers/2018/0478_w18_ms_11.pdf",
+    "totalMarks": 66,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Computer files can be saved in different file formats. Four file formats and four file types are given. Draw a line to match each file format to the most suitable file type. File format File type .jpeg Text file .mp3 Image file .mp4 Audio file .txt Video file",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "1.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Jamelia wants to store an image file. The image has an 8-bit resolution and is 150 pixels by 100 pixels in size. Calculate the file size of the image. Give your answer in kilobytes (kB). Show all of your working. File size kB UCLES 2018 0478/11/O/N/18",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "1.2",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct line (to a maximum of 3) File format"
+      },
+      {
+        "qNum": "3(c)",
+        "text": "Large files can be compressed to reduce their file size. Two types of compression that can be used are lossy and lossless. Explain how a file is compressed using lossless compression.",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(d)",
+        "text": "The table contains four different file formats that use compression. Tick ( ) to show whether each file format uses lossy or lossless compression. File format Lossy ( ) Lossless ( ) .jpeg .mp3 .mp4 .zip UCLES 2018 0478/11/O/N/18 [Turn over",
+        "context": "3",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "19(b)",
+        "text": "Hexadecimal is often used by computer programmers to represent binary values. Explain why computer programmers may choose to use hexadecimal. UCLES 2018 0478/11/O/N/18",
+        "context": "19 218",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain the difference between the functions of an AND gate and an OR gate. UCLES 2018 0478/11/O/N/18 [Turn over",
+        "context": "1 X",
+        "marks": 3,
+        "subtopics": [
+          "10.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct line (to a maximum of 3) File format"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Explain what is meant by phishing and pharming. Phishing Pharming",
+        "context": "4 Phishing and pharming are two examples of online security threats to a computer system.",
+        "marks": 4,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: Phishing: • A legitimate looking email is sent to a user • The email will encourage the user to click a link/open an attachment • The link will redirect a user to a legitimate looking webpage (to steal personal data) Pharming: • A malicious code is installed on a user s hard drive/server • The code will cause a redirection to a legitimate looking webpage (to steal personal data)"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Identify two other online security threats to a computer system. Security threat 1 Security threat 2",
+        "context": "4 Phishing and pharming are two examples of online security threats to a computer system.",
+        "marks": 2,
+        "subtopics": [
+          "5.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Hacking • Cracking • Virus • Denial of service • Malware • Spyware"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Give two security measures that can help to protect a computer system from online security threats. Security measure 1 Security measure 2 UCLES 2018 0478/11/O/N/18",
+        "context": "4 Phishing and pharming are two examples of online security threats to a computer system.",
+        "marks": 2,
+        "subtopics": [
+          "5.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Firewall • Proxy server • Anti-virus • Anti-malware • Anti-spyware • Username and password"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Five storage devices or media are listed in the table. Tick ( ) to show whether each storage device or media is an example of primary, secondary or off-line storage. Storage device or media Primary ( ) Secondary ( ) Off-line ( ) External HDD RAM Internal SSD ROM DVD",
+        "context": "5",
+        "marks": 5,
+        "subtopics": [
+          "3.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for the correct tick for each storage Storage device or media"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Users can store their data on optical storage media. Explain how data is written to optical storage media. UCLES 2018 0478/11/O/N/18 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • The disc is rotated/spun • Laser beam is used • The laser beam makes indentations on the surface of the disc/pits and lands • The data is written in a spiral/concentric tracks • The pits and lands represent binary values/1s and 0s • It is called burning data to the disc"
+      },
+      {
+        "qNum": "8(i)(i)",
+        "text": "Circle the most suitable type of storage to store the video. Optical Magnetic Solid state",
+        "context": "8",
+        "marks": 1,
+        "subtopics": [
+          "3.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(i)(i)",
+        "text": ".",
+        "context": "8",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(a)",
+        "text": "The table contains four statements about 3D printers and 3D cutters. Tick ( ) to show which statements apply to each output device, some statements may apply to both output devices. 3D printer ( ) Statement 3D cutter ( ) Outputs a physical 3D product Uses a high powered laser to create the output Cr",
+        "context": "6 Two examples of output devices are a 3D printer and a 3D cutter.",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for the correct ticks (9) for each statement"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Identify the software used to create the computerised designs for 3D printing. UCLES 2018 0478/11/O/N/18",
+        "context": "6 Two examples of output devices are a 3D printer and a 3D cutter.",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "short",
+        "answer": "Computer Aided Design/CAD",
+        "markScheme": "Computer Aided Design/CAD"
+      },
+      {
+        "qNum": "9(c)",
+        "text": "A Digital Light Projector (DLP) is another example of an output device. Describe how a DLP displays an image.",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Explain what is meant by parallel data transmission.",
+        "context": "7 Computers can use different methods of transmission to send data from one computer to another. Parallel data transmission is one method that can be used.",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct answer: • uses several/multiple wires • transmits multiple bits at a time"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Give one benefit and one drawback of parallel data transmission, compared to serial data transmission, over short distances. Benefit Drawback",
+        "context": "7 Computers can use different methods of transmission to send data from one computer to another. Parallel data transmission is one method that can be used.",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Benefit 1 mark for: • quicker/faster data transfer"
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Give one example where parallel data transmission is used. UCLES 2018 0478/11/O/N/18 [Turn over",
+        "context": "7 Computers can use different methods of transmission to send data from one computer to another. Parallel data transmission is one method that can be used.",
+        "marks": 1,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Used in integrated circuits • Used in RAM • Used in connections to peripheral devices (e.g. printer)"
+      },
+      {
+        "qNum": "8",
+        "text": "8 Kamil correctly answers an examination question about a number of internet terms. Six different terms have been removed from Kamil s answer. Complete the sentences in Kamil s answer, using the list given. Not all terms in the list need to be used. browser connection domain name server (DNS) Intern",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 1 mark for each correct answer, in the given order: • browser • webpages • Internet Service Provider (ISP) • Internet • protocol • IP address"
+      },
+      {
+        "qNum": "9",
+        "text": "9 A sports stadium uses a pressure sensor and a microprocessor to monitor the number of people entering the sports stadium. For the counter to increment the weight on the pressure sensor must exceed 5 kg. Explain how the system uses the pressure sensor and the microprocessor to monitor the number of",
+        "context": "",
+        "marks": 9,
+        "subtopics": [
+          "3.2",
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Uses layers of material to create the output"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 2,
+    "label": "2018 Oct/Nov P1v2",
+    "qpFile": "0478_w18_qp_12.pdf",
+    "msFile": "0478_w18_ms_12.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_12.pdf",
+    "msPath": "papers/2018/0478_w18_ms_12.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "The word BUS has the denary values: B U S 66 85 83 Convert the denary values into 8-bit binary. 66 85 83",
+        "context": "1 Computers use a character set to convert text into binary. One character set that can be used is ASCII. Each letter in ASCII can also be represented as a denary value.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct 8-bit binary number"
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "UCLES 2018 K E Y 01001011 01000101 01011001 Convert the three 8-bit binary values into hexadecimal. 01001011 01000101 01011001 0478/12/O/N/18",
+        "context": "1 Computers use a character set to convert text into binary. One character set that can be used is ASCII. Each letter in ASCII can also be represented as a denary value.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Give three other uses of hexadecimal notation in computer science. 1 2 3 State two benefits of using hexadecimal notation to represent binary values. Benefit 1 Benefit 2",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "High-level language (9) Assembly language (9) 10110111 11001100 01011100 FOR X = 1 TO 10 PRINT X NEXT X"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "The table contains three statements about RAM or ROM. Tick ( ) to show whether each statement describes RAM or ROM. Statement RAM ( ) ROM ( ) Stores the programs and data that are currently in use Used to boot up the computer when power is turned on Contents are retained when power is turned off",
+        "context": "2 A computer uses RAM and ROM to store data.",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct tick (9)"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Circle the storage category that includes both RAM and ROM. Primary Secondary Off-line",
+        "context": "2 A computer uses RAM and ROM to store data.",
+        "marks": 1,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "Primary",
+        "markScheme": "Primary"
+      },
+      {
+        "qNum": "2(c)",
+        "text": "Explain what is meant by off-line storage. UCLES 2018 0478/12/O/N/18 [Turn over",
+        "context": "2 A computer uses RAM and ROM to store data.",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Non-volatile storage • Storage that can be disconnected/removed from the computer • Any suitable example • Must be (physically) connected to computer to obtain stored data • Used to store files as a backup"
+      },
+      {
+        "qNum": "1",
+        "text": "1 Humidity >=50% 0 Humidity <50% The system will sound an alarm when certain conditions are detected. Alarm (X) will sound (=1) when: window is closed and temperature >=26 C or temperature <26 C and humidity >=50% Draw a logic circuit to represent the system. W T X H UCLES 2018 0478/12/O/N/18",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "1.2",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Identify three security issues that can put a computer system at risk. Security issue 1 Security issue 2 Security issue 3",
+        "context": "4",
+        "marks": 3,
+        "subtopics": [
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from: • Malware • Virus // No antivirus • Denial of service • Spyware // No antispyware • Phishing // opening unknown links/emails • Pharming // opening unknown links/emails (only award once for this alternative) • Hacking/cracking/unauthorised access // No/weak password // No/weak firewall • Downloading/Using unknown software • Not updating software • Physical issue e.g. computer/door left unlocked"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Explain how a firewall can help to protect a computer system from security issues.",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • It examines/monitors/filters traffic into and out of a computer • It allows a user to set criteria/rules for the traffic • It checks whether the traffic meets the criteria/rules • It blocks any traffic that does not meet the criteria/rules // Blocks unauthorised access • It warns a user of any unauthorised software/access/unauthorised outgoing traffic • It keeps a log of all traffic (that can be examined)"
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "For the first question she writes the answer: It is a high powered laser that cuts materials such as thin metals or wood. Identify the output device that Karina is describing.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "For the second question she writes the answer: The screen is made up of blocks of red, green and blue pixels. The screen uses layers of different types of liquid. Identify the output device that Karina is describing.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [
+          "1.2",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(iii)",
+        "text": "For the third question she writes the answer: It is responsible for powering and moving a motor in machinery, such as a robot arm in a factory. Identify the output device that Karina is describing. UCLES 2018 0478/12/O/N/18 [Turn over",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Karina correctly answers another examination question about some more output devices. Five different terms have been removed from her answer. Complete the sentences in Karina s answer, using the list given. Not all terms in the list need to be used. 3D digital light projector inkjet interactive whit",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 • •"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Many programmers write computer programs in high-level languages. The programs need to be translated into machine code to be read by the computer. State two types of translator that can be used. Translator 1 Translator 2",
+        "context": "6",
+        "marks": 2,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Explain two reasons why a computer programmer may choose to write a program in a highlevel language, rather than a low-level language. Reason 1 Reason 2",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 • •"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Three examples of computer code are given in the table. Tick ( ) to show whether each example of computer code is High-level language, Assembly language or Machine code. Computer code High-level language ( ) Assembly language ( ) Machine code ( ) 10110111 11001100 01011100 FOR X = 1 TO 10 PRINT X NE",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "4.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct tick (9) Computer code"
+      },
+      {
+        "qNum": "7",
+        "text": "7 Six internet terms and six definitions are listed. Draw a line to connect each term to a correct definition. Internet term Definition Browser A program that allows a user to view webpages Internet Service Provider (ISP) The main protocol that governs the transmission of data using the Internet Hyp",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 1 mark for each correct line (to a maximum of 5)"
+      },
+      {
+        "qNum": "8",
+        "text": "8 Describe the purpose of an interrupt in a computer system. UCLES 2018 0478/12/O/N/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "4.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • Used to attend to certain tasks/issues • Used to make sure that vital tasks are dealt with immediately • The interrupt/signal tells the CPU/processor (that its attention is required) • A signal that can be sent from a device (attached to the computer) • A signal that can be sent from software (installed on the computer) • The interrupt will cause the OS/current process to pause • The OS/CPU/ISR will service/handle the interrupt • They have different levels of priority • After the in"
+      },
+      {
+        "qNum": "9(i)(i)",
+        "text": "Serial data transmission",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(i)(ii)",
+        "text": "Parallel data transmission",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(i)(iii)",
+        "text": "Duplex data transmission UCLES 2018 0478/12/O/N/18 [Turn over",
+        "context": "9",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Data can sometimes be corrupted when it is transmitted from one computer to another, causing errors to be present in the data. Identify and describe three methods of error detection that could be used to see if an error has occurred. Error detection method 1 Description Error detection method 2 Desc",
+        "context": "10",
+        "marks": 9,
+        "subtopics": [
+          "2.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 10 A system uses pH sensors and a microprocessor to help monitor pollution in a river. The pH of the water should be between 6 and 8. The system outputs an alert if the pH of the water is not in this range. Explain how the system uses the pH sensors and the microprocessor to help monitor the poll",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 3,
+    "label": "2018 Oct/Nov P1v3",
+    "qpFile": "0478_w18_qp_13.pdf",
+    "msFile": "0478_w18_ms_13.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_13.pdf",
+    "msPath": "papers/2018/0478_w18_ms_13.pdf",
+    "totalMarks": 66,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 There are six output devices and six descriptions shown. Draw a line to connect each output device to the most appropriate description. Device Description Uses a high-intensity beam of light shone through three layers of changing pixels Laser Printer Uses millions of micro mirrors to reflect light",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.2",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct line, maximum 5 marks"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how Automatic Repeat reQuests (ARQ) are used in data transmission and storage.",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "State one other method that could be used to check for transmission errors.",
+        "context": "1",
+        "marks": 1,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 An elevator (lift) has a maximum weight limit of 2400 kg. The weight carried is monitored by a sensor and a microprocessor. Describe how the sensor and the microprocessor are used to make sure the maximum weight limit is not exceeded. UCLES 2018 0478/13/O/N/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "short",
+        "answer": "11111111",
+        "markScheme": "11111111"
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Explain why data is stored as binary in computers.",
+        "context": "08 93 01101010",
+        "marks": 2,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • The web browser sends URL to DNS • DNS stores an index of URL and matching IP address • DNS searches for URL to obtain the IP address • IP address sent to web browser, (if found) • Web browser sends request to IP of webserver • Webserver sends web page to web browser • Web browser interprets HTML to display web page • If URL not found DNS returns error"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Describe serial transmission.",
+        "context": "5 Data can be transferred using half-duplex serial transmission.",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct conversion 01101010"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Give one application of serial data transmission.",
+        "context": "5 Data can be transferred using half-duplex serial transmission.",
+        "marks": 1,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Describe half-duplex data transmission. UCLES 2018 0478/13/O/N/18",
+        "context": "5 Data can be transferred using half-duplex serial transmission.",
+        "marks": 2,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 00001000 • •"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Sarah stores data electronically. Describe three methods that she could use to avoid loss of stored data. Method 1 Method 2 Method 3 UCLES 2018 0478/13/O/N/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Backups • Make a copy of the data • Copy stored away from main computer • Data can be restored from backup Anti-virus • Scans computer for viruses • Software to detect/remove viruses • Can prevent data being corrupted by viruses Firewall • Hardware or software that monitors network traffic • To help prevent hackers gaining access / deleting data Password/Biometrics • To help protect files / computer from unauthorised access Restricted access • To stop users downloading/installing software that c"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "David uses an interpreter when creating the computer program. State three features of an interpreter. Feature 1 Feature 2 Feature 3",
+        "context": "7 David is writing a program using a high-level language. The program will be published and sold for profit.",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from: • It is a translator • Translates (high level language) to low level language • Executes one line at a time • Translates source code line by line • Runs error diagnostic • Produces error messages to tell user location of error • Stops execution when encounters errors • Continues translating when an error is fixed"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "David compiles the program when he has completed it. Explain two benefits of compiling the program. Benefit 1 Benefit 2 UCLES 2018 0478/13/O/N/18",
+        "context": "7 David is writing a program using a high-level language. The program will be published and sold for profit.",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from (Max three per benefit):"
+      },
+      {
+        "qNum": "7(c)",
+        "text": "David needs to send a large section of the programming code as an email attachment. He uses lossless compression to reduce the file size. Explain how the file size is reduced. UCLES 2018 0478/13/O/N/18 [Turn over",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 • • • Produces executable file this creates a smaller file size more saleable • • Program will be machine independent / portable this means it can be used on any hardware • • • No need for compiler to run executable file this means it will be quicker to run customers can just execute the program • • Source code cannot be accessed therefore, code cannot be stolen / plagiarised Three from: • Uses compression algorithm / by example e.g. RLE • Repeating words / phrases / patterns identifi"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "State what URL represents. U R L",
+        "context": "8 Alice enters a URL into a web browser to access a webpage.",
+        "marks": 1,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "short",
+        "answer": "Uniform Resource Locator",
+        "markScheme": "Uniform Resource Locator"
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Explain how the web browser uses the URL to access the webpage.",
+        "context": "8 Alice enters a URL into a web browser to access a webpage.",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • The web browser sends URL to DNS • DNS stores an index of URL and matching IP address • DNS searches for URL to obtain the IP address • IP address sent to web browser, (if found) • Web browser sends request to IP of webserver • Webserver sends web page to web browser • Web browser interprets HTML to display web page • If URL not found DNS returns error"
+      },
+      {
+        "qNum": "9",
+        "text": "9 Describe two differences between Read Only Memory (ROM) and Random Access Memory (RAM). Difference 1 Difference 2 UCLES 2018 0478/13/O/N/18",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 Four from: • • ROM is permanent RAM is temporary • • ROM is non-volatile RAM is volatile • • ROM is read only RAM can have read/write operations • • ROM holds instructions for boot up RAM holds files / instructions in use"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2018 0478/13/O/N/18 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct line, maximum 5 marks"
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Draw a logic circuit corresponding to the logic statement: X = 1 if ((A is 1 AND B is 1) AND (A is 1 OR C is NOT 1)) OR (B is 1 AND C is NOT 1) A B X C",
+        "context": "10",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per correct gate with correct inputs."
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Describe the role of the Program Counter (PC).",
+        "context": "11 The fetch-execute cycle make use of registers.",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • Holds address of next/current instruction to be fetched/processed/executed"
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe the role of the Memory Data Register (MDR). UCLES 2018 0478/13/O/N/18",
+        "context": "11 The fetch-execute cycle make use of registers.",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • Stores data/instruction that is in use from address in MAR"
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Creating a backup of 150 GB of data. Justification",
+        "context": "11 12 Explain the difference between a Musical Instrument Digital Interface (MIDI) file and a MP3 file. 13 State which types of storage device or media would be most suitable for these scenarios. For each device or media, justify your choice.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • Holds address of next/current instruction to be fetched/processed/executed"
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Storing applications on a tablet device. Justification",
+        "context": "11 12 Explain the difference between a Musical Instrument Digital Interface (MIDI) file and a MP3 file. 13 State which types of storage device or media would be most suitable for these scenarios. For each device or media, justify your choice.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • Stores data/instruction that is in use from address in MAR"
+      },
+      {
+        "qNum": "11(c)",
+        "text": "Storing a 1200 MB high-definition promotional movie about a new car. The movie is to be given to people who are interested in buying a new car. Justification UCLES 2018 0478/13/O/N/18",
+        "context": "11 12 Explain the difference between a Musical Instrument Digital Interface (MIDI) file and a MP3 file. 13 State which types of storage device or media would be most suitable for these scenarios. For each device or media, justify your choice.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 1,
+    "label": "2018 Oct/Nov P2v1",
+    "qpFile": "0478_w18_qp_21.pdf",
+    "msFile": "0478_w18_ms_21.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_21.pdf",
+    "msPath": "papers/2018/0478_w18_ms_21.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name, data type and use of two arrays you created for Task 1. Array 1 name Data type Use Array 2 name Data type Use",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State the name, data type and use of two variables you have created for Task 2. Variable 1 name Data type Use Variable 2 name Data type Use UCLES 2018 0478/21/O/N/18 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to enter each item code and quantity. Then when the order is completely entered, generate a unique order code (part of Task 2), using either pseudocode, programming statements or a flowchart. You should assume that Task 1 has already been completed. UCLES 2018 0478/21/O/N/18 5 UCL",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Explain how your program calculates the profit using your input (last part of Task 3) with variable profit percentage and outputs the results. Any programming statements you use in your answer must be fully explained. UCLES 2018 0478/21/O/N/18",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(d)",
+        "text": "State three items of test data you could use in Task 3 to test the input of the percentage profit value and explain why you chose them. Your reasons must be different for each item of test data. Test data 1 Reason Test data 2 Reason Test data 3 Reason UCLES 2018 0478/21/O/N/18 [Turn over",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 Six terms associated with programming and six descriptions are listed. Draw a line to link each term with its most appropriate description. Term Description Top-down design Pre-written code to include in your own program to carry out a common task. Structure diagram Shows the steps representing an",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2 marks for 4 correct data types 1 mark for 2 or 3 correct data types"
+      },
+      {
+        "qNum": "3",
+        "text": "3 Describe, giving a different example for each, the purpose of these validation checks used in programming. Range check Example Length check Example Type check Example UCLES 2018 0478/21/O/N/18 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "False <---------------- 1 Mark -------------> ---------1 Mark ------------------- >"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Describe the purpose of the algorithm.",
+        "context": "4 An algorithm is written in pseudocode: 0 Total 1 TO 50 FOR Count INPUT Num Total + Num Total NEXT Count OUTPUT Total",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each point: • • •"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Re-write the algorithm in pseudocode using a different type of loop.",
+        "context": "4 An algorithm is written in pseudocode: 0 Total 1 TO 50 FOR Count INPUT Num Total + Num Total NEXT Count OUTPUT Total",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Describe how you could modify the original algorithm shown at the start of question 4, to allow any number of inputs. UCLES 2018 0478/21/O/N/18",
+        "context": "4 An algorithm is written in pseudocode: 0 Total 1 TO 50 FOR Count INPUT Num Total + Num Total NEXT Count OUTPUT Total",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 Total 0 Count 0 REPEAT INPUT Num Total Total + Num Count Count + 1 UNTIL Count = 50 OUTPUT Total Accept alternative correct ranges e.g. Count 1 UNTIL Count > 50 1 mark for each correct point in description, e.g. • Use a variable for the counter upper limit • that is input by the user. or • loop using a condition control • until condition is met"
+      },
+      {
+        "qNum": "13(a)",
+        "text": "Complete the trace table for the input data: 7 Flag TestNum Num OUTPUT",
+        "context": "13",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "13(b)",
+        "text": "Complete the trace table for the input data: 6 Flag TestNum Num OUTPUT",
+        "context": "13",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "13(c)",
+        "text": "State the purpose of the algorithm in the flowchart. UCLES 2018 0478/21/O/N/18 [Turn over",
+        "context": "13",
+        "marks": 1,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Complete the table to show the most appropriate data type for each field based on the data shown in the table at the start of question 6. Field Data type PCID ScreenSize Type Price",
+        "context": "6 The database table, PCSTOCK, is a part of the database in an electronics shop, showing some of the desktop (DT), tablet (TB) and laptop (LT) computers they have in stock. PCID ScreenSize RAM Type HDD(GB) DT303240 30 32 DT 4000 $5000.00 DT301620 30 16 DT 2000 $4000.00 DT303220 30 DT231610 23 LT1916",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field Data type PCID Text ScreenSize Number Type Text Price Currency"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Using the query-by-example grid, write a query to identify all the desktop computers with a hard drive larger than 1000 GB. All fields in the table should be shown, sorted in descending order by price. Field: Table: Sort: Show: Criteria: or: UCLES 2018 0478/21/O/N/18",
+        "context": "6 The database table, PCSTOCK, is a part of the database in an electronics shop, showing some of the desktop (DT), tablet (TB) and laptop (LT) computers they have in stock. PCID ScreenSize RAM Type HDD(GB) DT303240 30 32 DT 4000 $5000.00 DT301620 30 16 DT 2000 $4000.00 DT303220 30 DT231610 23 LT1916",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark correct Fields included 1 mark correct Table and Show on all fields used 1 mark for correct sort, must be descending on Price 1 mark for correct criteria for the fields Field: PCID ScreenSize RAM Table: PCSTOCK PCSTOCK"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 2,
+    "label": "2018 Oct/Nov P2v2",
+    "qpFile": "0478_w18_qp_22.pdf",
+    "msFile": "0478_w18_ms_22.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_22.pdf",
+    "msPath": "papers/2018/0478_w18_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name of one variable you have used for Task 3. Give the data type for the variable. State what it is used for. Variable name Data type Use",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Describe the arrays that you have used to store the data for the children in Task 1. Include the name, data type and its use for each array.",
+        "context": "1",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how you ensured that each identification number entered in Task 1 was unique and included a correct check digit. UCLES 2018 0478/22/O/N/18 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Many correct answers. 1 mark for each correct point (max 4)."
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a flowchart. You should assume that Task 1 has already been completed. UCLES 2018 0478/22/O/N/18 5 UCLES 2018 0478/22/O/N/18 [Turn over",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program identifies and outputs the names and times of the fastest runner for each age range in Task 3. Any programming statements used in your answer must be fully explained. Do not include the wristband check or PB time update. UCLES 2018 0478/22/O/N/18",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Write an algorithm, using pseudocode, to input three different numbers, multiply the two larger numbers together and output the result. Use the variables: Number1, Number2 and Number3 for your numbers and Answer for your result.",
+        "context": "2",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any five from: 1 Use of correct variables 2 Input 3 numbers 3 Check all 3 input numbers are different 4 Attempt to find the largest two numbers input 5 Correctly finding the largest two numbers 6 Multiply their two largest numbers together and assign to variable 7 Output the result of the multiplication",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "2(a)",
+        "text": "and explain why you chose each set. Test data set 1 Reason Test data set 2 Reason UCLES 2018 0478/22/O/N/18 [Turn over",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any five from: 1 Use of correct variables 2 Input 3 numbers 3 Check all 3 input numbers are different 4 Attempt to find the largest two numbers input 5 Correctly finding the largest two numbers 6 Multiply their two largest numbers together and assign to variable 7 Output the result of the multiplication",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "3",
+        "text": "3 Four programming concepts and four descriptions are shown. Draw a line to connect each programming concept to the most appropriate description. Programming concept Description Library routine A subroutine that does not have to return a value. Structure diagram A standard subroutine that is availab",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Incorrect field name for Reference Number Incorrect criteria for Price in $ should be < Type not checked"
+      },
+      {
+        "qNum": "4",
+        "text": "4 A programmer wants to test that the readings from 2000 electricity meters are greater than 400 units and less than 900 units. The programmer uses selection and repetition statements as part of the program. Explain, using programming statements, how selection and repetition could be used in this pr",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Data type Reference Number Text Size Text Type Text/Boolean Price in $ Number/Currency 1 mark per bullet: • • • UCLES 2018 Many correct answers, an example is given. 1 mark for each correct row (max 4). Field"
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Complete the trace tables for each set of input data. Input data: 6, 2.5, 2 Height Depth Chlorine OK OUTPUT Chlorine OK OUTPUT Chlorine OK OUTPUT Input data: 4, 3, 1.5 Height Depth Input data: 6, 3.5, 4 Height Depth",
+        "context": "11",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Identify a problem with the algorithm that the flowchart represents. UCLES 2018 0478/22/O/N/18 [Turn over",
+        "context": "11",
+        "marks": 1,
+        "subtopics": [
+          "7.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Complete the table to show the most appropriate data type for each of the fields. Field Data type Reference Number Size Type Price in $",
+        "context": "6 A database table, PORTRAIT, is used to keep a record of the portraits available from a photographic studio. Each portrait has a unique reference number PICnnn, where n is a single digit, for example PIC123. The studio keeps a record of the size (for example 20 15), the type (black and white or col",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(b)",
+        "text": "The results from the query-by-example grid should show the reference number, price, type and size of all portraits under $50. Identify the three errors in the query-by-example grid. Field: Reference No Price in $ Type Size Table: PORTRAIT PORTRAIT PORTRAIT PORTRAIT Sort: Show: Criteria: >50.00 or: E",
+        "context": "6 A database table, PORTRAIT, is used to keep a record of the portraits available from a photographic studio. Each portrait has a unique reference number PICnnn, where n is a single digit, for example PIC123. The studio keeps a record of the size (for example 20 15), the type (black and white or col",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 3,
+    "label": "2018 Oct/Nov P2v3",
+    "qpFile": "0478_w18_qp_23.pdf",
+    "msFile": "0478_w18_ms_23.pdf",
+    "qpPath": "papers/2018/0478_w18_qp_23.pdf",
+    "msPath": "papers/2018/0478_w18_ms_23.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State the name, data type and use of three arrays you have created for Task 1. Array 1 name Data type Use Array 2 name Data type Use Array 3 name Data type Use",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State the name, data type and use for one variable you used in Task 2. Variable name Data type Use UCLES 2018 0478/23/O/N/18 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to show how your program finds and displays the weeks available for each log cabin and its capacity (part of Task 2), using either pseudocode, programming statements or a flowchart. UCLES 2018 0478/23/O/N/18 5 UCLES 2018 0478/23/O/N/18 [Turn over",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2018 1 mark for correct purpose: Find/output average height"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Describe how you could validate the input to identify a log cabin in Task 2. State one valid and one invalid item of data to test your validation method. Validation method Valid test data Invalid test data",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program performs Task 3. Any programming statements used in your answer must be fully explained. UCLES 2018 0478/23/O/N/18",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct answer Field"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Describe, giving an example for each, the following data types used in programming. Integer Description Example String Description Example",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct explanation: No field in this table contains unique identifier UCLES 2018 <-------- 1 Mark -------->"
+      },
+      {
+        "qNum": "3",
+        "text": "3 Give an example of a pseudocode statement or statements to perform each of the following functions. A condition controlled loop A conditional statement Totalling UCLES 2018 0478/23/O/N/18 [Turn over",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Tree Type Data type Text Size3 Number Size2 In Boolean/Text 1 mark for each correct row (max 3) and 1 mark for the correct order Peach 9.25 Plum 8.95 Nectarine 8.50"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "There are three errors in this code. State the line numbers that contain the errors and describe how to correct each error. Error 1 Error 2 Error 3",
+        "context": "8 Count = Count + 1 9 NEXT Count",
+        "marks": 3,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(b)",
+        "text": "State the purpose of this program. UCLES 2018 0478/23/O/N/18",
+        "context": "8 Count = Count + 1 9 NEXT Count",
+        "marks": 1,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(a)",
+        "text": "Complete the trace table for the input data: 7 Fib Prev2 Prev1 Number OUTPUT",
+        "context": "1 Prev1 INPUT Number IF Number = 0 0 THEN Fib ENDIF WHILE Number > 2 Prev2 + Prev1 Fib Prev1 Prev2 Fib Prev1 Number - 1 Number ENDWHILE OUTPUT Fib",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Complete the trace table for the input data: 2 Fib Prev2 Prev1 Number OUTPUT UCLES 2018 0478/23/O/N/18 [Turn over",
+        "context": "1 Prev1 INPUT Number IF Number = 0 0 THEN Fib ENDIF WHILE Number > 2 Prev2 + Prev1 Fib Prev1 Prev2 Fib Prev1 Number - 1 Number ENDWHILE OUTPUT Fib",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "IF Booking36[Cabin] = \"\" THEN OUTPUT \"Week 36 \", \" Cabin \", CabinName[Cabin] \" Capacity \", Capacity[Cabin] ENDIF IF Booking34[Cabin] = \"\" THEN OUTPUT \"Week 37 \", \" Cabin \", CabinName[Cabin] \" Capacity \", Capacity[Cabin] ENDIF IF Booking37[Cabin] = \"\" THEN OUTPUT \"Week 38 \", \" Cabin \", CabinName[Cabin] \" Capacity \", Capacity[Cabin] ENDIF IF Booking39[Cabin] = \"\" THEN OUTPUT \"Week 39 \", \" Cabin \", CabinName[Cabin] \" Capacity \", Capacity[Cabin] ENDIF NEXT Cabin"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "State whether any of the fields shown would be suitable as a primary key. Explain your answer",
+        "context": "6 An online fruit tree specialist sells fruit trees in various sizes. A database table, TREETAB, shows the tree type and, for each size, the price and whether they are in stock. Tree Type Size1 Size1 In Size2 Size2 In Size3 Size3 In Apple 10.95 Yes 14.95 Yes 29.95 Yes Apple 12.95 Yes 14.95 Yes 29.95",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for correct answer: No"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Complete the table to show the most appropriate data type for each of the fields based on the data shown in the table at the start of question 6. Field Data type Tree Type Size3 Size2 In UCLES 2018 0478/23/O/N/18",
+        "context": "6 An online fruit tree specialist sells fruit trees in various sizes. A database table, TREETAB, shows the tree type and, for each size, the price and whether they are in stock. Tree Type Size1 Size1 In Size2 Size2 In Size3 Size3 In Apple 10.95 Yes 14.95 Yes 29.95 Yes Apple 12.95 Yes 14.95 Yes 29.95",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(c)",
+        "text": "Show the output that would be given by this query-by-example. Field: Tree Type Size1 Size1 In Table: TREETAB TREETAB TREETAB Sort: Descending Show: Criteria: <10.00 or:",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(d)",
+        "text": "Using the following query-by-example grid, write a query to identify all types of the fruit trees that are out of stock for all three sizes. Make sure the type of the tree and the various in stock fields are shown. The trees should be listed in alphabetical order by type. Field: Table: Sort: Show: C",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 1,
+    "label": "2019 May/Jun P1v1",
+    "qpFile": "0478_s19_qp_11.pdf",
+    "msFile": "0478_s19_ms_11.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_11.pdf",
+    "msPath": "papers/2019/0478_s19_ms_11.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Show what the binary register stores for each pair of the given digits. 97 5C E1",
+        "context": "1 Hexadecimal is used for MAC addresses. Part of a MAC address is given: 97 5C E1 Each pair of digits is stored as binary in an 8-bit register.",
+        "marks": 6,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain what is meant by a MAC address.",
+        "context": "1 Hexadecimal is used for MAC addresses. Part of a MAC address is given: 97 5C E1 Each pair of digits is stored as binary in an 8-bit register.",
+        "marks": 4,
+        "subtopics": [
+          "3.4",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Give two other examples where hexadecimal can be used. Example 1 Example 2 UCLES 2019 0478/11/M/J/19",
+        "context": "1 Hexadecimal is used for MAC addresses. Part of a MAC address is given: 97 5C E1 Each pair of digits is stored as binary in an 8-bit register.",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from e.g.: • • • • • • • • Colour codes // Colour in HTML / CSS Error messages Locations in memory Memory dump // debugging IP address ASCII // Unicode Assembly language URL 1 mark for correct name, 1 mark for correct gate symbol"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "The only time the output will be 1 is when both inputs are 1. State the single logic gate Draw the single logic gate:",
+        "context": "2 Rajesh creates a logic circuit. He uses three different logic gates in his circuit. Each logic gate has a maximum of two inputs. He describes the logic of each gate.",
+        "marks": 2,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "short",
+        "answer": "NOR",
+        "markScheme": "NOR"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "The only time the output will be 1 is when both inputs are 0. State the single logic gate Draw the single logic gate:",
+        "context": "2 Rajesh creates a logic circuit. He uses three different logic gates in his circuit. Each logic gate has a maximum of two inputs. He describes the logic of each gate.",
+        "marks": 2,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019"
+      },
+      {
+        "qNum": "2(c)",
+        "text": "The only time the output will be 0 is when both inputs are 1. State the single logic gate Draw the single logic gate: UCLES 2019 0478/11/M/J/19 [Turn over",
+        "context": "2 Rajesh creates a logic circuit. He uses three different logic gates in his circuit. Each logic gate has a maximum of two inputs. He describes the logic of each gate.",
+        "marks": 2,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Five descriptions of different input or output devices are given in the table. Complete the table by stating the name of each input or output device. Description Name of device This is an input device that works by shining a light onto the surface of a document. The light source is automatically m",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.2",
+          "9.1"
+        ],
+        "answerType": "short",
+        "answer": "DVD CD Blu-ray",
+        "markScheme": "DVD CD Blu-ray"
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Computer virus Security method Description",
+        "context": "4",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "Hacking Security method Description",
+        "context": "4",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(iii)",
+        "text": "Spyware Security method Description UCLES 2019 0478/11/M/J/19 [Turn over",
+        "context": "4",
+        "marks": 3,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "State three ways that the data Lola stores could be accidentally damaged or accidentally lost. 1 2 3",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "Give two methods that Lola could use to help keep her data safe from accidental damage or accidental loss. 1 2 UCLES 2019 0478/11/M/J/19",
+        "context": "6",
+        "marks": 2,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5",
+        "text": "5 The following text is stored as a text file: She sells sea shells on the seashore. The shells that she sells are sea shells I am sure. Explain how lossless compression would compress this file. UCLES 2019 0478/11/M/J/19 [Turn over",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "1.3",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Back data up • Use surge protection • Keep data in a fireproof / waterproof / protective case • Use verification methods (for deleting files) • Following correct procedure e.g. ejecting offline devices / regularly saving Five from: • A (compression) algorithm is used • No data is removed in the process // original file can be restored • Repeated words (are identified) // Patterns in the data (are identified) • and are indexed/put into a table // by example • and are replaced with the"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "It currently requires employees to enter a username and a password to log-in to an account. Each password must be 8 letters. The company wants to increase the security of the log-in system. Identify two improvements the company could use to make the log-in system more secure. Explain how each improv",
+        "context": "6 A law company holds a lot of sensitive data about its clients.",
+        "marks": 4,
+        "subtopics": [
+          "3.4",
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 Four from (max 2 marks per improvement): • Make the password require more characters • Makes the password harder to crack/guess • More possible combinations for the password"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "The law company wants to purchase a new file server. The company can purchase a server with either solid state storage or magnetic storage. After discussion, it decides to purchase a file server with magnetic storage. Explain why the company chose magnetic storage rather than solid state storage. UC",
+        "context": "6 A law company holds a lot of sensitive data about its clients.",
+        "marks": 4,
+        "subtopics": [
+          "3.3",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(c)",
+        "text": "The law company also uses optical storage. Give three different examples of optical storage. 1 2 3",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7",
+        "text": "7 Annie writes a paragraph of text as an answer to an examination question about programming languages. Using the list given, complete Annie s answer by inserting the correct six missing terms. Not all terms will be used. Assembly Converter Denary Hexadecimal High-level language Low-level language M",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.4",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(a)",
+        "text": "The gallery uses Secure Socket Layer (SSL) to provide a secure connection when selling art. Describe the process of SSL and how it provides a secure connection.",
+        "context": "8 An art gallery has a website that is used to display and sell art.",
+        "marks": 6,
+        "subtopics": [
+          "4.2",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 1 mark for each correct term, in the correct place: • Syntax • High-level language • Translator • Machine code • Assembly • Low-level language"
+      },
+      {
+        "qNum": "8(b)",
+        "text": "The art gallery also uses a firewall. Six statements are given about firewalls. Tick (3) to show if the statement is True or False. Statement True (3) False (3) Firewalls are only available as hardware devices Firewalls allow a user to set rules for network traffic Firewalls will automatically stop ",
+        "context": "8 An art gallery has a website that is used to display and sell art.",
+        "marks": 6,
+        "subtopics": [
+          "5.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct tick."
+      },
+      {
+        "qNum": "11(c)",
+        "text": "The art gallery is concerned about computer ethics relating to its website. Explain what is meant by computer ethics and why the art gallery is concerned about computer ethics. UCLES 2019 0478/11/M/J/19",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 2,
+    "label": "2019 May/Jun P1v2",
+    "qpFile": "0478_s19_qp_12.pdf",
+    "msFile": "0478_s19_ms_12.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_12.pdf",
+    "msPath": "papers/2019/0478_s19_ms_12.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Identify three input devices that can be connected to a personal computer. 1 2 3",
+        "context": "1 Input and output devices are often connected to a personal computer.",
+        "marks": 3,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from e.g.: Keyboard Mouse Microphone 2D scanner 3D scanner Touchscreen Webcam // digital camera Joystick Trackpad Sensor Interactive whiteboard"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Identify three output devices that can be connected to a personal computer. 1 2 3",
+        "context": "1 Input and output devices are often connected to a personal computer.",
+        "marks": 3,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from e.g.: Monitor // touchscreen Inkjet printer Laser printer 3D printer Speaker Headphones LED Projector DLP 2D cutter 3D cutter Actuator"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Explain what is meant by off-line storage.",
+        "context": "2 A finance company uses off-line storage to archive their accounts.",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: It is non-volatile Can be easily disconnected from the computer It is not directly accessed by the CPU Suitable example e.g. CD, DVD, USB flash memory"
+      },
+      {
+        "qNum": "2(i)(i)",
+        "text": "Give one example of primary storage.",
+        "context": "2 A finance company uses off-line storage to archive their accounts.",
+        "marks": 1,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(i)(ii)",
+        "text": "Give two examples of secondary storage. 1 2 UCLES 2019 0478/12/M/J/19",
+        "context": "2 A finance company uses off-line storage to archive their accounts.",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Vanessa writes a paragraph as an answer to an examination question about the central processing unit (CPU). Use the list given to complete Vanessa s answer by inserting the correct six missing terms. Not all terms will be used. Components Data Decoded Executed Fetched Instructions RAM ROM Secondar",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "Parity bit",
+        "markScheme": "Parity bit"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Marley wants to store a video he has created for his school project. He considers using a DVD or a Blu-ray to store the video. Explain two differences between a DVD and a Blu-ray. 1 2",
+        "context": "4",
+        "marks": 2,
+        "subtopics": [
+          "3.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from e.g.: DVD uses red laser/light whereas blu-ray uses blue/violet laser/light DVD has a smaller (storage) capacity // Blu-ray has a larger (storage) capacity DVD has two layers (of polycarbonate) whereas Blu-ray disks have a single layer (of polycarbonate) DVD has a slower transfer rate (of approximately 10 mbps) // Blu-ray has a faster transfer rate (of approximately 36 mbps)"
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Marley also needs to store ten 8-bit colour images in a file for his project. Each image is 500 pixels wide and 300 pixels high. Calculate the total file size in megabytes (MB) for all Marley s images. Show all your working. File size MB UCLES 2019 0478/12/M/J/19",
+        "context": "4",
+        "marks": 3,
+        "subtopics": [
+          "1.3",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5",
+        "text": "5 Marley prints the images for his project using an inkjet printer. Describe how the inkjet printer prints an image.",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "True (9) Statement Cookies can be used to store a customer s credit card details"
+      },
+      {
+        "qNum": "5",
+        "text": "5 A music company wants to send a new music file to many radio stations. It will send the music file the day before the release date so that the radio stations can store the file ready for release. The music company does not want the radio stations to be able to open the music file until 09:00 on th",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.4",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "True (9) Statement Cookies can be used to store a customer s credit card details"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "She uses HTML to create her website. The HTML she produces has both structure and presentation. Explain what is meant by HTML structure and presentation. Include an example of each. Structure Presentation",
+        "context": "6 Priya creates a website to sell her old comic books and superhero figures.",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(b)",
+        "text": "Priya uses cookies in her website. Five statements are given about cookies. Tick ( ) to show if the statement is True or False. Statement True ( ) False ( ) Cookies can be used to store a customer s credit card details Cookies can be used to track the items a customer has viewed on a website Cookies",
+        "context": "6 Priya creates a website to sell her old comic books and superhero figures.",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark per each correct row."
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Priya stores her website on a webserver. To transmit the website data to the webserver she uses parallel duplex data transmission. Describe how data is transmitted using parallel duplex data transmission.",
+        "context": "7",
+        "marks": 4,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(d)",
+        "text": "Priya has a URL for her website. State what is meant by a URL.",
+        "context": "7",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(i)",
+        "text": "Explain what is meant by a denial of service attack.",
+        "context": "7",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(ii)",
+        "text": "Give one security device that can be used to help prevent a denial of service attack. UCLES 2019 0478/12/M/J/19 [Turn over",
+        "context": "7",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(a)",
+        "text": "An office has an automated lighting system. When movement is detected in the office the lights are switched on. If movement is not detected for a period of 2 minutes the lights are switched off. The system uses a sensor and a microprocessor. Describe how the automated lighting system uses a sensor a",
+        "context": "7",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from: Motion sensor is used Sensor sends data/signal to microprocessor Data/Signal is converted from analogue data to digital data (using ADC) Value to compared to stored value(s) // If value is outside range/matches microprocessor sends signal to switch lights on actuator used to switch light on/off timer is set for 2 minutes Every time movement is detected the timer is reset When timer reaches 0/120/times out microprocessor sends signal to switch lights off Process is continuous"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "A microprocessor uses ROM. Explain what is meant by ROM. UCLES 2019 0478/12/M/J/19",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from: Read only memory Non-volatile memory // Contents of memory are retained when power is turned off//permanent storage Primary storage // directly accessed by the CPU Holds firmware/boot-up instructions/start-up instructions/BIOS Cannot be written to"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Draw a logic circuit to match the given logic statement. Each logic gate used must have a maximum of two inputs. Do not attempt to simplify the logic statement. A X B C",
+        "context": "8 Consider the logic statement: X = 1 if ((A is 1 NOR C is 1) AND (B is NOT 1 NOR C is 1)) OR (A is 1 AND B is 1)",
+        "marks": 6,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 1 mark per each correct logic gate, with correct input(s)"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2019 0478/12/M/J/19 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: Electrical field/charge is spread across the screen Sensors are located around the screen // sensors are used to read the electric field When finger touches screen, the charge/ is transferred to the user as it is affected by the conductivity of another object Coordinates of touch determined/calculated/measured"
+      },
+      {
+        "qNum": "1",
+        "text": "1 UCLES 2019 0478/12/M/J/19",
+        "context": "",
+        "marks": 3,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: Electrical field/charge is spread across the screen Sensors are located around the screen // sensors are used to read the electric field When finger touches screen, the charge/ is transferred to the user as it is affected by the conductivity of another object Coordinates of touch determined/calculated/measured"
+      },
+      {
+        "qNum": "11",
+        "text": "11 10 Remy has a mobile device that has a capacitive touch screen. Describe how the capacitive touch screen registers Remy s touch. UCLES 2019 0478/12/M/J/19",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 3,
+    "label": "2019 May/Jun P1v3",
+    "qpFile": "0478_s19_qp_13.pdf",
+    "msFile": "0478_s19_ms_13.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_13.pdf",
+    "msPath": "papers/2019/0478_s19_ms_13.pdf",
+    "totalMarks": 71,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "She uses the hexadecimal colour code #D2E3F5 as the background colour for her website. The colour code is stored in two 12 bit binary registers. Show how the code would be stored in the registers. D2E 3F5",
+        "context": "1 Victoria is building a website for her cake design business.",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Victoria uses HTML to create her website. State what is meant by HTML.",
+        "context": "1 Victoria is building a website for her cake design business.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "The HTML Victoria writes has both structure and presentation. Five examples are given of structure and presentation. Tick ( ) to show which example is Structure and which is Presentation. Structure ( ) Example Presentation ( ) The colour applied to a text heading on a web page The font style applied",
+        "context": "1 Victoria is building a website for her cake design business.",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(d)",
+        "text": "Customers will use a web browser to access Victoria s website. Victoria writes a paragraph of text to explain how the website will be displayed on a customer s computer. Use the list given to complete Victoria s paragraph by inserting the correct six missing terms. Not all terms will be used. browse",
+        "context": "3",
+        "marks": 6,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Explain what is meant by cookies.",
+        "context": "4",
+        "marks": 2,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "Explain why Victoria would use cookies as part of her website.",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "A computer can have both a MAC address and an IP address. Four statements are given about MAC addresses and IP addresses. Tick ( ) to show whether each statement is True or False. Statement True ( ) False ( ) A MAC address is unique to a computer on a network Once an IP address has been set it canno",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "5.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Explain what is meant by the stored program concept.",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "The Von Neumann model has several components that are used in the fetch execute cycle. One component is the Arithmetic Logic Unit (ALU). Describe the role of the ALU.",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "A signal causes the operating system to stop and assess what to do next. Identify the name of this signal.",
+        "context": "5",
+        "marks": 1,
+        "subtopics": [
+          "4.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "State two functions of an operating system. 1 2 UCLES 2019 0478/13/M/J/19 [Turn over",
+        "context": "5",
+        "marks": 2,
+        "subtopics": [
+          "4.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Explain how a firewall could help prevent this distraction.",
+        "context": "3 A finance company is concerned that its employees are being distracted by using gaming websites at work.",
+        "marks": 4,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from:"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "The finance company is also worried about the security of the data stored on its servers. The company has decided to encrypt the data to improve the security. Describe how the data are encrypted. UCLES 2019 0478/13/M/J/19",
+        "context": "3 A finance company is concerned that its employees are being distracted by using gaming websites at work.",
+        "marks": 4,
+        "subtopics": [
+          "2.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(c)",
+        "text": "The finance company realises that its computer systems have been hacked. The company thinks that spyware was used to obtain a user s password. Explain how spyware could have been used to obtain the user s password. UCLES 2019 0478/13/M/J/19 [Turn over",
+        "context": "7",
+        "marks": 6,
+        "subtopics": [
+          "5.2",
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Redraw the logic circuit using only 4 logic gates. Each logic gate used must have a maximum of two inputs. A X B C UCLES 2019 0478/13/M/J/19",
+        "context": "4 Consider the given logic circuit: A X B C",
+        "marks": 4,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 1 mark for each correct logic gate, with correct inputs:"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Describe the purpose of a logic gate in a logic circuit. UCLES 2019 0478/13/M/J/19 [Turn over",
+        "context": "1 X",
+        "marks": 2,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 The binary number that has been transmitted incorrectly is in Register Explanation UCLES 2019 0478/13/M/J/19",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "short",
+        "answer": "Interrupt",
+        "markScheme": "Interrupt"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "Describe how the resistive touch screen registers the visitor s touch.",
+        "context": "6 A museum has an information point. Visitors to the museum can use the information point to plan their visit to the museum. The information point allows visitors to access the information using a resistive touch screen. Visitors can either listen to the information or read it on the screen. They ca",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from:"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "The information point has a screen to allow visitors to read information. Identify two other output devices that are present in the information point. Output device 1 Output device 2",
+        "context": "6 A museum has an information point. Visitors to the museum can use the information point to plan their visit to the museum. The information point allows visitors to access the information using a resistive touch screen. Visitors can either listen to the information or read it on the screen. They ca",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "The information point uses both primary and secondary storage. Explain what is meant by primary and secondary storage. Primary Secondary UCLES 2019 0478/13/M/J/19",
+        "context": "6 A museum has an information point. Visitors to the museum can use the information point to plan their visit to the museum. The information point allows visitors to access the information using a resistive touch screen. Visitors can either listen to the information or read it on the screen. They ca",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from (max. 2 marks per type):"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 1,
+    "label": "2019 May/Jun P2v1",
+    "qpFile": "0478_s19_qp_21.pdf",
+    "msFile": "0478_s19_ms_21.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_21.pdf",
+    "msPath": "papers/2019/0478_s19_ms_21.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "State one array you used for Task 1. State the data type and purpose of this array. Array Data type Purpose",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State one variable you used for Task 2 and one variable you used for Task 3. In each case, state the data type and purpose of the variable. Task 2 variable name Data type Purpose Task 3 variable name Data type Purpose UCLES 2019 0478/21/M/J/19 [Turn over",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Write an algorithm to show how you calculated and output the number of late arrivals and the average number of minutes late for each bus route (part of Task 2), using either pseudocode, programming statements or a flowchart. UCLES 2019 0478/21/M/J/19 5 UCLES 2019 0478/21/M/J/19 [Turn over",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from:"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "Explain how your program uses the input in Task 3 to only find the data for that specific day (part of Task 3). Any programming statements used in your answer must be fully explained. UCLES 2019 0478/21/M/J/19",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(d)",
+        "text": "Explain how you would alter your program in Task 1 to allow you to choose the number of weeks to enter data on bus arrival times. UCLES 2019 0478/21/M/J/19 [Turn over",
+        "context": "7",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 Describe each of the following data types used in programming. In each case, give an example of a piece of data to illustrate your answer. Each example must be different. Char String Boolean",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • • UCLES 2019 The entered number (Value)is being checked to see that it is not < 0 or not > 100 If it is, it is rejected and the user has to enter another number / an error message is displayed Otherwise the number is accepted, the word Accepted is output along with the Value"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Give an example of a conditional statement using pseudocode.",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Many possible answers, those given are examples only. 1 mark per bullet: • IF • Condition and outcome"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Describe the purpose of a conditional statement. UCLES 2019 0478/21/M/J/19",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • To allow different routes through a program dependent on meeting certain criteria"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Give a name for this type of validation check.",
+        "context": "7 PRINT \"Input a value between 0 and 100 inclusive\" INPUT Value WHILE Value < 0 OR Value > 100 PRINT \"Invalid value, try again\" INPUT Value ENDWHILE PRINT \"Accepted: \", Value",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Describe what is happening in this validation check.",
+        "context": "7 PRINT \"Input a value between 0 and 100 inclusive\" INPUT Value WHILE Value < 0 OR Value > 100 PRINT \"Invalid value, try again\" INPUT Value ENDWHILE PRINT \"Accepted: \", Value",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Complete the trace table for this program code using the test data: 200, 300, 1, 50, 60 Value OUTPUT UCLES 2019 0478/21/M/J/19",
+        "context": "7 PRINT \"Input a value between 0 and 100 inclusive\" INPUT Value WHILE Value < 0 OR Value > 100 PRINT \"Invalid value, try again\" INPUT Value ENDWHILE PRINT \"Accepted: \", Value",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(d)",
+        "text": "Draw a flowchart to represent this section of program code. UCLES 2019 0478/21/M/J/19 [Turn over",
+        "context": "11",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Give a reason for choosing BevNo as the primary key for this table.",
+        "context": "5 The table, BEVERAGES, shows the number of calories in 100 ml of a range of popular beverages. It also shows the availability of these drinks in a can, a small bottle and a large bottle. BevNo BevName Calories Can Small Bottle Large Bottle Bev01 Cola 40 Yes Yes Yes Bev02 Lime 45 Yes No Yes Bev03 En",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Each data value is unique",
+        "markScheme": "Each data value is unique"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "State the number of records shown in the table BEVERAGES. UCLES 2019 0478/21/M/J/19",
+        "context": "5 The table, BEVERAGES, shows the number of calories in 100 ml of a range of popular beverages. It also shows the availability of these drinks in a can, a small bottle and a large bottle. BevNo BevName Calories Can Small Bottle Large Bottle Bev01 Cola 40 Yes Yes Yes Bev02 Lime 45 Yes No Yes Bev03 En",
+        "marks": 1,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "10 records"
+      },
+      {
+        "qNum": "13(c)",
+        "text": "List the output that would be given by this query-by-example. Field: BevNo BevName Can Small Bottle Large Bottle Table: BEVERAGES BEVERAGES BEVERAGES BEVERAGES BEVERAGES = \"Yes\" = \"Yes\" = \"Yes\" Sort: Descending Show: Criteria: or:",
+        "context": "13",
+        "marks": 3,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "13(d)",
+        "text": "Complete the query-by-example grid to output a list showing just the names and primary keys of all the beverages with a calorie count greater than 45. The list should be in alphabetical order of names. Field: Table: Sort: Show: Criteria: or: UCLES 2019 0478/21/M/J/19",
+        "context": "13",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 2,
+    "label": "2019 May/Jun P2v2",
+    "qpFile": "0478_s19_qp_22.pdf",
+    "msFile": "0478_s19_ms_22.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_22.pdf",
+    "msPath": "papers/2019/0478_s19_ms_22.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "All variables, constants and other identifiers must have meaningful names. Describe the data structures you have used in Task 1 to record the items for sale. Include some sample data for each data structure you have described.",
+        "context": "1",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "4 marks for: Data Structure(s) max 2 • Arrays • Variable(s) for // data entry such as reserve price // index / constant for minimum number of items Further description max 3 • Data type(s) one or more • Use(s) one or more • Name(s) one or more e.g. Item_Number, NumberBids, Description, Reserve Price • Sample data for appropriate arrays e.g. 1234, 0, vase, 20.00 // Sample data for variable or constant e.g. 10 1 mark for: • At least four appropriate named arrays with sample data"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how your program for Task 1 ensures the item number is unique. UCLES 2019 0478/22/M/J/19 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "or UCLES 2019 • • Keep a counter/number Add one every time a new item is added • • Keep a list of numbers used Using a loop check number is not already in the list before a new item number is added"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for the part of Task 2 that allows the buyer to add a new bid, using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed and that the item details have already been found. UCLES 2019 0478/22/M/J/19 5 UCLES 2019 0478/22/M/J/19 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program for Task 2 checks that a new bid is higher than previous bids for an item. UCLES 2019 0478/22/M/J/19",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(e)",
+        "text": "Explain how your program identifies the items that have reached their reserve price, then calculates and displays the total auction company fee for all sold items as part of Task 3. Any programming statements used in your answer must be fully explained. UCLES 2019 0478/22/M/J/19 [Turn over",
+        "context": "7",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 Count INPUT Number Number High Count Low REPEAT INPUT Number IF Number > High THEN Number High ENDIF IF Number > Low THEN Number Low ENDIF Count + 1 Count UNTIL Count > 99 PRINT \"Largest Number is \", Number PRINT \"Smallest Number is \", Low Find the four errors in the pseudocode and suggest a corre",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Show how you would change the corrected algorithm to total the numbers and print the total. Use a variable Total. UCLES 2019 0478/22/M/J/19 [Turn over",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 This flowchart inputs the marks gained in an examination. An input of 1 ends the routine. START Total 0 Count 0 Distinction 0 INPUT Mark Total Total + Mark Count Count + 1 Is Mark = 1 ? Yes No No OUTPUT \"Number of Distinctions \", Distinction OUTPUT \"Average Mark \" Total/Count Is Mark >= 80 ? Yes D",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Total Count Distinction",
+        "markScheme": "Total Count Distinction"
+      },
+      {
+        "qNum": "4",
+        "text": "4 For each of the four groups of statements in the table, place a tick in the correct column to show whether it is an example of Selection or Repetition. Statements Selection Repetition FOR A 1 TO 100 B + 1 B NEXT A CASE A OF 100: B 200: C ENDCASE A A IF A > 100 THEN A B ENDIF REPEAT A B * 10 UNTIL ",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Statements Selection FOR A 1 TO 100 B B + 1 NEXT A Repetition"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Explain what is meant by validation and verification. Give an example for each one. Validation Example Verification Example UCLES 2019 0478/22/M/J/19 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "5.3",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Validation Two from: • automated checking • checking that data is reasonable / of a certain type • checking that data meets certain criteria Example 1 mark • range check // length check // type check // check digit etc. Verification Two from: • checking that data has not changed • during input to a computer • during transfer between computers / devices Example 1 mark • double entry // checking against original // visual check // use of checksum etc. UCLES 2019"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "State the field that could have a Boolean data type. Field UCLES 2019 0478/22/M/J/19",
+        "context": "6 A database table, FLIGHT, is used to keep a record of flights from a small airfield. Planes can carry passengers, freight or both. Some flights are marked as private and only carry passengers. Flight number Plane Notes Departure time Passengers FN101 Caravan 1 Private passenger flight 08:00 Y CN10",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "short",
+        "answer": "Passengers",
+        "markScheme": "Passengers"
+      },
+      {
+        "qNum": "13(b)",
+        "text": "A query-by-example has been written to display just the flight numbers of all planes leaving after 10:00 that only carry passengers. Field: Flight number Passengers Departure time Table: FLIGHT FLIGHT FLIGHT Sort: Show: 3 Criteria: =Y = 10:00 or: Explain why the query-by-example is incorrect, and wr",
+        "context": "13",
+        "marks": 7,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 3,
+    "label": "2019 May/Jun P2v3",
+    "qpFile": "0478_s19_qp_23.pdf",
+    "msFile": "0478_s19_ms_23.pdf",
+    "qpPath": "papers/2019/0478_s19_qp_23.pdf",
+    "msPath": "papers/2019/0478_s19_ms_23.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "All variables, constants and other identifiers must have meaningful names. Describe the data structures you have used in Task 1 to record the items available that day. Include some sample data for each data structure you have described.",
+        "context": "1",
+        "marks": 5,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "4 marks for: Data Structure(s) max 2 • Arrays • Variable(s) for // data entry such as Item Code // index / constant for minimum number of items Further description max 3 • Data type(s) one or more • Use(s) one or more • Name(s) one or more e.g. Item_Code, Description, Price, Stock • Sample data for appropriate arrays e.g. 1234, Notepad, 0.050, 1000 // Sample data for variable or constant e.g. 10"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how your program for Task 1 ensures all the item codes are different.",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "or",
+        "markScheme": "or"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Explain how your program for Task 2 highlights items where the stock level is low. UCLES 2019 0478/23/M/J/19 [Turn over",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 • • Keep a counter/number Add one every time a new item code is added • • Keep a list of item codes used Using a loop check item codes is not already in the list before a new item code is added • • • Check items in stock array with a value of 10 or less Display these values in a different way e.g. in red"
+      },
+      {
+        "qNum": "4(d)",
+        "text": "Write an algorithm for Task 2 using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed and the list of items currently available has already been displayed. UCLES 2019 0478/23/M/J/19 5 UCLES 2019 0478/23/M/J/19 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(e)",
+        "text": "Explain how your program completes Task 3. Any programming statements used in your answer must be fully explained. UCLES 2019 0478/23/M/J/19",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "An algorithm has been written in pseudocode to input the weight of 500 items and reject any that are over-weight or under-weight, then print the percentage rejected. 1 Count 0 Reject 62 Over 58 Under REPEAT INPUT ItemWeight IF ItemWeight > Over AND ItemWeight < Under THEN Reject - 1 Reject ENDIF Cou",
+        "context": "2",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each error identified + suggested correction"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Describe how you would change the corrected algorithm to calculate the number accepted instead of rejected, using a variable Accept, and print a warning if fewer than 50% are accepted. UCLES 2019 0478/23/M/J/19 [Turn over",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 Complete Trace table 1 for the tread depth input data: 1.7, 1.9, 1.4, 1.8, 2.0 TreadReject Count Depth OUTPUT Trace table 1 Complete Trace table 2 for the tread depth input data: 1.2, 1.9, 1.4, 1.8, 2.4 TreadReject Count Depth OUTPUT Trace table 2 UCLES 2019 0478/23/M/J/19 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4",
+        "text": "4 For each of the four checks in the table, place a tick in the correct column to show whether it is an example of a validation or verification check. Statements Validation Verification Range check Double entry Check digit Presence check",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "5.3"
+        ],
+        "answerType": "short",
+        "answer": "Statements Validation Range check",
+        "markScheme": "Statements Validation Range check"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Identify and describe three loop structures that are available in pseudocode. Loop structure 1 Description Loop structure 2 Description Loop structure 3 Description UCLES 2019 0478/23/M/J/19",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • FOR TO NEXT fixed number of repetitions • • REPEAT UNTIL always executed // condition tested at end • • WHILE DO ENDWHILE may not be executed // condition tested at beginning"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Explain why the field Train Number could not be used as a primary key. UCLES 2019 0478/23/M/J/19",
+        "context": "3 Gardenvillage 09:15 On time",
+        "marks": 1,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "15(b)",
+        "text": "A query-by-example has been written to display only the train numbers and platforms of all trains leaving after 08:30 that are late. Field: Train Number Platform Departure Time Status Table: TRAIN TRAIN TRAIN TRAIN Sort: Show: 3 Criteria: =Y < 08:30 or: = \"Late\" Explain why the query-by-example is i",
+        "context": "15",
+        "marks": 7,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 1,
+    "label": "2019 Oct/Nov P1v1",
+    "qpFile": "0478_w19_qp_11.pdf",
+    "msFile": "0478_w19_ms_11.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_11.pdf",
+    "msPath": "papers/2019/0478_w19_ms_11.pdf",
+    "totalMarks": 74,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Andrew can use an Inkjet printer or a Laser printer. Draw lines to connect each printer to a correct statement. More than one line may be used to connect to each printer or statement. Printer Statement Can print in colour Inkjet printer Uses a charged drum to create the printed item Uses powdered to",
+        "context": "1 Andrew wants to produce advertising material for his company.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Printer Statement",
+        "markScheme": "Printer Statement"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Andrew wants to print a single page A4 leaflet. He wants to print 10 000 copies. State whether he should use an inkjet or a laser printer.",
+        "context": "1 Andrew wants to produce advertising material for his company.",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Andrew wants to produce small 3D models of the company logo. Explain how a 3D cutter could be used to produce the models. UCLES 2019 0478/11/O/N/19",
+        "context": "1 Andrew wants to produce advertising material for his company.",
+        "marks": 2,
+        "subtopics": [
+          "3.4",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Design is created on the computer / software / CAD • Material is loaded to cutter • Different types of material can be used • Uses lasers to cut material • that use infra-red • that produces extreme heat • that is focussed using a special lens • Can work on both the x,y and z axis UCLES 2019"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Convert the binary values in the table to denary. Binary Denary 0001001110 0110110111 1000000001",
+        "context": "2 An electronic guessing game compares denary integer values input by a user with pre-stored values. The pre-stored values are held in 10-bit binary format.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct denary value Binary"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "When planning the game, the designer decided to use hexadecimal notation to represent the binary values. Explain why the designer used hexadecimal notation.",
+        "context": "2 An electronic guessing game compares denary integer values input by a user with pre-stored values. The pre-stored values are held in 10-bit binary format.",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Uses fewer characters // shorter • Easier to read / write / understand • Less likely to make mistakes // less error prone • Easier to debug"
+      },
+      {
+        "qNum": "2(c)",
+        "text": "State the hexadecimal equivalent of the binary value 1010110101",
+        "context": "2 An electronic guessing game compares denary integer values input by a user with pre-stored values. The pre-stored values are held in 10-bit binary format.",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct hexadecimal value in correct order"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Explain what is meant by spyware and how it is used to obtain data. UCLES 2019 0478/11/O/N/19 [Turn over",
+        "context": "3 A company has several offices. It uses the Internet to transfer data between offices. The company also makes payments to staff and suppliers using online banking. The company are concerned about spyware and other security aspects of using the Internet.",
+        "marks": 3,
+        "subtopics": [
+          "5.1",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from: • Malicious software // type of malware • Tracks / records keypresses // keylogger • Sends data to third party • Collected data is analysed to obtain data"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "The company uses a web page to log on to the online bank. Identify one method that could be used by the online bank to reduce the impact of spyware when logging on. State how the method prevents the use of spyware.",
+        "context": "4",
+        "marks": 2,
+        "subtopics": [
+          "5.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Headphones • Speakers • Printer • Light / LED"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "The company has installed a firewall as part of its data security. Describe how a firewall can help protect against unauthorised access to data.",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • HDD • SSD • USB drive"
+      },
+      {
+        "qNum": "4(d)",
+        "text": "State two other methods the company could use to help prevent unauthorised access to data. Method 1 Method 2 UCLES 2019 0478/11/O/N/19",
+        "context": "4",
+        "marks": 2,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • QR code is scanned using a camera on a mobile device • and read / decoded using an application / software • Illuminator shone on code • Squares reflect light differently • Corners of code are used for orientation • Opens document with information // Directs to website with information • QR code can be saved for future reference"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "State one input device that could be used for the information point.",
+        "context": "4 A zoo has an information point. Visitors use a menu to select information about animals. The menu includes 500 different animals. The information is provided only using high definition video with an audio track.",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Touch screen • Keyboard • Microphone • Mouse"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "The output is shown on a monitor. State one other output device that could be used for the information point.",
+        "context": "4 A zoo has an information point. Visitors use a menu to select information about animals. The menu includes 500 different animals. The information is provided only using high definition video with an audio track.",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Headphones • Speakers • Printer • Light / LED"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "The video files are stored at the information point. State one secondary storage device that could be used.",
+        "context": "4 A zoo has an information point. Visitors use a menu to select information about animals. The menu includes 500 different animals. The information is provided only using high definition video with an audio track.",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • HDD • SSD • USB drive"
+      },
+      {
+        "qNum": "4(d)",
+        "text": "The zoo decides to introduce Quick Response codes in different places in the zoo. These provide further information about the animals. Describe how customers obtain the information from the Quick Response codes. UCLES 2019 0478/11/O/N/19 [Turn over",
+        "context": "4 A zoo has an information point. Visitors use a menu to select information about animals. The menu includes 500 different animals. The information is provided only using high definition video with an audio track.",
+        "marks": 4,
+        "subtopics": [
+          "4.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • QR code is scanned using a camera on a mobile device • and read / decoded using an application / software • Illuminator shone on code • Squares reflect light differently • Corners of code are used for orientation • Opens document with information // Directs to website with information • QR code can be saved for future reference"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Describe how data is transmitted using half-duplex serial data transmission.",
+        "context": "5 Sonia shares files with her friends. The method of data transmission she uses is half-duplex serial transmission.",
+        "marks": 4,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • • •"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "The system uses parity bits to check for errors during data transmission. The outcome of four bytes after transmission is: Byte 1 Byte 2 Byte 3 Byte 4 00110011 01010100 10110100 01110111 One of the bytes has been transmitted incorrectly. Identify the byte that was transmitted incorrectly. Byte Expla",
+        "context": "5 Sonia shares files with her friends. The method of data transmission she uses is half-duplex serial transmission.",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for correct byte (Byte) 2 // 01010100"
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Explain one benefit of Ishan compiling the program.",
+        "context": "6 Ishan is a member of a software community that develops computer games. He has programmed a new feature for one of the community s existing games.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "Explain one drawback of Ishan compiling the program.",
+        "context": "6 Ishan is a member of a software community that develops computer games. He has programmed a new feature for one of the community s existing games.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Explain how Ishan will know he is on a secure website.",
+        "context": "6 Ishan is a member of a software community that develops computer games. He has programmed a new feature for one of the community s existing games.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "Describe how an SSL connection is established. UCLES 2019 0478/11/O/N/19 [Turn over",
+        "context": "6 Ishan is a member of a software community that develops computer games. He has programmed a new feature for one of the community s existing games.",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(c)",
+        "text": "The community publishes completed games on the Internet as freeware. Describe what is meant by freeware.",
+        "context": "8",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(i)(i)",
+        "text": "Describe one benefit of compressing the program files.",
+        "context": "8",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(i)(ii)",
+        "text": "State whether lossy or lossless compression should be used. UCLES 2019 0478/11/O/N/19",
+        "context": "8",
+        "marks": 1,
+        "subtopics": [
+          "1.3",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 0 State the single logic gate that produces the given output. UCLES 2019 0478/11/O/N/19 [Turn over",
+        "context": "",
+        "marks": 1,
+        "subtopics": [
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Exclusive OR / XOR / EOR"
+      },
+      {
+        "qNum": "1",
+        "text": "1 temperature is > 200 degrees Celsius 0 temperature is <= 200 degrees Celsius 1 speed is > 1 metre per second 0 speed is <= 1 metre per second The system will sound an alarm (X) when certain conditions are detected. The alarm will sound when: Temperature is > 200 degrees Celsius and the pressure is",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "1.2",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Exclusive OR / XOR / EOR"
+      },
+      {
+        "qNum": "11(d)",
+        "text": "Give two benefits of using sensors to monitor the manufacture of plastic pipes. 1 2",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 Explain how an instruction is fetched in a Von Neumann model computer.",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from: • PC holds address of the instruction • The address held in PC is sent to MAR • using address bus • MAR goes to location in memory where instruction is stored • Instruction sent to MDR • using data bus • Instruction sent to CIR • Control unit sends signals to manage the process • using the control bus"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Describe what is meant by HTML structure. UCLES 2019 0478/11/O/N/19 [Turn over",
+        "context": "9 HTML can be used to create the structure and the presentation of web pages.",
+        "marks": 2,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Layout of the webpage • e.g. where a paragraph is placed • Defined using tags"
+      },
+      {
+        "qNum": "12(b)",
+        "text": "Gloria writes a paragraph as an answer to an examination question about accessing a website. Use the list given to complete Gloria s answer by inserting the correct four missing terms. Not all terms will be used. browser cookies Hypertext Markup Language (HTML) hypertext transfer protocol (http) hyp",
+        "context": "12",
+        "marks": 4,
+        "subtopics": [
+          "5.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 2,
+    "label": "2019 Oct/Nov P1v2",
+    "qpFile": "0478_w19_qp_12.pdf",
+    "msFile": "0478_w19_ms_12.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_12.pdf",
+    "msPath": "papers/2019/0478_w19_ms_12.pdf",
+    "totalMarks": 68,
+    "questions": [
+      {
+        "qNum": "2",
+        "text": "2 The Von Neumann model for a computer system uses several components in the fetch-execute cycle. One component that is used is the Control Unit (CU). Identify four other components that are used in the Von Neumann model for a computer system. 1 2 3 4",
+        "context": "",
+        "marks": 8,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "State what is meant by analogue data.",
+        "context": "3 The data from a sensor must be converted from analogue to digital to be processed by a computer.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "6.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Continuous data // by description • Non-discrete data // by description • By example, e.g. data such as a sound wave"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "State what is meant by digital data. UCLES 2019 0478/12/O/N/19",
+        "context": "3 The data from a sensor must be converted from analogue to digital to be processed by a computer.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One from: • Discrete data that has only two values • By example, e.g. binary data / 1 s and 0 s"
+      },
+      {
+        "qNum": "1(a)",
+        "text": "Convert the binary value to denary.",
+        "context": "1 0 0",
+        "marks": 1,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(a)",
+        "text": ".",
+        "context": "1 0 The contents of the register shown at the start of question 4 are shifted two places to the left. Show the contents of the register after this shift has taken place.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Describe how lossy compression reduces the size of the sound file. UCLES 2019 0478/12/O/N/19 [Turn over",
+        "context": "5 Audrey wants to send a sound file to Nico using email. The file is too large to attach to an email so Audrey decides to compress the file. She uses lossy compression to reduce the size of the sound file.",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • A compression algorithm is used • Discards any unnecessary sounds • using perceptual musical shaping • such as removing background noise / sounds humans can t hear // or other suitable example • Reduces sample size / resolution // by example • Reduces sample rate // by example • Sound is clipped • The data is permanently removed"
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "State one advantage Audrey could give of using lossy rather than lossless to compress the sound file.",
+        "context": "4",
+        "marks": 1,
+        "subtopics": [
+          "1.3",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "State one disadvantage Nico could give of using lossy rather than lossless to compress the sound file.",
+        "context": "4",
+        "marks": 1,
+        "subtopics": [
+          "1.3",
+          "1.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Explain what is meant by a MIDI file.",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "MIDI uses serial data transmission. Explain two advantages of using serial transmission rather than parallel transmission. Advantage 1 Advantage 2 UCLES 2019 0478/12/O/N/19",
+        "context": "4",
+        "marks": 4,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Describe how Gerald s key presses on his keyboard are processed by the computer. UCLES 2019 0478/12/O/N/19 [Turn over",
+        "context": "7 Gerald uses a keyboard to enter a website address into the address bar of his browser.",
+        "marks": 4,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: • Membrane / matrix / circuit board present at base of keys • A key is pressed that presses a switch • When a key is pressed it completes a circuit // changes the current in a circuit • The location of the keypress is calculated • An index of characters is searched to find the corresponding keypress • Each character has an ASCII / Unicode value • The ASCII / Unicode value has a binary value • Keypress generates an interrupt • Each character / keypress is added to a buffer to wait to b"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "State three functions of a browser. 1 2 3",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(c)",
+        "text": "The website Gerald visits uses https. Explain what is meant by https. UCLES 2019 0478/12/O/N/19",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Write a logic statement to match the given logic circuit.",
+        "context": "8 Consider the logic circuit: A X B C",
+        "marks": 3,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "X = 1 if (A is 1 XOR C is 1) OR (B is 1 NAND C is NOT 1) X = (A XOR C) OR (B NAND NOTC) One mark for each bullet: • (A XOR C) • OR • (B NAND NOTC) UCLES 2019"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X 0478/12/O/N/19 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "Parallel data transmission",
+        "markScheme": "Parallel data transmission"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Five statements are given about duplex data transmission. Tick ( ) to show if the statement is True or False. Statement True ( ) False ( ) Duplex data transmission can be either serial or parallel Duplex data transmission is when data is transmitted both ways, but only one way at a time Duplex data ",
+        "context": "9 Maisey purchases a new router and attaches it to her computer. The connection she sets up uses duplex data transmission.",
+        "marks": 5,
+        "subtopics": [
+          "2.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Duplex data transmission can be either serial or parallel Duplex data transmission is when data is transmitted both ways, but only one way at a time Duplex data transmission is always used to connect a device to a computer Duplex data transmission is when data is transmitted both ways at the same time Duplex data transmission automatically detects any errors in data"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Maisey s computer uses an integrated circuit (IC) for data transmission that sends multiple bits at the same time. State whether the IC uses serial or parallel data transmission.",
+        "context": "9 Maisey purchases a new router and attaches it to her computer. The connection she sets up uses duplex data transmission.",
+        "marks": 1,
+        "subtopics": [
+          "2.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 One mark per each correct tick Statement •"
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Maisey purchases a new printer and connects it to her computer using the USB port. Explain two benefits of using a USB connection. Benefit 1 Benefit 2 UCLES 2019 0478/12/O/N/19",
+        "context": "9 Maisey purchases a new router and attaches it to her computer. The connection she sets up uses duplex data transmission.",
+        "marks": 4,
+        "subtopics": [
+          "2.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 Four from (maximum two marks per benefit): • It is a universal standard • so it is likely to be compatible with the computer"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Companies use error detection methods to make sure that data is accurate. One error detection method is the use of a check digit. Explain what is meant by a check digit and how it is used to detect errors.",
+        "context": "9 10 Data is valuable to a company.",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Duplex data transmission can be either serial or parallel Duplex data transmission is when data is transmitted both ways, but only one way at a time Duplex data transmission is always used to connect a device to a computer Duplex data transmission is when data is transmitted both ways at the same time Duplex data transmission automatically detects any errors in data"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Companies can use a range of security methods to keep their data secure. Identify two security methods that a company can use to keep their data secure and explain how each method can keep the data secure. Security method 1 Security method 2 UCLES 2019 0478/12/O/N/19 [Turn over",
+        "context": "9 10 Data is valuable to a company.",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 One mark per each correct tick Statement •"
+      },
+      {
+        "qNum": "11(a)",
+        "text": "State what the RAM, ROM and SSD are used for. RAM ROM SSD",
+        "context": "11 Robert has a mobile device that uses RAM, ROM and an SSD.",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "RAM • To store the data / instructions / parts of OS that are currently in use ROM • To store the firmware / bootup instructions / BIOS SSD • To store files / software // by example"
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Give two reasons why an SSD, rather than a HDD, is used in the mobile device. Reason 1 Reason 2 UCLES 2019 0478/12/O/N/19",
+        "context": "11 Robert has a mobile device that uses RAM, ROM and an SSD.",
+        "marks": 2,
+        "subtopics": [
+          "3.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • It is more durable // it has no moving parts • It has a faster read / write / access speed • It is more compact / light weight / smaller / portable • It uses less energy // battery will last longer • It is quieter • Not affected by magnetic forces • It runs at a cooler temperature • Less latency // takes less time to warm up"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 3,
+    "label": "2019 Oct/Nov P1v3",
+    "qpFile": "0478_w19_qp_13.pdf",
+    "msFile": "0478_w19_ms_13.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_13.pdf",
+    "msPath": "papers/2019/0478_w19_ms_13.pdf",
+    "totalMarks": 61,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Identify two input devices that may be used in the library s system. Input device 1 Input device 2",
+        "context": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Identify two storage devices that may be used in the library s system. Storage device 1 Storage device 2",
+        "context": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book.",
+        "marks": 2,
+        "subtopics": [
+          "3.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(iii)",
+        "text": "Identify two output devices that may be used in the library s system. Output device 1 Output device 2",
+        "context": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "State how the library could make the encryption more secure.",
+        "context": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book.",
+        "marks": 1,
+        "subtopics": [
+          "2.3",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "The term used to describe data before it is encrypted is plain text. State the term used to describe encrypted data. UCLES 2019 0478/13/O/N/19",
+        "context": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book.",
+        "marks": 1,
+        "subtopics": [
+          "2.3",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(i)(i)",
+        "text": "The website has a background colour with the hexadecimal colour code #F92A10 The colour code is stored in two 12-bit binary registers. Show how the colour code would be stored in the registers. F92 A10 UCLES 2019 0478/13/O/N/19 [Turn over",
+        "context": "3 The library s archive system uses an error detection and correction system that combines a parity check with an automatic repeat request (ARQ). Describe how this system uses the parity check and ARQ.",
+        "marks": 6,
+        "subtopics": [
+          "2.2",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(d)",
+        "text": "The library often holds events that introduce new authors. At the events, the library has a Liquid Crystal Display (LCD) screen that displays data, including an image and information about the author. Describe how an LCD screen operates to display this data. UCLES 2019 0478/13/O/N/19",
+        "context": "4 Videos on the library website show customers which books the library will soon have in stock. The library wants the file size of a video to be as small as possible. Identify and describe a method the library could use to reduce the file size of a video as much as possible.",
+        "marks": 5,
+        "subtopics": [
+          "4.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Four statements are given about high-level programming languages. Tick (3) to show if each statement is True or False. True (3) Statement False (3) High-level languages need to be translated into machine code to run on a computer High-level languages are written using mnemonic codes High-level langu",
+        "context": "2 A programmer uses a high-level language to write a computer program.",
+        "marks": 4,
+        "subtopics": [
+          "3.4",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct row"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Tick (3) to show which of the following is an example of a high-level language program. Example program Tick (3) 1011100000110000 0000011011100010 INP STA ONE INP STA TWO ADD ONE a = input() b = input() if a == b: print(\"Correct\") else: print(\"Incorrect\") UCLES 2019 0478/13/O/N/19 [Turn over",
+        "context": "2 A programmer uses a high-level language to write a computer program.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for the correct tick Example program"
+      },
+      {
+        "qNum": "3",
+        "text": "3 Blair writes a paragraph about data transmission in her Computer Science examination. Use the list given to complete Blair s paragraph by inserting the correct five missing terms. Not all terms will be used. Terms can be used more than once. duplex half-duplex parallel serial simplex data transmis",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "2.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Parity bit Register A",
+        "markScheme": "Parity bit Register A"
+      },
+      {
+        "qNum": "1(a)",
+        "text": "The system will sound an alarm (X) when certain conditions are detected. The alarm will sound when: The pressure > = 80 % and the temperature > = 35 C or The temperature < 35 C and the pH > 7 Draw a logic circuit to represent the alarm system in the factory. Each logic gate must have a maximum of tw",
+        "context": "1 Pressure > = 80 % 0 Pressure < 80 %",
+        "marks": 4,
+        "subtopics": [
+          "1.2",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "A sensor and a microprocessor are used to monitor the pH of the cleaning products. The system records each reading that is taken. If the reading is greater than 7 a warning message is displayed on a monitor. Explain how the sensor and microprocessor are used in the system. UCLES 2019 0478/13/O/N/19 ",
+        "context": "1 X",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1",
+        "context": "",
+        "marks": 3,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019"
+      },
+      {
+        "qNum": "6(a)",
+        "text": "For the first question, he writes the answer: This type of software can be copied and shared without the permission of the owner. State what Jesse is describing.",
+        "context": "6 Jesse is taking his Computer Science examination. He answers five questions about ethics.",
+        "marks": 1,
+        "subtopics": [
+          "5.3",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• Free software"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "For the second question, he writes the answer: With this type of software, the owner still retains the copyright for the software, but he gives away copies of it for free. State what Jesse is describing.",
+        "context": "6 Jesse is taking his Computer Science examination. He answers five questions about ethics.",
+        "marks": 1,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• Freeware"
+      },
+      {
+        "qNum": "6(c)",
+        "text": "For the third question, he writes the answer: This type of software is often a trial version of the full software. To use the full version the user normally needs to pay a fee. State what Jesse is describing. UCLES 2019 0478/13/O/N/19",
+        "context": "6 Jesse is taking his Computer Science examination. He answers five questions about ethics.",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• Shareware"
+      },
+      {
+        "qNum": "11(d)",
+        "text": "For the fourth question, he writes the answer: This is when a person copies another person s computer program and tries to claim it as his own. State what Jesse is describing.",
+        "context": "11",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(e)",
+        "text": "For the fifth question, he writes the answer: This is the legal protection that a person can obtain, to provide protection against his work being stolen. State what Jesse is describing.",
+        "context": "11",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(i)",
+        "text": "Describe what is meant by main memory and how it is used in the Von Neumann model for a computer system.",
+        "context": "7 The Von Neumann model for a computer system has several components that are used in the fetch-execute cycle.",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(ii)",
+        "text": "State two other components in the Von Neumann model for a computer system. 1 2 UCLES 2019 0478/13/O/N/19 [Turn over",
+        "context": "7 The Von Neumann model for a computer system has several components that are used in the fetch-execute cycle.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "12(b)",
+        "text": "Computer systems often use interrupts. Five statements are given about interrupts. Tick (3) to show if each statement is True or False. Statement True (3) False (3) Interrupts can be hardware based or software based Interrupts are handled by the operating system Interrupts allow a computer to multit",
+        "context": "12",
+        "marks": 5,
+        "subtopics": [
+          "4.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8",
+        "text": "8 A company discovers malware on its network. Explain two ways that the malware could have been introduced to the company s network. Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort h",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "5.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2019 Four from: • A hacker could have hacked the network • and downloaded the malware onto the network"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 1,
+    "label": "2019 Oct/Nov P2v1",
+    "qpFile": "0478_w19_qp_21.pdf",
+    "msFile": "0478_w19_ms_21.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_21.pdf",
+    "msPath": "papers/2019/0478_w19_ms_21.pdf",
+    "totalMarks": 78,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "All variables, constants and other identifiers must have meaningful names. Name two variables that you could have used for Task 1. State the data type and purpose of each variable. Variable 1 name Data type Purpose Variable 2 name Data type Purpose",
+        "context": "1",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2019 Two examples of: Any meaningful name for a variable related to Task 1 one mark Correct data type related to Task 1 one mark Correct purpose related to Task 1 one mark e.g. • • • Length // Width real to store the length // width of the patio • • • StoneType string to store the type of stone slab chosen by the user • • • PatioArea integer to store the area of stone needed for the patio"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Describe how arrays could be used to store the data about the types and price per square metre of the stone slabs for Task 1. UCLES 2019 0478/21/O/N/19 [Turn over",
+        "context": "1",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two from: • Use of two one-dimensional arrays • with matching indexes • each with a specific data types, e.g. string for stone and real for price • Size of array / number of elements / length of each array is 6 • Meaningful array names, e.g. Stone and Price UCLES 2019"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements or a flowchart. Assume Task 1 has been completed. UCLES 2019 0478/21/O/N/19 5 UCLES 2019 0478/21/O/N/19 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program completes Task 3. Any programming statements you use in your answer must be fully explained. UCLES 2019 0478/21/O/N/19",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(e)",
+        "text": "Name two validation checks that could be used when entering patio dimensions in Task 1 or Task 2 and describe their purpose. Validation check 1 Purpose Validation check 2 Purpose UCLES 2019 0478/21/O/N/19 [Turn over",
+        "context": "7",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 For each of the four descriptions in the table, place a tick in the correct column to show whether it describes a Structure diagram, a Flowchart or Library routines. Structure diagram Description Flowchart Library routines A modelling tool used to show the hierarchy of a system. A collection of st",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "CarID Which contains unique values to identify each record"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Describe what happens in this pseudocode. UCLES 2019 0478/21/O/N/19",
+        "context": "3 Examine the following pseudocode: INPUT A INPUT B INPUT C INPUT D INPUT E INPUT F INPUT G INPUT H INPUT I INPUT J INPUT K INPUT L A + B + C + D + E + F + G + H + I + J + K + L T OUTPUT \"The average equals \", T / 12",
+        "marks": 3,
+        "subtopics": [
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • •"
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Describe how this pseudocode could be altered to allow any number of values to be input.",
+        "context": "9",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Re-write the given pseudocode to allow any number of values to be input. UCLES 2019 0478/21/O/N/19 [Turn over",
+        "context": "9",
+        "marks": 5,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Complete the trace table for this algorithm using the given input data. 0 Index 0 TO 7 FOR Count INPUT Value IF Value > 50 THEN Value PassMarks[Index] Index + 1 Index ENDIF NEXT Count PRINT \"Number passed \", Index Input data: 58, 40, 67, 85, 12, 13, 75, 82 PassMarks Index Count Value OUTPUT",
+        "context": "4",
+        "marks": 34,
+        "subtopics": [
+          "8.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2019 Index Count Value PassMarks [0] OUTPUT"
+      },
+      {
+        "qNum": "4(a)",
+        "text": ". UCLES 2019 0478/21/O/N/19",
+        "context": "4",
+        "marks": 1,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2019 Index Count Value PassMarks [0] OUTPUT"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Complete the table to show suitable field names and an example of appropriate data for each field in the database table CAR_RANGE. Field name Example of data",
+        "context": "5 A car manufacturer makes a range of car models named Pegasus, Apollo and Cupid. It keeps a database to store the records of its range and the different options for each car model. Within the table CAR_RANGE, the following data needs to be stored: 1. 2. 3. 4. 5. Car model Body style saloon, hatchba",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(b)",
+        "text": "State which of your fields would be most appropriate for a primary key and give a reason for your choice.",
+        "context": "5 A car manufacturer makes a range of car models named Pegasus, Apollo and Cupid. It keeps a database to store the records of its range and the different options for each car model. Within the table CAR_RANGE, the following data needs to be stored: 1. 2. 3. 4. 5. Car model Body style saloon, hatchba",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• •"
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Complete the query-by-example grid to provide a list of car models using petrol and the number of doors these cars have, in alphabetical order of car model. Display only the car models and the number of doors. Field: Table: Sort: Show: Criteria: or: UCLES 2019 0478/21/O/N/19",
+        "context": "5 A car manufacturer makes a range of car models named Pegasus, Apollo and Cupid. It keeps a database to store the records of its range and the different options for each car model. Within the table CAR_RANGE, the following data needs to be stored: 1. 2. 3. 4. 5. Car model Body style saloon, hatchba",
+        "marks": 3,
+        "subtopics": [
+          "9.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 2,
+    "label": "2019 Oct/Nov P2v2",
+    "qpFile": "0478_w19_qp_22.pdf",
+    "msFile": "0478_w19_ms_22.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_22.pdf",
+    "msPath": "papers/2019/0478_w19_ms_22.pdf",
+    "totalMarks": 46,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Describe the data structures that you have used to store the data for the concrete slabs in Task 1, include the name, data type and use for each data structure.",
+        "context": "1",
+        "marks": 5,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "State one variable that you have used in Task 3. Give the data type for the variable. State what it is used for. Variable name Data type Use",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain how you calculated the volume of a concrete slab in Task 1. UCLES 2019 0478/22/O/N/19 [Turn over",
+        "context": "1",
+        "marks": 3,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Three from: • Using the shape, size and depth • the area of the shape is found • for all except round multiply length by breadth/show example • for round multiply Pi by half the diameter/radius squared • multiply the area by the depth to give the volume UCLES 2019 Variable name e.g. ConcretePrice Data type e.g. Real Use e.g. To store the price of the grade of concrete"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed. UCLES 2019 0478/22/O/N/19 5 UCLES 2019 0478/22/O/N/19 [Turn over",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how you changed your program for Task 1 to meet the requirements for Task 3. Include and fully explain any altered or additional programming statements. UCLES 2019 0478/22/O/N/19",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 TotalTry REPEAT PRINT \"Enter your guess now, it must be a whole number\" INPUT Guess IF TotalTry > Number THEN PRINT \"Too large try again\" ENDIF IF Guess > Number THEN PRINT \"Too small try again\" ENDIF Guess + 1 TotalTry UNTIL Guess <> Number TotalTry - 1 TotalTry PRINT \"Number of guesses \", TotalT",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "24.88"
+      },
+      {
+        "qNum": "9(i)(i)",
+        "text": "It has been decided to only reject batches of rope that contain ropes that are too short. State the change required to the algorithm.",
+        "context": "9 Complete the trace table for the input data: 24.88, 25.01, 24.98, 25.00, 25.05, 24.99, 24.97, 25.04, 25.19, 25.07 Reject Count Length OUTPUT",
+        "marks": 1,
+        "subtopics": [
+          "7.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(i)(ii)",
+        "text": "Explain how the algorithm to reject batches could be improved to make it more effective. UCLES 2019 0478/22/O/N/19 [Turn over",
+        "context": "9 Complete the trace table for the input data: 24.88, 25.01, 24.98, 25.00, 25.05, 24.99, 24.97, 25.04, 25.19, 25.07 Reject Count Length OUTPUT",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4",
+        "text": "4 Four validation checks and four descriptions are shown. Draw a line to connect each validation check to the correct description. Validation Check Description Range check Checks that some data is entered. Presence check Checks for a maximum number of characters in the data entered. Length check Che",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "2019",
+        "markScheme": "2019"
+      },
+      {
+        "qNum": "5",
+        "text": "5 A programmer writes a program to weigh baskets of fruit in grams, keeping a total of the weight and counting the number of baskets. The total weight is stored in a variable Total and the number of baskets is stored in a variable BasketCount. Explain, including examples of programming statements, h",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field: Item number Order number Status Table: SALES SALES SALES Sort: Show: ; Criteria: Like \"Not started\" or: Like \"In progress\" • • • UCLES 2019 ; Correct Item number column Correct Order number column and any additional column not shown Correct status column"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Explain why constants, variables and arrays are used in programming. Constants Variables Arrays UCLES 2019 0478/22/O/N/19 [Turn over",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Variables Two from: • Stores a value that can change • during the execution of the program • Can use a variable without knowing its value Arrays Two from: • A list of items of the same data type • stored under a single name • To reduce the number of variables used • Any item can be found using an index number to show its place in the list"
+      },
+      {
+        "qNum": "1(a)",
+        "text": "Explain why the field Item number could not be used as a primary key. UCLES 2019 0478/22/O/N/19",
+        "context": "1 Not started",
+        "marks": 1,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Criteria: Not Like \"Delivered\" or: Explain why the query-by-example is incorrect, and write a correct query-by-example. Explanation Field: Table: Sort: Show: Criteria: or: UCLES 2019 0478/22/O/N/19",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "9.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct line, up to maximum of three marks."
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 3,
+    "label": "2019 Oct/Nov P2v3",
+    "qpFile": "0478_w19_qp_23.pdf",
+    "msFile": "0478_w19_ms_23.pdf",
+    "qpPath": "papers/2019/0478_w19_qp_23.pdf",
+    "msPath": "papers/2019/0478_w19_ms_23.pdf",
+    "totalMarks": 188,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "All variables, constants and other identifiers must have meaningful names. Name two arrays you could use for Task 1. State the data type and purpose of each one. Array 1 Data type 1 Purpose Array 2 Data type 2 Purpose",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Two examples of: Any meaningful name for an array related to Task 1 one mark, e.g. • TileDescription • TilePrice • TileCode Correct data type and purpose related to Task 1 one mark, e.g. • string to store the name / description of the tiles • real to store the price of the tiles • string to store the tile codes"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Name a variable that you used for Task 2. State the data type and purpose of this variable. Explain why you chose to use a variable rather than a constant. Variable Data type Purpose Reason for use of a variable UCLES 2019 0478/23/O/N/19 [Turn over",
+        "context": "1",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any meaningful name for a variable related to Task 2 one mark, e.g. • NumberOfWalls • TotalArea • TotalCost"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for Task 1, using either pseudocode, programming statements or a flowchart. Assume that the first part of Task 1, the storage and display of tile descriptions, prices per box and identification codes has already been done. UCLES 2019 0478/23/O/N/19 5 UCLES 2019 0478/23/O/N/19 [Tur",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how you extended your program to complete Task 2. Any programming statements you use in your answer must be fully explained. UCLES 2019 0478/23/O/N/19",
+        "context": "6",
+        "marks": 3,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(e)",
+        "text": "Explain how you could validate the input for percentage waste allowance in Task 3. UCLES 2019 0478/23/O/N/19 [Turn over",
+        "context": "7",
+        "marks": 3,
+        "subtopics": [
+          "3.4",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 Describe the use of a subroutine in a program.",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct symbol and name / description / example of use (maximum four marks) Symbol Description of use Terminator start / end the flowchart Process to show calculations, etc. Input / Output Decision to show condition Continuation to extend the flowchart and allow it to join up UCLES 2019"
+      },
+      {
+        "qNum": "3",
+        "text": "3 Name the three types of loop structure used in pseudocode. UCLES 2019 0478/23/O/N/19",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2019 TRUE"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Name the type of statement demonstrated by the use of IF THEN ELSE ENDIF",
+        "context": "4 The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" ENDIF ENDIF ENDIF ENDIF",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "•"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Re-write the pseudocode algorithm using a CASE statement. UCLES 2019 0478/23/O/N/19 [Turn over",
+        "context": "4 The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" ENDIF ENDIF ENDIF ENDIF",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from: MP1 CASE statement with identifier Response MP2 Correct structure used for choices MP3 . correct statements used for choices MP4 OTHERWISE and correct statement MP5 Single ENDCASE included e.g. CASE OF Response // CASE Response OF 1 : X X + Y 2 : X X - Y 3 : X X * Y 4 : X X / Y OTHERWISE OUTPUT No response ENDCASE"
+      },
+      {
+        "qNum": "16",
+        "text": "16 Last FALSE Found INPUT UserIn WHILE (First <= Last) AND (Found = FALSE) DO (First + Last) DIV 2 Middle IF MyData[Middle] = UserIn THEN TRUE Found ELSE IF UserIn < MyData[Middle] THEN Middle - 1 Last ELSE Middle + 1 First ENDIF ENDIF ENDWHILE OUTPUT Found This table shows the contents of the array",
+        "context": "",
+        "marks": 138,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "short",
+        "answer": "Found",
+        "markScheme": "Found"
+      },
+      {
+        "qNum": "20(a)",
+        "text": "Complete the trace table for the input data: 10 First Last UserIn Middle Found OUTPUT",
+        "context": "20 25 27 29 34 36 Value",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "20(b)",
+        "text": "Describe the function being performed by the algorithm. UCLES 2019 0478/23/O/N/19",
+        "context": "20 25 27 29 34 36 Value",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6",
+        "text": "6 Draw four different flowchart symbols and describe how they are used in a program flowchart. Flowchart symbol Description of use UCLES 2019 0478/23/O/N/19 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "2019",
+        "markScheme": "2019"
+      },
+      {
+        "qNum": "7(a)",
+        "text": "State the number of fields and records required for this database. Number of Fields Number of Records",
+        "context": "7 A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 test score and their year 11 test score. The class has 32 students.",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • Number of Fields: 4 Number of Records: 32"
+      },
+      {
+        "qNum": "7(b)",
+        "text": "The data in MARKBOOK is stored under category headings: LastName, FirstName, Y10TestScore and Y11TestScore. State, with a reason, whether any of these headings would be suitable as a primary key.",
+        "context": "7 A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 test score and their year 11 test score. The class has 32 students.",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "• • No field is suitable as a primary key because none of the data would be unique // duplicates could occur"
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Complete the query-by-example grid to only display the first name, last name and year 10 test score of each student who achieved 50 or more in their year 10 test. The output should be in test score order with the highest marks at the top of the list. Field: Table: Sort: Show: Criteria: or: Permissio",
+        "context": "7 A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 test score and their year 11 test score. The class has 32 students.",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Field: FirstName LastName Table: MARKBOOK MARKBOOK Sort: Show:"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 1,
+    "variant": 1,
+    "label": "2020 May/Jun P1v1",
+    "qpFile": "0478_s20_qp_11.pdf",
+    "msFile": "0478_s20_ms_11.pdf",
+    "qpPath": "papers/2020/0478_s20_qp_11.pdf",
+    "msPath": "papers/2020/0478_s20_ms_11.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Identify one input device that is part of the smartphone.",
+        "context": "1 An image of a smartphone is shown.",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: Microphone Touchscreen Camera Button",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Identify two output devices that are part of the smartphone. 1 2",
+        "context": "1 An image of a smartphone is shown.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: Speaker Touchscreen Light/flash",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "State what is meant by the term MAC address.",
+        "context": "1 An image of a smartphone is shown.",
+        "marks": 1,
+        "subtopics": [
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Describe the structure of a MAC address. UCLES 2020 0478/11/M/J/20",
+        "context": "1 An image of a smartphone is shown.",
+        "marks": 3,
+        "subtopics": [
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(d)",
+        "text": "A smartphone needs both RAM and ROM. State why a smartphone needs RAM and ROM. RAM ROM",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(i)(i)",
+        "text": "Identify two biometric systems that would be suitable for securing a smartphone. 1 2",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "4.2",
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(i)(ii)",
+        "text": "Explain why modern smartphones are secured with a biometric system. UCLES 2020 0478/11/M/J/20 [Turn over",
+        "context": "3",
+        "marks": 2,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Draw a logic circuit to match the given logic statement. All logic gates must have a maximum of two inputs. Do not attempt to simplify the logic statement. A B X C",
+        "context": "2 Consider the logic statement: X = (((A NAND B) OR (B XOR C)) AND NOT C)",
+        "marks": 5,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "1 mark for each correct gate. UCLES 2020"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2020 0478/11/M/J/20",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Interrupt One mark for benefit, two marks for drawbacks Benefit: Printing may be higher quality Can use larger paper sizes Can print onto different media No warm-up time"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Give three benefits of using a USB port to connect the mobile device to the computer. Benefit 1 Benefit 2 Benefit 3",
+        "context": "3 Carla s computer has a USB port. Carla uses the USB port to connect her mobile device to her computer, to transfer her photos.",
+        "marks": 3,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 Any three from: It is a universal standard It can t be inserted the wrong way around Supports different transmission speeds Automatically detects if correct driver installed It will charge the mobile device at the same time",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "3(b)",
+        "text": "State the type of data transmission used when transferring data using a USB port.",
+        "context": "3 Carla s computer has a USB port. Carla uses the USB port to connect her mobile device to her computer, to transfer her photos.",
+        "marks": 1,
+        "subtopics": [
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Serial"
+      },
+      {
+        "qNum": "3(c)",
+        "text": "Carla wants to reduce the file size of the photos she has transferred to her computer. She does not want the quality of the photos to be reduced, so she uses lossless compression. Describe how lossless compression reduces the file size of the photos. UCLES 2020 0478/11/M/J/20 [Turn over",
+        "context": "3 Carla s computer has a USB port. Carla uses the USB port to connect her mobile device to her computer, to transfer her photos.",
+        "marks": 4,
+        "subtopics": [
+          "1.3",
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "A compression algorithm is used No data is removed in the compression process An index/dictionary of pixels is created The number of times a pixel is repeated in a row is stored"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Give two similarities between the check digit and checksum methods. 1 2",
+        "context": "4 Two error detection methods that Allison s computer uses are check digit and checksum.",
+        "marks": 2,
+        "subtopics": [
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: They both calculate a value from the data They both append the calculated value to the data They both recalculate the value They both report an error if they don t match",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "4(b)",
+        "text": "Identify one other error detection method that Allison s computer could use. Describe how the method checks for errors. Method Description UCLES 2020 0478/11/M/J/20",
+        "context": "4 Two error detection methods that Allison s computer uses are check digit and checksum.",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for method, three marks for description: Automatic Repeat reQuest Uses acknowledgement / request and time-out Error control protocol Check performed on receiving data // error is detected by e.g. parity check, check sum If error detected, request is sent to resend data // negative acknowledgement is used Resend request is repeated till data is sent correctly / requests timeout / limit is reached Send acknowledgement that data is received // positive acknowledgement is used If acknowledg"
+      },
+      {
+        "qNum": "5",
+        "text": "5 Six components of a computer are given. Some are part of the central processing unit (CPU) of the Von Neumann model for a computer system. Tick ( ) to show if each component is a CPU component or is Not a CPU component. CPU component ( ) Component Not a CPU component ( ) Arithmetic logic unit (ALU",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.1",
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "CPU Not a CPU component component ( ) ( ) Component"
+      },
+      {
+        "qNum": "6",
+        "text": "6 Four scenarios are given. Identify the most suitable sensor for each scenario. A different sensor must be used for each scenario. Sensor Scenario Detecting when a person is approaching an automatic door system Monitoring the pollution level in a river Checking if a tropical aquarium is 25 degrees ",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Sensor Scenario Pressure / motion / infra-red Detecting when a person is approaching an automatic door system pH / light Monitoring the pollution level in a river Temperature Checking if a tropical aquarium is 25 degrees Celsius Magnetic field / pressure / motion / infra-red Counting the number of cars that cross a bridge One mark per each correct sensor (each sensor must be different) UCLES 2020"
+      },
+      {
+        "qNum": "7(i)(i)",
+        "text": "Describe how keylogging software can be used to gain unauthorised access to a customer s account.",
+        "context": "7 Hans has a website selling comic books. Customers can create an account to buy the comic books. Customers enter a username and password to log in to their account.",
+        "marks": 4,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(ii)",
+        "text": "Identify a feature that Hans can add to the website to limit the threat of keylogging software.",
+        "context": "7 Hans has a website selling comic books. Customers can create an account to buy the comic books. Customers enter a username and password to log in to their account.",
+        "marks": 1,
+        "subtopics": [
+          "5.3",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(i)",
+        "text": "State how customers can check that the personal details they enter into the website will be transmitted securely.",
+        "context": "7 Hans has a website selling comic books. Customers can create an account to buy the comic books. Customers enter a username and password to log in to their account.",
+        "marks": 1,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(i)(ii)",
+        "text": "Explain how a customer s browser checks that the website is secure. UCLES 2020 0478/11/M/J/20",
+        "context": "7 Hans has a website selling comic books. Customers can create an account to buy the comic books. Customers enter a username and password to log in to their account.",
+        "marks": 4,
+        "subtopics": [
+          "5.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Benny is printing some photos and the paper gets jammed in the printer. A signal is sent to alert the computer about the paper jam. State the name of this type of signal.",
+        "context": "8 Benny is a photographer and prints his photos using an inkjet printer.",
+        "marks": 1,
+        "subtopics": [
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Identify one benefit and two drawbacks of Benny using an inkjet printer, instead of a laser printer, to print his photos. Benefit Drawback 1 Drawback 2",
+        "context": "8 Benny is a photographer and prints his photos using an inkjet printer.",
+        "marks": 3,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(c)",
+        "text": "Four statements are given about printers. Tick ( ) to show whether the statement applies to an Inkjet printer or a Laser printer. Statement Inkjet ( ) Laser ( ) Uses a rotating drum to transfer the image to the paper Uses powdered toner Uses nozzles to spray droplets on to the paper Uses a print hea",
+        "context": "8 Benny is a photographer and prints his photos using an inkjet printer.",
+        "marks": 4,
+        "subtopics": [
+          "3.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Inkjet ( ) Statement Uses a rotating drum to transfer the image to the paper Uses powdered toner Uses nozzles to spray droplets on to the paper Uses a print head mechanism that moves side to side One mark per each correct row UCLES 2020 Laser ( )"
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Identify three features of a low-level language. Feature 1 Feature 2 Feature 3",
+        "context": "9 Programs can be written in a low-level language.",
+        "marks": 3,
+        "subtopics": [
+          "4.2",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Give two examples of a low-level language. Example 1 Example 2",
+        "context": "9 Programs can be written in a low-level language.",
+        "marks": 2,
+        "subtopics": [
+          "3.4",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Give one drawback of writing programs in a low-level language, instead of a high-level language.",
+        "context": "9 Programs can be written in a low-level language.",
+        "marks": 1,
+        "subtopics": [
+          "3.4",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Closer to/is machine code May use mnemonics May need an assembler to be translated One line of code represents a single instruction Machine dependent Have direct access to memory locations/registers",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(i)(i)",
+        "text": "Give the 8-bit binary value of the two denary values: 180 201 UCLES 2020 0478/11/M/J/20",
+        "context": "9 Programs can be written in a low-level language.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11",
+        "text": "11 Give the 12-bit binary value of the denary value 250. Binary can be represented as hexadecimal to make it easier to read. Give the hexadecimal values of the 8-bit binary values: 10010011 00011101 UCLES 2020 0478/11/M/J/20",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "s",
+    "sessionLabel": "May/Jun",
+    "paper": 2,
+    "variant": 3,
+    "label": "2020 May/Jun P2v3",
+    "qpFile": "0478_s20_qp_23.pdf",
+    "msFile": "0478_s20_ms_23.pdf",
+    "qpPath": "papers/2020/0478_s20_qp_23.pdf",
+    "msPath": "papers/2020/0478_s20_ms_23.pdf",
+    "totalMarks": 0,
+    "questions": []
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 1,
+    "label": "2020 Oct/Nov P1v1",
+    "qpFile": "0478_w20_qp_11.pdf",
+    "msFile": "0478_w20_ms_11.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_11.pdf",
+    "msPath": "papers/2020/0478_w20_ms_11.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Six devices are shown. Tick (3) to show if each device is an Input, Output or Storage device. Input (3) Device Output Storage (3) (3) Keyboard Sensor 3D cutter 2D scanner Microphone Hard disk drive (HDD)",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "3.2",
+          "3.3"
+        ],
+        "answerType": "short",
+        "answer": "LCD",
+        "markScheme": "LCD"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Complete the table to show the 12-bit binary values and the Denary values for each Hexadecimal ticket number. Hexadecimal ticket number 12-bit binary value Denary value 028 1A9 20C UCLES 2020 0478/11/O/N/20",
+        "context": "2 Ron is attending a music concert. He has bought three tickets. Each ticket number is displayed as a hexadecimal number.",
+        "marks": 6,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct binary conversion One mark for each correct denary conversion Hexadecimal ticket number UCLES 2020 One mark per each correct row: Device 12-bit binary value"
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Each ticket also has a QR code. The QR code is scanned at the entrance to the venue. A person can only enter the venue with a valid QR code that allows entry. When a person enters, a count is incremented to show how many people have entered the venue. Explain how the system scans the QR code, checks",
+        "context": "3",
+        "marks": 7,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Web server Certificate Authentic Browser Signal"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Identify the two layers in the TLS protocol. Layer 1 Layer 2 UCLES 2020 0478/11/O/N/20 [Turn over",
+        "context": "3 Transport Layer Security (TLS) protocol is used to secure the transmission of data over the Internet.",
+        "marks": 2,
+        "subtopics": [
+          "5.2",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(b)",
+        "text": "The following paragraph explains how data is sent securely using the TLS protocol. Use the terms to complete the paragraph. Not all terms may need to be used. authentic binary browser certificate internet service provider signal web page web server website The browser requests the to identify itself",
+        "context": "4",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 Four marks for 8 correct outputs Three marks for 6/7 correct outputs Two marks for 4/5 correct outputs One mark for 2/3 correct outputs"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Identify one other protocol that can be used to secure data transmission over the Internet. UCLES 2020 0478/11/O/N/20",
+        "context": "4",
+        "marks": 1,
+        "subtopics": [
+          "2.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for the correct gate and one mark for the correct truth table"
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Draw a logic circuit to represent the given logic statement. All logic gates must have a maximum of two inputs. Do not attempt to simplify the logic statement. A B X C",
+        "context": "4 Consider the given logic statement: X = ((NOT (A NAND B)) OR (B NOR C))",
+        "marks": 4,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2020 0478/11/O/N/20",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "LCD",
+        "markScheme": "LCD"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "LCD",
+        "markScheme": "LCD"
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Give two examples of HTML structure. Example 1 Example 2",
+        "context": "5 Luke is creating a website for his t-shirt design business.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "Give two examples of HTML presentation. Example 1 Example 2 UCLES 2020 0478/11/O/N/20 [Turn over",
+        "context": "5 Luke is creating a website for his t-shirt design business.",
+        "marks": 2,
+        "subtopics": [
+          "3.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "8(b)",
+        "text": "Luke is concerned that his web server may be hacked or subjected to a denial of service (DoS) attack. State two security methods that Luke could use to help protect the web server from hacking or a DoS attack. Method 1 Method 2",
+        "context": "8",
+        "marks": 2,
+        "subtopics": [
+          "5.1",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Energy efficient // low power consumption Long lasting // longevity Focussed beam // less light strays from beam Brighter/vivid colours High resolution No flicker Display is thinner Mercury free technology // environmentally friendly Fewer pixel failure Increased viewing in sunlight",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Describe how data is transmitted using parallel data transmission.",
+        "context": "6 A Von Neumann model for a computer system contains several integrated circuits (IC).",
+        "marks": 2,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "Give one benefit of using parallel, rather than serial, data transmission.",
+        "context": "6 A Von Neumann model for a computer system contains several integrated circuits (IC).",
+        "marks": 1,
+        "subtopics": [
+          "2.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(i)",
+        "text": "Identify the bus that carries signals around the CPU to control the components.",
+        "context": "6 A Von Neumann model for a computer system contains several integrated circuits (IC).",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(i)(ii)",
+        "text": "Identify the register built into the arithmetic logic unit (ALU). UCLES 2020 0478/11/O/N/20",
+        "context": "6 A Von Neumann model for a computer system contains several integrated circuits (IC).",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9",
+        "text": "9 Four statements about a Von Neumann model for a computer system are shown. Tick (3) to show if each statement is True or False. True (3) Statement False (3) Data and instructions are stored in the same memory unit The control unit manages operations within the CPU Data and instructions can be fetc",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7",
+        "text": "7 Nina is recording some music tracks that she has written. She is researching whether she should record them in MIDI or MP3 format. Explain what is meant by MIDI and MP3 format. MIDI MP3 UCLES 2020 0478/11/O/N/20 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Four from (Max two per format):"
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Explain what is meant by LED technology.",
+        "context": "8 Matthew is buying a new television with a display that uses LED technology.",
+        "marks": 3,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Light emitting diodes (technology) The display is made up of pixels that are arranged together as a matrix each is formed of three LEDs/filters Shades of colour are achieved by mixing red, blue and green The screen can be back-lit/edge-lit",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(b)",
+        "text": "State three benefits of LED technology. Benefit 1 Benefit 2 Benefit 3",
+        "context": "8 Matthew is buying a new television with a display that uses LED technology.",
+        "marks": 3,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Energy efficient // low power consumption Long lasting // longevity Focussed beam // less light strays from beam Brighter/vivid colours High resolution No flicker Display is thinner Mercury free technology // environmentally friendly Fewer pixel failure Increased viewing in sunlight",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(c)",
+        "text": "Identify one other technology that could have been used for the display.",
+        "context": "8 Matthew is buying a new television with a display that uses LED technology.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(a)",
+        "text": "An even parity check is used to check for errors in the binary values after transmission. For each of the 7-bit binary values, write the Parity bit that makes sure even parity is met. UCLES 2020 7-bit binary value Parity bit 1100010 1001011 0100010 0010111 0478/11/O/N/20",
+        "context": "9 Victoria is entering data into a computer system. The data will be transmitted to cloud storage.",
+        "marks": 4,
+        "subtopics": [
+          "2.2",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Identify two other error checking methods that could be used to check the binary values are correct after transmission. Method 1 Method 2",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "1.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(c)",
+        "text": "A check digit is used to check whether data is correct when entered into the system. Describe how a check digit can be used to make sure the data entered is correct. UCLES 2020 0478/11/O/N/20",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 2,
+    "label": "2020 Oct/Nov P1v2",
+    "qpFile": "0478_w20_qp_12.pdf",
+    "msFile": "0478_w20_ms_12.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_12.pdf",
+    "msPath": "papers/2020/0478_w20_ms_12.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "State what is meant by HTML.",
+        "context": "1 Tina is creating a website for charity events. She uses HTML to create the website.",
+        "marks": 1,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: Hypertext Mark-up Language Web authoring language // language used to write/create websites/web pages",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "State whether background colour is an example of structure or presentation, in the website.",
+        "context": "1 Tina is creating a website for charity events. She uses HTML to create the website.",
+        "marks": 1,
+        "subtopics": [
+          "8.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "The hexadecimal colour code #43B7F0 is stored in three 8-bit registers. Give the 8-bit binary values for each part of the hexadecimal code. 43 B7 F0",
+        "context": "1 Tina is creating a website for charity events. She uses HTML to create the website.",
+        "marks": 6,
+        "subtopics": [
+          "1.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "State whether the microphone is an input or output device. UCLES 2020 0478/12/O/N/20",
+        "context": "1 Tina is creating a website for charity events. She uses HTML to create the website.",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 She wants to compress the recording to make sure that the file is as small as possible for the website. Identify which type of compression she should use and describe how this would compress the file for the website. Type of compression Description Give two benefits of compressing the file for the",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "1.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "NOTE: Three different types of human error can be awarded e.g. accidental deletion, not saving data, incorrect shutdown procedure"
+      },
+      {
+        "qNum": "4(i)(i)",
+        "text": "Identify the two layers that are present in the TLS protocol. Layer 1 Layer 2",
+        "context": "4",
+        "marks": 2,
+        "subtopics": [
+          "4.2",
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(i)(ii)",
+        "text": "Explain how data is sent securely using the TLS protocol. UCLES 2020 0478/12/O/N/20",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "5.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Identify three security threats to her web server that Tina might be concerned about. 1 2 3",
+        "context": "5",
+        "marks": 3,
+        "subtopics": [
+          "4.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(ii)",
+        "text": "Tina installs a proxy server to help protect her website from security threats. Describe how the proxy server will help protect the website.",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "5.2",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Tick ( ) to show whether an Even or an Odd parity check has been used for each binary value. 8-bit binary value Even ( ) Odd ( ) 11111111 01100110 01111011 10000000 UCLES 2020 0478/12/O/N/20 [Turn over",
+        "context": "2 Four 7-bit binary values are transmitted from one computer to another. A parity bit was added to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly.",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct row: 8-bit binary value Even ( ) 11111111 01100110 01111011 10000000"
+      },
+      {
+        "qNum": "6(b)",
+        "text": "The data will also be checked using a checksum. Describe how a checksum can be used to check that the data has been transmitted correctly.",
+        "context": "6",
+        "marks": 5,
+        "subtopics": [
+          "2.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(i)(i)",
+        "text": "Identify three ways that the data could be accidentally damaged. 1 2 3",
+        "context": "3 Alessandro has some important data stored on his computer. He is concerned about accidental damage to his data.",
+        "marks": 3,
+        "subtopics": [
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(i)(ii)",
+        "text": "State what Alessandro could do to make sure that he can retrieve his data if it is accidentally damaged. UCLES 2020 0478/12/O/N/20",
+        "context": "3 Alessandro has some important data stored on his computer. He is concerned about accidental damage to his data.",
+        "marks": 1,
+        "subtopics": [
+          "4.2",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "Alessandro uses an SSD to store his data. Describe what is meant by an SSD and how it operates to store data.",
+        "context": "7",
+        "marks": 4,
+        "subtopics": [
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Alessandro also uses off-line storage to store his data. Three examples of off-line storage are Blu-ray, CD and DVD. Six statements are given about off-line storage. Tick ( ) to show if each statement applies to Blu-ray, CD, or DVD. Some statements apply to more than one example of off-line storage.",
+        "context": "7",
+        "marks": 6,
+        "subtopics": [
+          "3.3",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Draw a logic circuit to match the given logic statement. All logic gates must have a maximum of two inputs. Do not attempt to simplify the logic statement. A B X C",
+        "context": "4 Consider the logic statement: X = (((A NAND B) NOR (B AND C)) OR C)",
+        "marks": 4,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 One mark for each correct logic gate with correct input:"
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2020 0478/12/O/N/20",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "short",
+        "answer": "Create a backup",
+        "markScheme": "Create a backup"
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Five statements about LED displays are given. Tick ( ) to show if each statement is True or False. Statement True ( ) False ( ) It is a flat panel display It creates images using red, green and blue diodes It is not very energy efficient and gives off heat It can be used in mobile devices such as sm",
+        "context": "5 Tammy is buying a new computer that has an LED display.",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for each correct row:"
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Tammy connects the computer to her home network. The computer has a MAC address and an IP address. A paragraph is given about MAC addresses and IP addresses. Complete the paragraph using the list of terms given. Not all terms need to be used. compiled computer control dynamic identify packet princip",
+        "context": "10",
+        "marks": 5,
+        "subtopics": [
+          "5.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "10(c)",
+        "text": "Tammy uses a browser when accessing the Internet. Describe the role of the browser. UCLES 2020 0478/12/O/N/20",
+        "context": "10",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 1,
+    "variant": 3,
+    "label": "2020 Oct/Nov P1v3",
+    "qpFile": "0478_w20_qp_13.pdf",
+    "msFile": "0478_w20_ms_13.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_13.pdf",
+    "msPath": "papers/2020/0478_w20_ms_13.pdf",
+    "totalMarks": 75,
+    "questions": [
+      {
+        "qNum": "1",
+        "text": "1 Five hardware devices are given. Tick (3) to show if each device is an Input, Output or Storage device. Device Input (3) Output (3) Storage (3) Solid state drive (SSD) Headphones 2D cutter LCD projector Microphone",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "3.3",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from: Suitable sensor used e.g. motion sensor/pressure sensor (Analogue) data is converted to digital (using ADC) Sensor sends data to microprocessor Data compared to stored data if value outside range/within range water is sprayed signal sent to actuator to spray water if value within range/outside range no action taken Continuous loop"
+      },
+      {
+        "qNum": "2(a)",
+        "text": "Identify the component within the CPU that controls the flow of data.",
+        "context": "2 Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model for a computer system.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Control unit // CU"
+      },
+      {
+        "qNum": "2(b)",
+        "text": "Identify the component within the CPU where calculations are carried out.",
+        "context": "2 Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model for a computer system.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Arithmetic logic unit // ALU"
+      },
+      {
+        "qNum": "2(c)",
+        "text": "Identify the component within the CPU that stores the address of the next instruction to be processed.",
+        "context": "2 Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model for a computer system.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Program counter // memory address register // PC // MAR"
+      },
+      {
+        "qNum": "2(d)",
+        "text": "Identify the register within the CPU that holds an instruction that has been fetched from memory.",
+        "context": "2 Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model for a computer system.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Memory data register // current instruction register // MDR // CIR"
+      },
+      {
+        "qNum": "2(e)",
+        "text": "Identify the register within the CPU that holds data that has been fetched from memory. UCLES 2020 0478/13/O/N/20",
+        "context": "2 Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model for a computer system.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Memory data register // MDR"
+      },
+      {
+        "qNum": "3(a)",
+        "text": "Four denary to 8-bit binary conversions are given. Tick (3) to show if each denary to 8-bit binary conversion is Correct or Incorrect. Denary Binary Conversion 145 10010001 179 10110101 11 00010011 100 01100010 Correct (3) Incorrect (3)",
+        "context": "3",
+        "marks": 4,
+        "subtopics": [
+          "1.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Convert the 12-bit binary number into hexadecimal. 1 1 0 0 0 1 0 0 0 0 0 0",
+        "context": "3",
+        "marks": 3,
+        "subtopics": [
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(a)",
+        "text": "Describe how the webpages are requested and displayed on the customer s computer.",
+        "context": "4 Eugene has a web server that stores his online shopping website. Customers access the website using a browser.",
+        "marks": 4,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 One mark per each correct row:"
+      },
+      {
+        "qNum": "4(b)",
+        "text": "State three online security threats to Eugene s web server. Threat 1 Threat 2 Threat 3 UCLES 2020 0478/13/O/N/20 [Turn over",
+        "context": "4 Eugene has a web server that stores his online shopping website. Customers access the website using a browser.",
+        "marks": 3,
+        "subtopics": [
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Hacking Denial of service (DoS) Malware Virus",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(a)",
+        "text": "Tick (3) to show if the USB connection uses Parallel or Serial data transmission. Describe your chosen method of data transmission. Parallel Serial Description",
+        "context": "5 Arjun uses a scanner to create digital versions of some printed documents. The scanner is attached to his computer using a USB connection.",
+        "marks": 3,
+        "subtopics": [
+          "2.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for correct tick, two marks for description Serial Bits sent one at a time Single wire"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Give three benefits of a USB connection. Benefit 1 Benefit 2 Benefit 3",
+        "context": "5 Arjun uses a scanner to create digital versions of some printed documents. The scanner is attached to his computer using a USB connection.",
+        "marks": 3,
+        "subtopics": [
+          "2.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 Multiple bits sent at a time Multiple wires Any three from: Universal connection // industry standard Can only be inserted one way Backward compatible Auto configures // automatically recognised devices Can power devices Fast data transfer speed Inexpensive to purchase/manufacture",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "5(c)",
+        "text": "Arjun uses the Internet to send the digital documents to his friend. He wants to make sure the documents are sent securely. Identify two protocols that can be used to transfer data securely. Protocol 1 Protocol 2 UCLES 2020 0478/13/O/N/20",
+        "context": "5 Arjun uses a scanner to create digital versions of some printed documents. The scanner is attached to his computer using a USB connection.",
+        "marks": 2,
+        "subtopics": [
+          "3.2",
+          "2.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: TLS SSL HTTPS One mark for each correct row: 8-bit binary value Even ( ) 10000001 10000010",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "6",
+        "text": "6 Elsa writes a paragraph in an examination about encryption. There are several terms missing from the paragraph. Complete the paragraph using the list of given terms. Not all terms may need to be used. Some terms may be used more than once. algorithm alphanumeric cookie cypher key padlock plain wor",
+        "context": "",
+        "marks": 5,
+        "subtopics": [
+          "2.3",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: Transposition error When bits still add up to odd/even number Even number of incorrect bits",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "7(a)",
+        "text": "Tick (3) to show whether an Even or an Odd parity check has been used for each binary value. 8-bit binary value Even (3) Odd (3) 10000001 10000010 00101001 00101000",
+        "context": "7 Four 7-bit binary values are transmitted from one computer to another. A parity bit was added to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly.",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(b)",
+        "text": "A parity check may not always detect errors that have occurred in data transmission. State why a parity check may not detect data transmission errors.",
+        "context": "7 Four 7-bit binary values are transmitted from one computer to another. A parity bit was added to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020"
+      },
+      {
+        "qNum": "7(c)",
+        "text": "Give one other error checking method that could be used to check for errors in data transmission. UCLES 2020 0478/13/O/N/20",
+        "context": "7 Four 7-bit binary values are transmitted from one computer to another. A parity bit was added to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly.",
+        "marks": 1,
+        "subtopics": [
+          "3.1",
+          "1.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: ARQ Checksum",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Explain what is meant by LCD technology.",
+        "context": "8 Edith is buying a new computer monitor that displays images using LCD technology.",
+        "marks": 3,
+        "subtopics": [
+          "3.3",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Liquid crystal display The display is made of pixels arranged in a matrix Uses a flat panel display Backlit display with CCFLs/LEDs Uses light-modulating properties of liquid crystals Crystals can be turned between opaque and transparent (to allow light to pass) Colours created using RGB",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(b)",
+        "text": "State three benefits of LCD technology. Benefit 1 Benefit 2 Benefit 3",
+        "context": "8 Edith is buying a new computer monitor that displays images using LCD technology.",
+        "marks": 3,
+        "subtopics": [
+          "3.3",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Low power consumption Runs at cool temperature Do not suffer image burn Do not suffer flicker issues Bright image/colours High resolution image Cheaper to purchase than e.g. LED screen",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(a)",
+        "text": "Give three similarities between a CD and a DVD. 1 2 3",
+        "context": "9 Elle uses both CDs and DVDs to store her school projects.",
+        "marks": 3,
+        "subtopics": [
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Both need a red laser to read/write data Both are spun to be read Both use spiral tracks for data Both are optical storage Both are off-line storage // both non-volatile Both use pits and lands to store data",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "9(b)",
+        "text": "State one difference between a CD and a DVD. UCLES 2020 0478/13/O/N/20 [Turn over",
+        "context": "9 Elle uses both CDs and DVDs to store her school projects.",
+        "marks": 1,
+        "subtopics": [
+          "3.3"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any one from: DVD can be dual layer, but CD can only be single DVD has higher storage capacity DVD has a shorter wavelength laser DVD are spun faster DVDs have a higher data transfer rate",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "8(a)",
+        "text": "Draw a logic circuit to match the given logic statement. All logic gates must have a maximum of two inputs. Do not attempt to simplify the logic statement. A B X C",
+        "context": "8 10 Consider the following logic statement: X = ((B AND NOT A) XOR (A OR C))",
+        "marks": 4,
+        "subtopics": [
+          "10.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any three from: Liquid crystal display The display is made of pixels arranged in a matrix Uses a flat panel display Backlit display with CCFLs/LEDs Uses light-modulating properties of liquid crystals Crystals can be turned between opaque and transparent (to allow light to pass) Colours created using RGB",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1",
+        "text": "1 X UCLES 2020 0478/13/O/N/20",
+        "context": "",
+        "marks": 4,
+        "subtopics": [],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Six from: Suitable sensor used e.g. motion sensor/pressure sensor (Analogue) data is converted to digital (using ADC) Sensor sends data to microprocessor Data compared to stored data if value outside range/within range water is sprayed signal sent to actuator to spray water if value within range/outside range no action taken Continuous loop"
+      },
+      {
+        "qNum": "11",
+        "text": "11 A theme park has a game where a player tries to run from the start to the finish without getting wet. The system for the game uses sensors and a microprocessor to spray water at a player as they run past each sensor. Describe how the sensors and the microprocessor are used in this system. 12 Warn",
+        "context": "",
+        "marks": 11,
+        "subtopics": [
+          "5.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020"
+      },
+      {
+        "qNum": "10(a)",
+        "text": "State one similarity between phishing and pharming.",
+        "context": "10 13 Phishing and pharming are two security issues a user should be aware of when using the Internet.",
+        "marks": 1,
+        "subtopics": [
+          "5.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 One mark for each correct logic gate with the correct input:"
+      },
+      {
+        "qNum": "10(b)",
+        "text": "Explain two differences between phishing and pharming. Difference 1 Difference 2 UCLES 2020 0478/13/O/N/20",
+        "context": "10 13 Phishing and pharming are two security issues a user should be aware of when using the Internet.",
+        "marks": 2,
+        "subtopics": [
+          "5.2",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 1,
+    "label": "2020 Oct/Nov P2v1",
+    "qpFile": "0478_w20_qp_21.pdf",
+    "msFile": "0478_w20_ms_21.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_21.pdf",
+    "msPath": "papers/2020/0478_w20_ms_21.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Identify one array that you could have used for Task 1. Give the data type and state the use of the array. Array Data type Use",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "8.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "For one array One mark for naming of an array with a suitable data type and one mark for its use"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Data entered by a customer includes the age of the driver in Task 1. Identify two different validation checks you could use for the age of the driver. Justify your choice for each one. Validation check 1 Justification Validation check 2 Justification UCLES 2020 0478/21/O/N/20 [Turn over",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "For each validation check One mark for identification of a check and one mark for the reason max 4"
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a flowchart. Assume that Task 1 has been completed. UCLES 2020 0478/21/O/N/20",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(i)(i)",
+        "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed. Any programming statements used in your answer must be fully explained. UCLES 2020 0478/21/O/N/20 [Turn over",
+        "context": "5",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6",
+        "text": "6 The car insurance system needs updating to record the percentage of customers who bought car insurance after obtaining a price to insure a car. Describe the changes required to your program. UCLES 2020 0478/21/O/N/20",
+        "context": "",
+        "marks": 3,
+        "subtopics": [
+          "3.1",
+          "9.1"
+        ],
+        "answerType": "short",
+        "answer": "Invalid",
+        "markScheme": "Invalid"
+      },
+      {
+        "qNum": "2",
+        "text": "2 Describe the purpose of variables and constants. Use an example of each in your answer. UCLES 2020 0478/21/O/N/20 [Turn over",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "UCLES 2020 2020"
+      },
+      {
+        "qNum": "3(s)",
+        "text": "from the algorithm of: an assignment statement a loop a counting statement a totalling statement",
+        "context": "3 This pseudocode algorithm calculates the weight and number of bags in a load of firewood. The weight in kilograms of each bag is input. The algorithm finishes when either 50 bags have been weighed, or as soon as the total weight exceeds 1000 kilograms. Only then are the total weight and the number",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3(b)",
+        "text": "Give the line numbers of the four errors in this pseudocode. Suggest a correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction UCLES 2020 0478/21/O/N/20",
+        "context": "3 This pseudocode algorithm calculates the weight and number of bags in a load of firewood. The weight in kilograms of each bag is input. The algorithm finishes when either 50 bags have been weighed, or as soon as the total weight exceeds 1000 kilograms. Only then are the total weight and the number",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark for error and correction Line 1 TotalWeight 0 Line 10 move OUTPUT \"Number of bags in the load is \", BagCount to end / after line 11 Line 11 UNTIL TotalWeight > MaxWeight OR BagCount >= MaxBag Line 12 OUTPUT \"Total weight of the load is \", TotalWeight"
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Explain how you could extend the algorithm to calculate and display the average weight of a bag of firewood in the load. UCLES 2020 0478/21/O/N/20 [Turn over",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "5.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(a)",
+        "text": "Complete the trace table for this set of input data: 5, 4, 6, 2, 1, 9, 3, 2, 1, 6, 7, 6, 1, 5, 1, 0, 0, 0, 0, 0 V W X Y Z A B OUTPUT",
+        "context": "11",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "11(b)",
+        "text": "Describe the purpose of this flowchart. UCLES 2020 0478/21/O/N/20 [Turn over",
+        "context": "11",
+        "marks": 2,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "5(a)",
+        "text": "State how many fields and how many records are shown in the AIRLINE table. Number of Fields Number of Records",
+        "context": "5 A database table, AIRLINE, stores data used to compare airlines. Code Airline name Number of employees Number of countries Head office Share price FJ FastJet 60000 30 Europe 514.50 MA MurphyAir 35000 8 Europe 152.67 JS JetSeven 45000 22 Asia 257.44 K3 Koala3 22000 11 Australia 501.21 NS NorthState",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "6 fields 9 records"
+      },
+      {
+        "qNum": "5(b)",
+        "text": "Show the output that would be given by this query-by-example. Field: Airline name Number of employees Head office Share price Table: AIRLINE AIRLINE AIRLINE AIRLINE Sort: Show: 3 3 Criteria: < 35000 > 500.00 or: UCLES 2020 0478/21/O/N/20",
+        "context": "5 A database table, AIRLINE, stores data used to compare airlines. Code Airline name Number of employees Number of countries Head office Share price FJ FastJet 60000 30 Europe 514.50 MA MurphyAir 35000 8 Europe 152.67 JS JetSeven 45000 22 Asia 257.44 K3 Koala3 22000 11 Australia 501.21 NS NorthState",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "10.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Either mark by row or by column but not both One each correct row or one mark for each correct column max two Koala3 Australia SkyKing Europe"
+      },
+      {
+        "qNum": "13(c)",
+        "text": "Complete the query-by-example grid to find every airline with a head office in Asia or Africa, and number of countries greater than 4. Only show the airline name and number of countries. Field: Table: Sort: Show: Criteria: or: UCLES 2020 0478/21/O/N/20",
+        "context": "13",
+        "marks": 4,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 2,
+    "label": "2020 Oct/Nov P2v2",
+    "qpFile": "0478_w20_qp_22.pdf",
+    "msFile": "0478_w20_ms_22.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_22.pdf",
+    "msPath": "papers/2020/0478_w20_ms_22.pdf",
+    "totalMarks": 65,
+    "questions": [
+      {
+        "qNum": "1(i)(i)",
+        "text": "Identify one array you could have used for Task 1 and state its purpose. Array Purpose",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(ii)",
+        "text": "Identify one variable you could have used for Task 2 and state its purpose. Variable Purpose",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(iii)",
+        "text": "Identify one constant you could have used for Task 3 and state its purpose. Constant Purpose",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Explain the benefits of storing Price as a real data type. UCLES 2020 0478/22/O/N/20 [Turn over",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "4(c)",
+        "text": "Write an algorithm to show how you completed Task 1, using either pseudocode, programming statements or a flowchart. It is not necessary to show initialisation or setting up of arrays in your answer. UCLES 2020 0478/22/O/N/20 5 UCLES 2020 0478/22/O/N/20 [Turn over",
+        "context": "4",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program completes Task 3. Any programming statements used in your answer must be fully explained. UCLES 2020 0478/22/O/N/20",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "7(e)",
+        "text": "Describe how you could alter your program to allow more than one computer to be bought. UCLES 2020 0478/22/O/N/20 [Turn over",
+        "context": "7",
+        "marks": 2,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2",
+        "text": "2 Tick (3) one box in each row to identify if the statement about subroutines is true or false. Statement true (3) false (3) A subroutine is called from within a program. A subroutine is not a complete program. A subroutine is a self-contained piece of code. A subroutine must return a value to the c",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "PartNum The data stored in this field is unique for each record"
+      },
+      {
+        "qNum": "3",
+        "text": "3 This pseudocode algorithm is used as a validation check. PRINT \"Input a number from 1 to 5000\" REPEAT INPUT Number IF Number < 1 OR Number > 5000 THEN PRINT \"Invalid number, please try again\" ENDIF UNTIL Number >= 1 AND Number <= 5000 PRINT Number, \" is within the correct range\" Identify three dif",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "One mark Flag column One mark Count column One mark Num[0] and Num[1] columns One mark Num[2], Num[3] and Num[4] columns One mark Store column"
+      },
+      {
+        "qNum": "4",
+        "text": "4 This pseudocode algorithm allows 5000 numbers to be entered and stored in an array called Number. 1 TO 5000 FOR Count INPUT Number[Count] NEXT Count Extend and re-write the algorithm using pseudocode to also count and output how many of the numbers stored in the array are greater than 500, using t",
+        "context": "",
+        "marks": 6,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "2020 Any six from: MP1 Initialisation of Higher to 0 before the loop MP2 Use of IF statement MP3 Correct condition in IF statement MP4 Correct counting statement inside loop MP5 OUTPUT/PRINT statement with correct reference to Higher MP6 Appropriate message in output MP7 Correct location of OUTPUT and IF statements Higher 0 FOR Count 1 TO 5000 INPUT Number[Count] IF Number[Count] > 500 THEN Higher Higher + 1 ENDIF NEXT Count OUTPUT \"There are \", Higher, \" values that are greater than 500\" UCLES ",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "1(a)",
+        "text": "The contents of the array at the start of the algorithm are: Num Num Num Num Num 45 56 30",
+        "context": "1 Flag ENDIF NEXT Count UNTIL Flag = 0",
+        "marks": 10,
+        "subtopics": [
+          "3.4",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "15",
+        "text": "15 Complete the trace table for the algorithm using the data given in the array. Flag Count Num 45 Num 56 Num 30 Num 12 Num",
+        "context": "",
+        "marks": 10,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "15(b)",
+        "text": "Describe the purpose of the algorithm. UCLES 2020 0478/22/O/N/20",
+        "context": "15 Store",
+        "marks": 2,
+        "subtopics": [
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "6",
+        "text": "6 Draw a flowchart symbol to represent each of the following: Input/Output Decision Question 7 starts on Page 12. Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the",
+        "context": "",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.4"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Input/Output Decision One mark for each correct symbol UCLES 2020"
+      },
+      {
+        "qNum": "1(a)",
+        "text": "State the number of records in the table AUDIOPARTS",
+        "context": "1 S25 Surround Speaker 100.00 60 T19 Speaker Stands (Pair) 75.00 60",
+        "marks": 1,
+        "subtopics": [
+          "3.2",
+          "9.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Identify the field that is most suitable to be a primary key and give a reason for your choice. Fieldname Reason",
+        "context": "1 S25 Surround Speaker 100.00 60 T19 Speaker Stands (Pair) 75.00 60",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Complete the query-by-example grid to show the items where the quantity in stock is fewer than 10. Show all the fields from the database table in descending order of cost. Field: Table: Sort: Show: Criteria: or: UCLES 2020 0478/22/O/N/20",
+        "context": "1 S25 Surround Speaker 100.00 60 T19 Speaker Stands (Pair) 75.00 60",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "3.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "IF ComponentFlag = False THEN OUTPUT \"Your RAM Item Code doesn t exist, please try again\" ENDIF ENDWHILE OUTPUT \"Which type of Primary Hard Disk Drive would you like? Input the Item Code\" ComponentFlag False WHILE ComponentFlag = False INPUT PHDDCode Count 5 WHILE Count<8 DO IF PHDDCode = ComponentCode[Count] THEN HDDIndex Count ComponentFlag True Count 8 ENDIF Count Count + 1 ENDWHILE IF ComponentFlag = False THEN OUTPUT \"Your Primary HDD Item Code doesn t exist, please try again\" ENDIF ENDWHIL"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "session": "w",
+    "sessionLabel": "Oct/Nov",
+    "paper": 2,
+    "variant": 3,
+    "label": "2020 Oct/Nov P2v3",
+    "qpFile": "0478_w20_qp_23.pdf",
+    "msFile": "0478_w20_ms_23.pdf",
+    "qpPath": "papers/2020/0478_w20_qp_23.pdf",
+    "msPath": "papers/2020/0478_w20_ms_23.pdf",
+    "totalMarks": 50,
+    "questions": [
+      {
+        "qNum": "1(a)",
+        "text": "Identify one constant and identify one variable that you could have used for Task 1. Give the value that would be assigned to the constant. Give the data type for the variable. State what each one could be used for. Constant Value Use Variable Data type Use",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 6,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "short",
+        "answer": "Constant name MaxSalad Value",
+        "markScheme": "Constant name MaxSalad Value"
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "Write an algorithm to allow a customer to choose the filling and salad items for their baguette (part of Task 1), using either pseudocode, programming statements or a flowchart. Your algorithm must only include this part of Task 1. UCLES 2020 0478/23/O/N/20 [Turn over 4 UCLES 2020 0478/23/O/N/20 5",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 5,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(i)(i)",
+        "text": "ensured that only valid choices were accepted for the filling.",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 3,
+        "subtopics": [
+          "8.1",
+          "4.2"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(c)",
+        "text": "Explain how you would need to change your program for Task 1 if there were three sizes of baguette to choose from (15 cm, 20 cm and 30 cm). UCLES 2020 0478/23/O/N/20 [Turn over",
+        "context": "1 All variables, constants and other identifiers must have meaningful names.",
+        "marks": 2,
+        "subtopics": [
+          "8.1",
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": "Any two from: MP1 Store three sizes of baguette e.g. add third baguette size to array MP2 Change the prompt to output three sizes of baguettes MP3 Change the selection statement to allow for a third size of baguette e.g. IF/REPEAT/WHILE",
+        "acceptedAnswers": []
+      },
+      {
+        "qNum": "6(d)",
+        "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed. Any programming statements used in your answer must be fully explained. UCLES 2020 0478/23/O/N/20",
+        "context": "6",
+        "marks": 4,
+        "subtopics": [
+          "3.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "2(s)",
+        "text": "from the algorithm of: an assignment statement a loop a counting statement a selection statement UCLES 2020 0478/23/O/N/20",
+        "context": "2 An algorithm has been written in pseudocode to check the temperature readings taken from a freezer are within the range 18 degrees to 25 degrees inclusive. The algorithm counts the number of times that the temperature reading is below 25 degrees and the number of times that the temperature reading",
+        "marks": 4,
+        "subtopics": [
+          "8.1",
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(b)",
+        "text": "Give line numbers where the four errors are to be found in the pseudocode. Suggest a correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "9(c)",
+        "text": "Explain how you could extend the algorithm to count the number of times the temperature readings are within the range 18 degrees to 25 degrees inclusive. UCLES 2020 0478/23/O/N/20 [Turn over",
+        "context": "9",
+        "marks": 4,
+        "subtopics": [
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "3",
+        "text": "3 Four programming concepts and five descriptions are shown. Draw a line to connect each Programming concept to its correct Description. Not all Descriptions will be connected to a Programming concept. Programming concept Description Validation A subroutine that does not have to return a value Verif",
+        "context": "",
+        "marks": 4,
+        "subtopics": [
+          "3.1",
+          "8.1"
+        ],
+        "answerType": "short",
+        "answer": "Invalid",
+        "markScheme": "Invalid"
+      },
+      {
+        "qNum": "13(a)",
+        "text": "Complete a trace table for this set of input data: 11, 4, 6, 2, 3, 9, 3, 2, 2, 6, 0, 0, 1, 1 Y Z A OUTPUT",
+        "context": "13",
+        "marks": 4,
+        "subtopics": [
+          "7.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "13(b)",
+        "text": "Explain the purpose of this algorithm. UCLES 2020 0478/23/O/N/20 [Turn over",
+        "context": "13",
+        "marks": 2,
+        "subtopics": [
+          "7.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "1(a)",
+        "text": "State how many fields and how many records are shown in this table. Number of fields Number of records",
+        "context": "1 Y N",
+        "marks": 2,
+        "subtopics": [
+          "9.1"
+        ],
+        "answerType": "short",
+        "answer": "Constant name MaxSalad Value",
+        "markScheme": "Constant name MaxSalad Value"
+      },
+      {
+        "qNum": "1(b)",
+        "text": "Show the output that would be given by this query-by-example. Field: Creature Class Ready for release Table: MARINE MARINE MARINE Sort: Show: Criteria: 3 3 =\"Bird\" or: UCLES 2020 0478/23/O/N/20",
+        "context": "1 Y N",
+        "marks": 2,
+        "subtopics": [
+          "9.1",
+          "8.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      },
+      {
+        "qNum": "15(c)",
+        "text": "Complete the query-by-example grid to display the creatures, in ascending order of quantity, that have no offspring and are ready for release. Display only the creature field. Field: Table: Sort: Show: Criteria: or: UCLES 2020 0478/23/O/N/20",
+        "context": "15",
+        "marks": 4,
+        "subtopics": [
+          "9.1",
+          "5.1"
+        ],
+        "answerType": "markscheme",
+        "answer": "",
+        "markScheme": ""
+      }
+    ]
+  },
   {
     "year": 2021,
     "session": "m",
